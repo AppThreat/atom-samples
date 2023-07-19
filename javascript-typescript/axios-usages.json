@@ -20416,7 +20416,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "CancelToken",
+          "returnType" : "ANY",
           "lineNumber" : 13,
           "columnNumber" : 2
         },
@@ -20507,7 +20507,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "Axios",
+          "returnType" : "ANY",
           "lineNumber" : 22,
           "columnNumber" : 2
         },
@@ -20621,21 +20621,21 @@
         },
         {
           "name" : "from",
-          "typeFullName" : "AxiosHeaders",
+          "typeFullName" : "lib\\core\\AxiosHeaders.js::program:AxiosHeaders:from",
           "lineNumber" : 248,
           "columnNumber" : 2,
           "label" : "LOCAL"
         },
         {
           "name" : "concat1",
-          "typeFullName" : "AxiosHeaders",
+          "typeFullName" : "lib\\core\\AxiosHeaders.js::program:AxiosHeaders:concat1",
           "lineNumber" : 252,
           "columnNumber" : 2,
           "label" : "LOCAL"
         },
         {
           "name" : "accessor",
-          "typeFullName" : "AxiosHeaders",
+          "typeFullName" : "lib\\core\\AxiosHeaders.js::program:AxiosHeaders:accessor",
           "lineNumber" : 260,
           "columnNumber" : 2,
           "label" : "LOCAL"
@@ -20649,7 +20649,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "AxiosHeaders",
+          "returnType" : "ANY",
           "lineNumber" : 75,
           "columnNumber" : 2
         },
@@ -20783,7 +20783,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "AxiosHeaders",
+          "returnType" : "ANY",
           "lineNumber" : 248,
           "columnNumber" : 2
         },
@@ -20795,7 +20795,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "AxiosHeaders",
+          "returnType" : "ANY",
           "lineNumber" : 252,
           "columnNumber" : 2
         },
@@ -20806,7 +20806,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "AxiosHeaders",
+          "returnType" : "ANY",
           "lineNumber" : 260,
           "columnNumber" : 2
         }
@@ -20861,7 +20861,7 @@
           "paramTypes" : [
             "ANY"
           ],
-          "returnType" : "InterceptorManager",
+          "returnType" : "ANY",
           "lineNumber" : 6,
           "columnNumber" : 2
         },
@@ -20948,7 +20948,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "AxiosTransformStream",
+          "returnType" : "ANY",
           "lineNumber" : 11,
           "columnNumber" : 2
         },
@@ -21114,7 +21114,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "FormDataPart",
+          "returnType" : "ANY",
           "lineNumber" : 15,
           "columnNumber" : 2
         },
