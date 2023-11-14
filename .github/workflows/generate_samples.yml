@@ -1,0 +1,57 @@
+name: Update slices
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit-updates:
+        description: Push updated slices
+        required: false
+        default: true
+        type: boolean
+      commit-msg:
+        description: Optional commit message
+        required: false
+        default: "Slice update"
+        type: string
+      args:
+        description: Optional arguments for generation script
+        required: false
+        default: '-repo_dir /home/runner/work/src_repos'
+        type: string
+  
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v3
+        with:
+          java-version: 20
+          distribution: temurin
+
+      - run: npm install -g @appthreat/atom
+
+      - name: Update slices
+        shell: pwsh
+        run: |
+          ./generate.ps1 ${{ inputs.args }}
+
+      - name: Upload slices as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: slices
+          path: /home/runner/work/atom-samples/atom-samples/**/*.json
+
+      - name: Commit changes
+        if: inputs.commit-updates
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "Caroline Russell"
+          git config user.email "caroline@appthreat.dev"
+          git add .
+          git commit -m "${{ inputs.commit-msg }}"
+          git push
