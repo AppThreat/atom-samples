@@ -60,6 +60,7 @@ jobs:
           curl -s "https://get.sdkman.io" | bash
           source "/home/runner/.sdkman/bin/sdkman-init.sh"
           echo sdkman_auto_answer=true > ~/.sdkman/etc/config
+          sdk install java 20.0.2-tem
 
       - name: Download custom csv sample list
         if: ${{ inputs.csv-file }}
