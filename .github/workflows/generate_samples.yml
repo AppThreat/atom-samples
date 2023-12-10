@@ -4,16 +4,16 @@ on:
   workflow_dispatch:
     inputs:
       commit-updates:
-        description: Commit and push new/updated slices
+        description: Push updated slices
         required: false
         default: true
         type: boolean
       commit-msg:
-        description: Desired commit message
+        description: Commit message
         required: false
         default: "Slice update"
         type: string
-      slice-type:
+      filter-slice-type:
         description: Generate only this slice type
         required: false
         type: string
@@ -22,29 +22,18 @@ on:
         required: false
         default: 'java javascript python'
         type: string
-      reset-cache:
-        description: Don't use the cached repos (delete the caches before running)
-        required: false
-        type: boolean
-        default: false
       debug-cmds:
-        description: Don't execute commands, just print and upload shell files
+        description: Don't execute commands, just print and output shell files
         required: false
         type: boolean
         default: false
-      run-twice:
-        description: Run generate.py a second time with custom args (if debugging, first run scripts will not be uploaded as artifacts)
+      custom-csv:
+        description: Link to custom sources.csv (Input accepted from Caroline or Prabhu only)
         required: false
         type: string
-        default: ''
-      csv-file:
-        description: URL to CSV file to use instead of sources.csv
-        required: false
-        type: string
-
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}-${{ inputs.filter }}-${{ inputs.filter-slice-type }}
   cancel-in-progress: true
 
 jobs:
@@ -54,93 +43,61 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Atom and SDKMan
+      - run: npm install -g @appthreat/atom
+
+      -  name: sdkman install
+         if: ${{ ! inputs.debug-cmds }}
+         run: |
+           curl -s "https://get.sdkman.io" | bash
+           source "/home/runner/.sdkman/bin/sdkman-init.sh"
+           echo sdkman_auto_answer=true > ~/.sdkman/etc/config
+
+      - name: Allow a custom csv
+        if: inputs.custom-csv != '' && (github.actor == 'cerrussell' || github.actor == 'prabhu')
         run: |
-          npm install -g @appthreat/atom
-          curl -s "https://get.sdkman.io" | bash
-          source "/home/runner/.sdkman/bin/sdkman-init.sh"
-          echo sdkman_auto_answer=true > ~/.sdkman/etc/config
-          sdk install java 20.0.2-tem
+          curl -o sources.csv ${{ inputs.custom-csv }}
 
-      - name: Download custom csv sample list
-        if: ${{ inputs.csv-file }}
-        run: wget ${{ inputs.csv-file }} -O /home/runner/work/atom-samples/atom-samples/sources.csv
-
-      - name: Restore sample repo cache
-        if: ${{ ! inputs.reset-cache }}
-        uses: actions/cache/restore@v3
+      - name: Sample repo cache
+        uses: actions/cache@v3
         id: cache
         with:
           path: /home/runner/work/src_repos
-          key: ${{ runner.os }}-atom-samples
+          key: ${{ runner.os }}-atom-samples-${{ hashFiles('sources.csv') }}
 
-      - name: Restore sdkman install cache
-        if: ${{ ! inputs.reset-cache }}
-        uses: actions/cache/restore@v3
+      - name: sdkman install cache
+        if: ${{ ! inputs.debug-cmds }}
+        uses: actions/cache@v3
         id: sdkman-cache
         with:
           path: /home/runner/.sdkman/candidates
           key: ${{ runner.os }}-sdkman
 
       - name: Generate slices
-        if: ${{ ! inputs.debug-cmds }}
+        if: ${{ steps.cache.outputs.cache-hit }} || ${{ inputs.debug-cmds }}
         env:
           SDKMAN_DIR: /home/runner/.sdkman
         run: |
-          python generate.py --skip-clone -s ${{ inputs.slice-type }} -i ${{ inputs.filter }}
-          bash /home/runner/work/atom-samples/atom-samples/sdkman_installs.sh
-          bash /home/runner/work/atom-samples/atom-samples/atom_commands.sh
+           python generate.py -s ${{ inputs.filter-slice-type }} -i ${{ inputs.filter }}
+           bash /home/runner/work/atom-samples/atom-samples/sdkman_installs.sh
+           bash /home/runner/work/atom-samples/atom-samples/atom_commands.sh
+           python generate.py --cleanup
 
-      - name: Generate slices (without skipping clone)
-        if: ${{ ! inputs.debug-cmds }} && ${{ inputs.reset-cache }}
-        env:
-          SDKMAN_DIR: /home/runner/.sdkman
-        run: |
-          python generate.py -s ${{ inputs.slice-type }} -i ${{ inputs.filter }}
-          bash /home/runner/work/atom-samples/atom-samples/sdkman_installs.sh
-          bash /home/runner/work/atom-samples/atom-samples/atom_commands.sh
-
-      - name: Generate slices II
-        if: ${{ ! inputs.debug-cmds }} && ${{ inputs.run-twice }}
-        env:
-          SDKMAN_DIR: /home/runner/.sdkman
-        run: |
-          python generate.py ${{ inputs.run-twice }}
-          bash /home/runner/work/atom-samples/atom-samples/sdkman_installs.sh
-          bash /home/runner/work/atom-samples/atom-samples/atom_commands.sh
-
-      - name: Debug commands
+      - name: Generate shell scripts only
         if: ${{ inputs.debug-cmds }}
         run: |
-          python generate.py --skip-clone --debug-cmds -s ${{ inputs.slice-type }} -i ${{ inputs.filter }}
+          python generate.py --skip-clone --debug-cmds -s ${{ inputs.filter-slice-type }} -i ${{ inputs.filter }}
 
       - name: Upload slices as artifact
-        if: ${{ ! inputs.commit-updates }}
         uses: actions/upload-artifact@v3
         with:
           name: slices
           path: /home/runner/work/atom-samples/atom-samples/**/*.json
 
       - name: Upload shell scripts generated as artifact
-        if: ${{ inputs.debug-cmds }}
         uses: actions/upload-artifact@v3
         with:
           name: scripts
           path: /home/runner/work/atom-samples/atom-samples/*.sh
-
-      - name: Save repo cache
-        if: inputs.reset-cache || ${{ ! steps.cache.outputs.cache-hit }}
-        uses: actions/cache/save@v3
-        with:
-          path: /home/runner/work/src_repos
-          key: ${{ runner.os }}-atom-samples
-
-      - name: Save sdkman cache
-        if: inputs.reset-cache || ${{ ! steps.cache.outputs.cache-hit }}
-        uses: actions/cache/save@v3
-        with:
-          path: /home/runner/.sdkman/candidates
-          key: ${{ runner.os }}-sdkman
 
       - name: Commit changes
         if: inputs.commit-updates && ${{ ! inputs.debug-cmds }}
@@ -149,6 +106,6 @@ jobs:
         run: |
           git config user.name "Caroline Russell"
           git config user.email "caroline@appthreat.dev"
-          git add java javascript python
+          git add ${{ inputs.filter }}
           git commit -m "${{ inputs.commit-msg }}"
           git push
