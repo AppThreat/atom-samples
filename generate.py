@@ -183,7 +183,7 @@ def exec_on_repo(
             commands += f"\n{subprocess.list2cmdline(new_cmd)}"
     commands += f"\n{subprocess.list2cmdline(['cd', loc])}"
     if lang == 'java':
-        commands += '\nsdk use java 20.0.2-tem'
+        commands += '\nsdk use java 21.0.1-tem'
     for stype in slice_types:
         slice_file = Path.joinpath(output_dir, lang, f"{project}-{stype}.json")
         atom_file = Path.joinpath(repo_dir, f"{project}.atom")
@@ -246,7 +246,7 @@ def run_pre_builds(repo_data, output_dir, debug_cmds):
     Returns:
         None
     """
-    cmds = ['sdk install java 20.0.2-tem']
+    cmds = ['sdk install java 21.0.1-tem']
     [
         cmds.extend(row['pre_build_cmd'].split(';'))
         for row in repo_data
