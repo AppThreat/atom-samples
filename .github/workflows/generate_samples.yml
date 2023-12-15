@@ -122,5 +122,5 @@ jobs:
           git config user.email "caroline@appthreat.dev"
           git add ${{ inputs.filter }}
           git commit -m "${{ inputs.commit-msg }}"
-          git push
+          git push --set-upstream origin update/slice-update
           gh pr create --title "${{ inputs.commit-msg }}" --reviewer cerrussell,prabhu
