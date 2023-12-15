@@ -1,7 +1,7 @@
 project,link,language,pre_build_cmd,build_cmd
-"apollo","https://github.com/apolloconfig/apollo.git","java","sdk use java 8.0.392-tem","mvn package -DskipTests=true"
-"karate","https://github.com/karatelabs/karate.git","java","sdk use java 11.0.21-tem","mvn package -DskipTests=true"
-"piggymetrics","https://github.com/sqshq/piggymetrics.git","java","sdk use java 8.0.392-tem","mvn package -DskipTests=true"
+"apollo","https://github.com/apolloconfig/apollo.git","java","sdk use java 8.0.392-tem","mvn -q package -DskipTests=true"
+"karate","https://github.com/karatelabs/karate.git","java","sdk use java 11.0.21-tem","mvn -q package -DskipTests=true"
+"piggymetrics","https://github.com/sqshq/piggymetrics.git","java","sdk use java 8.0.392-tem","mvn -q package -DskipTests=true"
 "axios","https://github.com/axios/axios.git","javascript","",""
 "videojs","https://github.com/videojs/video.js.git","javascript","","npm install"
 "sequelize","https://github.com/sequelize/sequelize.git","javascript","","yarn install"

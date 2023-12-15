@@ -56,12 +56,23 @@ jobs:
         run: |
           curl -o sources.csv ${{ inputs.custom-csv }}
 
-      - name: Sample repo cache
+      - name: Sample repo cache (python and javascript)
+        if: contains(inputs.filter, 'python') || contains(inputs.filter, 'javascript')
         uses: actions/cache@v3
         id: cache
         with:
-          path: /home/runner/work/src_repos
-          key: ${{ runner.os }}-atom-samples-${{ hashFiles('sources.csv') }}
+          path: |
+            /home/runner/work/src_repos/python
+            /home/runner/work/src_repos/javascript
+          key: ${{ runner.os }}-python-js-sample-repos-${{ hashFiles('sources.csv') }}
+
+      - name: Sample repo cache (java)
+        if: ${{ startsWith(inputs.filter,'java') || endsWith(inputs.filter,'java') || inputs.filter == 'python java javascript' || inputs.filter == 'javascript java python' }}
+        uses: actions/cache@v3
+        id: jcache
+        with:
+          path: /home/runner/work/src_repos/java
+          key: ${{ runner.os }}-java-sample-repos-${{ hashFiles('sources.csv') }}
 
       - name: sdkman install cache
         uses: actions/cache@v3
@@ -98,7 +109,7 @@ jobs:
           path: /home/runner/work/atom-samples/atom-samples/*.sh
 
       - name: Commit changes
-        if: inputs.commit-updates && ${{ ! inputs.debug-cmds }}
+        if: inputs.commit-updates && ${{ ! inputs.debug-cmds }} && (github.actor == 'cerrussell' || github.actor == 'prabhu')
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
