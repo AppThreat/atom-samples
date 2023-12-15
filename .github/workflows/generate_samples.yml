@@ -43,6 +43,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set up a branch if pushing
+        if: inputs.commit-updates && ${{ ! inputs.debug-cmds }}
+        run: |
+          git checkout -B update/slice-update main^0 --
+
       - run: npm install -g @appthreat/atom
 
       -  name: sdkman install
