@@ -123,3 +123,4 @@ jobs:
           git add ${{ inputs.filter }}
           git commit -m "${{ inputs.commit-msg }}"
           git push
+          gh pr create --title "${{ inputs.commit-msg }}" --reviewer cerrussell,prabhu
