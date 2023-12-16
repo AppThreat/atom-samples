@@ -164,7 +164,7 @@ def exec_on_repo(
     lang = repo['language']
     loc = Path.cwd()
     repo_dir = Path.joinpath(clone_dir, lang, project)
-    commands = ''
+    commands = 'sdk use java 21.0.1-tem'
 
     if clone and not debug_cmds:
         clone_repo(repo['link'], clone_dir, repo_dir)
