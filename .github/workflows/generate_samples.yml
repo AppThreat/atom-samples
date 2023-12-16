@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       commit-updates:
-        description: Push updated slices
+        description: Push updated slices (will only run if initiated by Caroline or Prabhu)
         required: false
         default: true
         type: boolean
@@ -14,21 +14,25 @@ on:
         default: "Slice update"
         type: string
       filter-slice-type:
-        description: Generate only this slice type
+        description: Generate only this slice type (either usages or reachables)
         required: false
         type: string
       filter:
         description: Generate only for these languages (separated by spaces)
-        required: false
+        required: true
         default: 'java javascript python'
         type: string
       debug-cmds:
-        description: Don't execute commands, just print and output shell files
+        description: Don't execute commands, just print and upload shell files
         required: false
         type: boolean
         default: false
       custom-csv:
         description: Link to custom sources.csv (Input accepted from Caroline or Prabhu only)
+        required: false
+        type: string
+      run-twice:
+        description: Run generate.py a second time with custom args
         required: false
         type: string
 
@@ -41,28 +45,40 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Echo inputs
+        run: |
+          echo "commit-updates: ${{ inputs.commit-updates }}"
+          echo "commit-msg: ${{ inputs.commit-msg }}"
+          echo "filter-slice-type: ${{ inputs.filter-slice-type }}"
+          echo "filter: ${{ inputs.filter }}"
+          echo "debug-cmds: ${{ inputs.debug-cmds }}"
+          echo "custom-csv: ${{ inputs.custom-csv }}"
+          echo "run-twice: ${{ inputs.run-twice }}"
+          echo "github.actor: ${{ github.actor }}"
+
       - uses: actions/checkout@v4
 
       - name: Set up a branch if pushing
-        if: inputs.commit-updates && ${{ ! inputs.debug-cmds }}
+        if: ${{ inputs.commit-updates && contains(fromJSON('["cerrussell", "prabhu"]'), github.actor) && ! inputs.debug-cmds }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git checkout -B update/slice-update main^0 --
 
-      - run: npm install -g @appthreat/atom
-
-      -  name: sdkman install
+      -  name: Atom and sdkman install
          run: |
+           npm install -g @appthreat/atom
            curl -s "https://get.sdkman.io" | bash
            source "/home/runner/.sdkman/bin/sdkman-init.sh"
            echo sdkman_auto_answer=true > ~/.sdkman/etc/config
 
       - name: Allow a custom csv
-        if: inputs.custom-csv != '' && (github.actor == 'cerrussell' || github.actor == 'prabhu')
+        if: inputs.custom-csv && contains(fromJSON('["cerrussell", "prabhu"]'), github.actor)
         run: |
           curl -o sources.csv ${{ inputs.custom-csv }}
 
       - name: Sample repo cache (python and javascript)
-        if: contains(inputs.filter, 'python') || contains(inputs.filter, 'javascript')
+        if: contains(inputs.filter, 'python') || contains(inputs.filter, 'javascript') || contains(inputs.run-twice, 'python') || contains(inputs.run-twice, 'javascript')
         uses: actions/cache@v3
         id: cache
         with:
@@ -72,7 +88,7 @@ jobs:
           key: ${{ runner.os }}-python-js-sample-repos-${{ hashFiles('sources.csv') }}
 
       - name: Sample repo cache (java)
-        if: ${{ startsWith(inputs.filter,'java') || endsWith(inputs.filter,'java') || inputs.filter == 'python java javascript' || inputs.filter == 'javascript java python' }}
+        if: startsWith(inputs.filter,'java') || contains(inputs.run-twice, 'java') || endsWith(inputs.filter,'java') || contains(fromJSON('["python java javascript", "javascript java python"]'), inputs.filter)
         uses: actions/cache@v3
         id: jcache
         with:
@@ -96,12 +112,36 @@ jobs:
            bash /home/runner/work/atom-samples/atom-samples/atom_commands.sh
            python generate.py --cleanup
 
-      - name: Generate shell scripts only
-        if: ${{ inputs.debug-cmds }}
+      - name: Optional second run
+        if: ${{ ! inputs.debug-cmds && inputs.run-twice }}
+        env:
+          SDKMAN_DIR: /home/runner/.sdkman
         run: |
-          python generate.py --skip-clone --debug-cmds -s ${{ inputs.filter-slice-type }} -i ${{ inputs.filter }}
+          mv /home/runner/work/atom-samples/atom-samples/sdkman_installs.sh /home/runner/work/atom-samples/atom-samples/sdkman_installs-run1.sh
+          mv /home/runner/work/atom-samples/atom-samples/atom_commands.sh /home/runner/work/atom-samples/atom-samples/atom_commands-run1.sh
+          python generate.py ${{ inputs.run-twice }}
+          bash /home/runner/work/atom-samples/atom-samples/sdkman_installs.sh
+          bash /home/runner/work/atom-samples/atom-samples/atom_commands.sh
+          python generate.py --cleanup
+          mv /home/runner/work/atom-samples/atom-samples/sdkman_installs.sh /home/runner/work/atom-samples/atom-samples/sdkman_installs-run2.sh
+          mv /home/runner/work/atom-samples/atom-samples/atom_commands.sh /home/runner/work/atom-samples/atom-samples/atom_commands-run2.sh
+
+      - name: Generate shell scripts only
+        if: inputs.debug-cmds
+        run: |
+          python generate.py --debug-cmds -s ${{ inputs.filter-slice-type }} -i ${{ inputs.filter }}
+
+      - name: Generate shell scripts only - second run
+        if: inputs.debug-cmds && inputs.run-twice
+        run: |
+          mv /home/runner/work/atom-samples/atom-samples/sdkman_installs.sh /home/runner/work/atom-samples/atom-samples/sdkman_installs-run1.sh
+          mv /home/runner/work/atom-samples/atom-samples/atom_commands.sh /home/runner/work/atom-samples/atom-samples/atom_commands-run1.sh
+          python generate.py --debug-cmds ${{ inputs.run-twice }}
+          mv /home/runner/work/atom-samples/atom-samples/sdkman_installs.sh /home/runner/work/atom-samples/atom-samples/sdkman_installs-run2.sh
+          mv /home/runner/work/atom-samples/atom-samples/atom_commands.sh /home/runner/work/atom-samples/atom-samples/atom_commands-run2.sh
 
       - name: Upload slices as artifact
+        if: ${{ ! inputs.debug-cmds && ! inputs.commit-updates  }}
         uses: actions/upload-artifact@v3
         with:
           name: slices
@@ -113,8 +153,8 @@ jobs:
           name: scripts
           path: /home/runner/work/atom-samples/atom-samples/*.sh
 
-      - name: Commit changes
-        if: inputs.commit-updates && ${{ ! inputs.debug-cmds }} && (github.actor == 'cerrussell' || github.actor == 'prabhu')
+      - name: Commit, push, and create PR
+        if: ${{ inputs.commit-updates && ! inputs.debug-cmds && contains(fromJSON('["cerrussell", "prabhu"]'), github.actor) }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -123,4 +163,4 @@ jobs:
           git add ${{ inputs.filter }}
           git commit -m "${{ inputs.commit-msg }}"
           git push --set-upstream origin update/slice-update
-          gh pr create --title "${{ inputs.commit-msg }}" --body "Updates for ${{ inputs.filter }} --reviewer cerrussell,prabhu
+          gh pr create --title "${{ inputs.commit-msg }}" --body "Updates for ${{ inputs.filter }}" --reviewer cerrussell,prabhu
