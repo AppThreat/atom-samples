@@ -125,7 +125,7 @@ def generate(args):
             args.clone_dir,
             args.output_dir,
             args.skip_build,
-            args.slice_types,
+            args.slice_types if type(args.slice_types) == list else [args.slice_types],
             args.debug_cmds,
             repo,
         )
