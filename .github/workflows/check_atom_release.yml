@@ -9,7 +9,7 @@ on:
         default: ''
         type: string
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 4 * * TUE,FRI'
 
 jobs:
   check_release:
