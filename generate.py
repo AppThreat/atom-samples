@@ -24,7 +24,7 @@ def build_args():
     parser.add_argument(
         '--clone-dir',
         type=Path,
-        default='/home/runner/work/src_repos',
+        default=Path('/home/runner/work/src_repos'),
         help='Path to src_repos',
         dest='clone_dir'
     )
@@ -36,9 +36,9 @@ def build_args():
         help='Path to output',
         dest='output_dir',
     )
-    lang_parser_group = parser.add_mutually_exclusive_group()
-    lang_parser_group.set_defaults(langs=['java', 'python', 'javascript'])
-    lang_parser_group.add_argument(
+    filter_parser_group = parser.add_mutually_exclusive_group()
+    filter_parser_group.set_defaults(langs=['java', 'python', 'javascript'])
+    filter_parser_group.add_argument(
         '-i',
         '--include-langs',
         choices=['java', 'python', 'javascript'],
@@ -47,11 +47,19 @@ def build_args():
         dest='langs',
         nargs='*',
     )
-    lang_parser_group.add_argument(
+    filter_parser_group.add_argument(
         '-e',
         '--exclude-langs',
         choices=['java', 'python', 'javascript'],
+        help='Languages to exclude from samples',
         dest='elangs',
+        nargs='*'
+    )
+    filter_parser_group.add_argument(
+        '-p',
+        '--projects',
+        help='Filter to these sample projects',
+        dest='projects',
         nargs='*'
     )
     parser.add_argument(
@@ -106,6 +114,8 @@ def generate(args):
     Returns:
         None
     """
+    if args.projects:
+        args.langs = ['java', 'python', 'javascript']
     langs = set(args.langs)
     if args.output_dir == '.':
         args.output_dir = pathlib.Path.cwd()
@@ -114,7 +124,8 @@ def generate(args):
     if not args.debug_cmds:
         check_dirs(args.skip_clone, args.clone_dir, args.output_dir)
 
-    repo_data = read_csv(args.repo_csv, langs)
+    repo_data = read_csv(args.repo_csv, langs, args.projects, args.clone_dir)
+    processed_repos = process_repo_data(repo_data, args.clone_dir, langs)
 
     if not args.skip_build:
         run_pre_builds(repo_data, args.output_dir, args.debug_cmds)
@@ -122,26 +133,42 @@ def generate(args):
     commands = ''.join(
         exec_on_repo(
             args.skip_clone,
-            args.clone_dir,
             args.output_dir,
             args.skip_build,
-            args.slice_types if type(args.slice_types) == list else [args.slice_types],
-            args.debug_cmds,
+            args.slice_types
+            if isinstance(args.slice_types, list)
+            else [args.slice_types],
             repo,
         )
-        for repo in repo_data
+        for repo in processed_repos
     )
     sh_path = Path.joinpath(args.output_dir, 'atom_commands.sh')
     write_script_file(sh_path, commands, args.debug_cmds)
 
 
+def add_repo_dirs(clone_dir, repo_data):
+    """
+    Adds a key for the repository directory to the repository data.
+
+    Args:
+        clone_dir (pathlib.Path): The directory to store sample repositories.
+        repo_data (list[dict]): Contains the sample repository data
+
+    Returns:
+        list[dict]: The updated repository data with the 'repo_dir' key
+    """
+    new_data = []
+    for r in repo_data:
+        r['repo_dir'] = Path.joinpath(clone_dir, r['language'], r['project'])
+        new_data.append(r)
+    return new_data
+
+
 def exec_on_repo(
         clone,
-        clone_dir,
         output_dir,
         skip_build,
         slice_types,
-        debug_cmds,
         repo
 ):
     """
@@ -149,11 +176,9 @@ def exec_on_repo(
 
     Args:
         clone (bool): Indicates whether to clone the repository.
-        clone_dir (pathlib.Path): The directory to store sample repositories.
         output_dir (pathlib.Path): The directory to output the slices.
         skip_build (bool): Indicates whether to skip the build phase.
         slice_types (list): The types of slices to be generated.
-        debug_cmds (bool): Indicates whether to include debug output.
         repo (dict): The repository information.
 
 
@@ -163,12 +188,12 @@ def exec_on_repo(
     project = repo['project']
     lang = repo['language']
     loc = Path.cwd()
-    repo_dir = Path.joinpath(clone_dir, lang, project)
-    commands = 'sdk use java 21.0.1-tem'
+    repo_dir = repo['repo_dir']
+    commands = ''
 
-    if clone and not debug_cmds:
-        clone_repo(repo['link'], clone_dir, repo_dir)
-    commands += f"\n{subprocess.list2cmdline(['cd', repo_dir])}"
+    if clone:
+        commands += f'\n{clone_repo(repo["link"], repo_dir)}'
+    commands += f'\n{subprocess.list2cmdline(["cd", repo_dir])}'
     if not skip_build and len(repo['pre_build_cmd']) > 0:
         cmds = repo['pre_build_cmd'].split(';')
         cmds = [cmd.lstrip().rstrip() for cmd in cmds]
@@ -181,26 +206,29 @@ def exec_on_repo(
         for cmd in cmds:
             new_cmd = list(cmd.split(' '))
             commands += f"\n{subprocess.list2cmdline(new_cmd)}"
-    commands += f"\n{subprocess.list2cmdline(['cd', loc])}"
-    if lang == 'java':
-        commands += '\nsdk use java 21.0.1-tem'
+    if repo.get('cdxgen_cmd'):
+        commands += f"\n{repo['cdxgen_cmd']}"
+    commands += f'\n{subprocess.list2cmdline(["cd", loc])}'
+    commands += f'\n{subprocess.list2cmdline(["sdk", "use", "java", "21.0.1-zulu"])}'
     for stype in slice_types:
-        slice_file = Path.joinpath(output_dir, lang, f"{project}-{stype}.json")
-        atom_file = Path.joinpath(repo_dir, f"{project}.atom")
+        slice_file = Path.joinpath(output_dir, lang, f'{project}-{stype}.json')
+        atom_file = Path.joinpath(repo_dir, f'{project}.atom')
         cmd = ['atom', stype, '-l', lang, '-o', atom_file, '-s', slice_file,
                repo_dir]
-        commands += f"\n{subprocess.list2cmdline(cmd)}"
+        commands += f'\n{subprocess.list2cmdline(cmd)}'
     commands += '\n\n'
     return commands
 
 
-def read_csv(csv_file, langs):
+def read_csv(csv_file, langs, projects, clone_dir):
     """
     Reads a CSV file and filters the data based on a list of languages.
 
     Parameters:
         csv_file (pathlib.Path): The path to the CSV file.
         langs (set): A set of programming languages.
+        projects (list): A list of projects names to filter on.
+        clone_dir (pathlib.Path): The directory storing the cloned repositories.
 
     Returns:
         list: A filtered list of repository data.
@@ -208,30 +236,30 @@ def read_csv(csv_file, langs):
     with open(csv_file, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         repo_data = list(reader)
-    if len(langs) != 3:
-        return [repo for repo in repo_data if repo['language'] in langs]
-    return repo_data
+    if projects:
+        repo_data = [repo for repo in repo_data if repo['project'] in projects]
+    elif 'java' not in langs or 'javascript' not in langs or 'python' not in langs:
+        repo_data = [repo for repo in repo_data if repo['language'] in langs]
+    return add_repo_dirs(clone_dir, repo_data)
 
 
-def clone_repo(url, clone_dir, repo_dir):
+def clone_repo(url, repo_dir):
     """
     Clones a repository from a given URL to a specified directory.
 
     Args:
         url (str): The URL of the repository to clone.
-        clone_dir (pathlib.Path): The directory to clone the repository into.
         repo_dir (pathlib.Path): The directory to store the cloned repository.
 
     Returns:
-        None
+        str: The command to clone the repository.
     """
-    os.chdir(clone_dir)
     if Path.exists(repo_dir):
         logging.info('%s already exists, skipping clone.', repo_dir)
-        return
+        return ''
 
-    clone_cmd = f'git clone {url} {repo_dir}'
-    subprocess.run(clone_cmd, shell=True, encoding='utf-8', check=False)
+    clone_cmd = ['git', 'clone', url, repo_dir]
+    return subprocess.list2cmdline(clone_cmd)
 
 
 def run_pre_builds(repo_data, output_dir, debug_cmds):
@@ -246,7 +274,7 @@ def run_pre_builds(repo_data, output_dir, debug_cmds):
     Returns:
         None
     """
-    cmds = ['sdk install java 21.0.1-tem']
+    cmds = []
     [
         cmds.extend(row['pre_build_cmd'].split(';'))
         for row in repo_data
@@ -256,6 +284,7 @@ def run_pre_builds(repo_data, output_dir, debug_cmds):
     cmds = set(cmds)
 
     commands = [c.replace('use', 'install') for c in cmds]
+    commands.append('sdk install java 21.0.1-zulu')
     commands = '\n'.join(commands)
     sh_path = Path.joinpath(output_dir, 'sdkman_installs.sh')
     write_script_file(sh_path, commands, debug_cmds)
@@ -316,6 +345,57 @@ def cleanup(output_dir):
                 path = os.path.join(root, file)
                 if os.path.getsize(path) <= 1024:
                     os.remove(path)
+
+
+def run_cdxgen(repos):
+    """
+    Generates cdxgen commands.
+
+    Args:
+        repos (list[dict]): Repository data
+
+    Returns:
+        str: The repository data with cdxgen commands
+    """
+    new_repos = []
+    for r in repos:
+        if r['language'] in ['java', 'javascript']:
+            cdxgen_cmd = [
+                'cdxgen',
+                '-t',
+                r['language'],
+                '--deep',
+                '-o',
+                Path.joinpath(r['repo_dir'], 'bom.json'),
+                r['repo_dir']
+            ]
+            r['cdxgen_cmd'] = subprocess.list2cmdline(cdxgen_cmd)
+        else:
+            r['cdxgen_cmd'] = None
+        new_repos.append(r)
+
+    return new_repos
+
+
+def process_repo_data(repo_data, clone_dir, langs):
+    """
+    Process the repo data, adding the 'repo_dir' key and filtering as required.
+
+    Args:
+        repo_data (list[dict]): Repository data
+        clone_dir (pathlib.Path): Destination for cloned repo.
+        langs (set): Filter data to these languages
+
+    Returns:
+        list[dict]: The processed repository data
+    """
+    new_data = []
+    for r in repo_data:
+        r['repo_dir'] = Path.joinpath(clone_dir, r['language'], r['project'])
+        new_data.append(r)
+    if 'java' in langs or 'javascript' in langs:
+        new_data = run_cdxgen(new_data)
+    return new_data
 
 
 def main():

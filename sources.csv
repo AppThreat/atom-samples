@@ -1,9 +1,9 @@
 project,link,language,pre_build_cmd,build_cmd
-"apollo","https://github.com/apolloconfig/apollo.git","java","sdk use java 8.0.392-tem","mvn -q package -DskipTests=true"
-"karate","https://github.com/karatelabs/karate.git","java","sdk use java 11.0.21-tem","mvn -q package -DskipTests=true"
-"piggymetrics","https://github.com/sqshq/piggymetrics.git","java","sdk use java 8.0.392-tem","mvn -q package -DskipTests=true"
+"apollo","https://github.com/apolloconfig/apollo.git","java","sdk use maven 3.5.4;sdk use java 17.0.9-zulu","mvn -B clean compile -Dmaven.gitcommitid.skip=true -DskipTests=true"
+"karate","https://github.com/karatelabs/karate.git","java","sdk use java 21.ea.35-open","mvn -B clean install -P pre-release -pl '!karate-gatling' -Djavacpp.platform=linux-x86_64 -DskipTests=true"
+"piggymetrics","https://github.com/sqshq/piggymetrics.git","java","sdk use java 8.0.392-zulu","mvn -B -ntp package -DskipTests=true"
 "axios","https://github.com/axios/axios.git","javascript","",""
-"videojs","https://github.com/videojs/video.js.git","javascript","","npm install"
+"videojs","https://github.com/videojs/video.js.git","javascript","",""
 "sequelize","https://github.com/sequelize/sequelize.git","javascript","","yarn install"
 "ava","https://github.com/avajs/ava.git","javascript","","npm install"
 "spaCy","https://github.com/explosion/spaCy.git","python","",""
