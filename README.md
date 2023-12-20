@@ -1,18 +1,22 @@
 # atom-samples
 
-Collection of data-flow and usage slice samples
-for [appthreat/atom](https://github.com/appthreat/atom).
+Collection of data-flow and usage slice samples for 
+[appthreat/atom](https://github.com/appthreat/atom).
 
 ## Slice Generation
 
 Slices were generated using the following commands, where language is the
-programming language of the target project as listed in Sample Sources.
+programming language of the target project as listed in 
+[Sample Projects](#sample-projects).
 
 `atom usages -l language -o app.atom -s usages.json .`
 
 `atom reachables -l language -o app.atom -s reachables.json .`
 
-## Sample Sources
+>Java and javascript projects require cdxgen be run with the deep option for reachables
+> `cdxgen -t java --deep .`
+
+## Sample Projects
 
 Data-flow and usage commands for sample projects below.
 
