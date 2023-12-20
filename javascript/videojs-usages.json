@@ -7102,7 +7102,7 @@
         {
           "targetObj" : {
             "name" : "getComponent",
-            "typeFullName" : "ANY",
+            "typeFullName" : "Component",
             "resolvedMethod" : "src/js/component.js::program:Component:getComponent",
             "isExternal" : false,
             "lineNumber" : 185,
@@ -7111,7 +7111,7 @@
           },
           "definedBy" : {
             "name" : "getComponent",
-            "typeFullName" : "ANY",
+            "typeFullName" : "Component",
             "resolvedMethod" : "src/js/component.js::program:Component:getComponent",
             "isExternal" : false,
             "lineNumber" : 185,
@@ -7929,6 +7929,30 @@
         },
         {
           "targetObj" : {
+            "name" : "keys",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "Object.keys",
+            "isExternal" : true,
+            "lineNumber" : 307,
+            "columnNumber" : 2,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "keys",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "Object.keys",
+            "isExternal" : true,
+            "lineNumber" : 307,
+            "columnNumber" : 2,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
             "name" : "isArray",
             "typeFullName" : "ANY",
             "resolvedMethod" : "ArrayConstructor:isArray",
@@ -8023,30 +8047,6 @@
         },
         {
           "targetObj" : {
-            "name" : "keys",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "Object.keys",
-            "isExternal" : true,
-            "lineNumber" : 307,
-            "columnNumber" : 2,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "keys",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "Object.keys",
-            "isExternal" : true,
-            "lineNumber" : 307,
-            "columnNumber" : 2,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
             "name" : "Tech",
             "typeFullName" : "src/js/component.js::program:Component",
             "lineNumber" : null,
@@ -8055,7 +8055,7 @@
           },
           "definedBy" : {
             "name" : "Component.getComponent",
-            "typeFullName" : "src/js/component.js::program:Component:<init>:getComponent",
+            "typeFullName" : "src/js/component.js::program:Component",
             "resolvedMethod" : "Component.getComponent",
             "isExternal" : null,
             "lineNumber" : 771,
@@ -8232,7 +8232,7 @@
           },
           "definedBy" : {
             "name" : "Component.getComponent",
-            "typeFullName" : "src/js/component.js::program:Component:<init>:getComponent",
+            "typeFullName" : "src/js/component.js::program:Component",
             "resolvedMethod" : "Component.getComponent",
             "isExternal" : null,
             "lineNumber" : 809,
@@ -9021,6 +9021,30 @@
         },
         {
           "targetObj" : {
+            "name" : "registerComponent",
+            "typeFullName" : "Component",
+            "resolvedMethod" : "src/js/component.js::program:Component:registerComponent",
+            "isExternal" : false,
+            "lineNumber" : 618,
+            "columnNumber" : 0,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "registerComponent",
+            "typeFullName" : "Component",
+            "resolvedMethod" : "src/js/component.js::program:Component:registerComponent",
+            "isExternal" : false,
+            "lineNumber" : 618,
+            "columnNumber" : 0,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
             "name" : "Tech",
             "typeFullName" : "src/js/component.js::program:Component",
             "lineNumber" : null,
@@ -9029,7 +9053,7 @@
           },
           "definedBy" : {
             "name" : "Component.getComponent",
-            "typeFullName" : "src/js/component.js::program:Component:<init>:getComponent",
+            "typeFullName" : "src/js/component.js::program:Component",
             "resolvedMethod" : "Component.getComponent",
             "isExternal" : null,
             "lineNumber" : 1792,
@@ -9048,30 +9072,6 @@
               "lineNumber" : 1795,
               "columnNumber" : 27
             }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "registerComponent",
-            "typeFullName" : "src/js/component.js::program:Component:<init>",
-            "resolvedMethod" : "src/js/component.js::program:Component:registerComponent",
-            "isExternal" : false,
-            "lineNumber" : 618,
-            "columnNumber" : 0,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "registerComponent",
-            "typeFullName" : "src/js/component.js::program:Component:<init>",
-            "resolvedMethod" : "src/js/component.js::program:Component:registerComponent",
-            "isExternal" : false,
-            "lineNumber" : 618,
-            "columnNumber" : 0,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
           ],
           "argToCalls" : [
           ]
@@ -57572,6 +57572,26 @@
         },
         {
           "targetObj" : {
+            "name" : "canPlayType(type)",
+            "typeFullName" : "ANY",
+            "lineNumber" : 3371,
+            "columnNumber" : 2,
+            "label" : "UNKNOWN"
+          },
+          "definedBy" : {
+            "name" : "canPlayType(type)",
+            "typeFullName" : "ANY",
+            "lineNumber" : 3371,
+            "columnNumber" : 2,
+            "label" : "UNKNOWN"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
             "name" : "tech",
             "typeFullName" : "src/js/tech/tech.js::program:Tech",
             "lineNumber" : null,
@@ -57580,7 +57600,7 @@
           },
           "definedBy" : {
             "name" : "Component.getComponent",
-            "typeFullName" : "ANY",
+            "typeFullName" : "src/js/component.js::program:Component",
             "resolvedMethod" : "src/js/component.js::program:Component:getComponent",
             "isExternal" : null,
             "lineNumber" : 3382,
@@ -57609,26 +57629,6 @@
               "lineNumber" : 3393,
               "columnNumber" : 14
             }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "canPlayType(type)",
-            "typeFullName" : "ANY",
-            "lineNumber" : 3371,
-            "columnNumber" : 2,
-            "label" : "UNKNOWN"
-          },
-          "definedBy" : {
-            "name" : "canPlayType(type)",
-            "typeFullName" : "ANY",
-            "lineNumber" : 3371,
-            "columnNumber" : 2,
-            "label" : "UNKNOWN"
-          },
-          "invokedCalls" : [
           ],
           "argToCalls" : [
           ]
@@ -66415,7 +66415,7 @@
         {
           "targetObj" : {
             "name" : "tt",
-            "typeFullName" : "ANY",
+            "typeFullName" : "src/js/tracks/html-track-element.js::program:HTMLTrackElement",
             "position" : 1,
             "lineNumber" : 5088,
             "columnNumber" : 25,
@@ -66423,7 +66423,7 @@
           },
           "definedBy" : {
             "name" : "tt",
-            "typeFullName" : "ANY",
+            "typeFullName" : "src/js/tracks/html-track-element.js::program:HTMLTrackElement",
             "position" : 1,
             "lineNumber" : 5088,
             "columnNumber" : 25,
@@ -66436,7 +66436,7 @@
               "callName" : "addRemoteTextTrack",
               "resolvedMethod" : "this.addRemoteTextTrack",
               "paramTypes" : [
-                "ANY",
+                "HTMLTrackElement",
                 "__ecma.Boolean"
               ],
               "returnType" : "ANY",
@@ -75693,7 +75693,7 @@
         {
           "targetObj" : {
             "name" : "getPlugin",
-            "typeFullName" : "ANY",
+            "typeFullName" : "Function | Plugin",
             "resolvedMethod" : "src/js/plugin.js::program:getPlugin",
             "isExternal" : false,
             "lineNumber" : 432,
@@ -75702,7 +75702,7 @@
           },
           "definedBy" : {
             "name" : "getPlugin",
-            "typeFullName" : "ANY",
+            "typeFullName" : "Function | Plugin",
             "resolvedMethod" : "src/js/plugin.js::program:getPlugin",
             "isExternal" : false,
             "lineNumber" : 432,
@@ -86641,38 +86641,6 @@
         },
         {
           "targetObj" : {
-            "name" : "tech",
-            "typeFullName" : "src/js/tech/tech.js::program:Tech",
-            "lineNumber" : null,
-            "columnNumber" : null,
-            "label" : "LOCAL"
-          },
-          "definedBy" : {
-            "name" : "Component.getComponent",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "src/js/component.js::program:Component:getComponent",
-            "isExternal" : null,
-            "lineNumber" : 46,
-            "columnNumber" : 17,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-            {
-              "callName" : "isSupported",
-              "resolvedMethod" : "tech.isSupported",
-              "paramTypes" : [
-              ],
-              "returnType" : "ANY",
-              "isExternal" : true,
-              "lineNumber" : 50,
-              "columnNumber" : 20
-            }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
             "name" : "super",
             "typeFullName" : "ANY",
             "resolvedMethod" : "src/js/tech/loader.js::program:super",
@@ -86812,6 +86780,38 @@
               "lineNumber" : 31,
               "columnNumber" : 21
             }
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "tech",
+            "typeFullName" : "src/js/tech/tech.js::program:Tech",
+            "lineNumber" : null,
+            "columnNumber" : null,
+            "label" : "LOCAL"
+          },
+          "definedBy" : {
+            "name" : "Component.getComponent",
+            "typeFullName" : "src/js/component.js::program:Component",
+            "resolvedMethod" : "src/js/component.js::program:Component:getComponent",
+            "isExternal" : null,
+            "lineNumber" : 46,
+            "columnNumber" : 17,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+            {
+              "callName" : "isSupported",
+              "resolvedMethod" : "tech.isSupported",
+              "paramTypes" : [
+              ],
+              "returnType" : "ANY",
+              "isExternal" : true,
+              "lineNumber" : 50,
+              "columnNumber" : 20
+            }
+          ],
+          "argToCalls" : [
           ]
         },
         {
@@ -94488,7 +94488,7 @@
         {
           "targetObj" : {
             "name" : "getTech",
-            "typeFullName" : "ANY",
+            "typeFullName" : "Tech",
             "resolvedMethod" : "src/js/tech/tech.js::program:Tech:getTech",
             "isExternal" : false,
             "lineNumber" : 41,
@@ -94497,7 +94497,7 @@
           },
           "definedBy" : {
             "name" : "getTech",
-            "typeFullName" : "ANY",
+            "typeFullName" : "Tech",
             "resolvedMethod" : "src/js/tech/tech.js::program:Tech:getTech",
             "isExternal" : false,
             "lineNumber" : 41,
@@ -125444,7 +125444,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "BigPlayButton",
           "isExternal" : false,
           "lineNumber" : 15,
           "columnNumber" : 2
@@ -125729,7 +125729,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "{ clickHandler?: Function; controlText?: __ecma.String; className?: __ecma.String; }"
           ],
-          "returnType" : "ANY",
+          "returnType" : "ClickableComponent",
           "isExternal" : false,
           "lineNumber" : 36,
           "columnNumber" : 2
@@ -125891,7 +125891,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "CloseButton",
           "isExternal" : false,
           "lineNumber" : 25,
           "columnNumber" : 2
@@ -126473,14 +126473,14 @@
         },
         {
           "name" : "registerComponent",
-          "typeFullName" : "src/js/component.js::program:Component:registerComponent",
+          "typeFullName" : "Component",
           "lineNumber" : 1787,
           "columnNumber" : 2,
           "label" : "LOCAL"
         },
         {
           "name" : "getComponent",
-          "typeFullName" : "src/js/component.js::program:Component:getComponent",
+          "typeFullName" : "Component",
           "lineNumber" : 1849,
           "columnNumber" : 2,
           "label" : "LOCAL"
@@ -126496,7 +126496,7 @@
             "{ children?: ANY[]; className?: __ecma.String; }",
             "() => Component"
           ],
-          "returnType" : "ANY",
+          "returnType" : "Component",
           "isExternal" : false,
           "lineNumber" : 55,
           "columnNumber" : 2
@@ -127267,7 +127267,7 @@
             "__ecma.String",
             "Component"
           ],
-          "returnType" : "src/js/component.js::program:Component:<init>",
+          "returnType" : "Component",
           "isExternal" : false,
           "lineNumber" : 1787,
           "columnNumber" : 2
@@ -127279,7 +127279,7 @@
             "src/js/component.js::program:Component",
             "__ecma.String"
           ],
-          "returnType" : "ANY",
+          "returnType" : "Component",
           "isExternal" : false,
           "lineNumber" : 1849,
           "columnNumber" : 2
@@ -127323,7 +127323,7 @@
             "Player",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "AudioTrackButton",
           "isExternal" : false,
           "lineNumber" : 24,
           "columnNumber" : 2
@@ -127408,7 +127408,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "AudioTrackMenuItem",
           "isExternal" : false,
           "lineNumber" : 24,
           "columnNumber" : 2
@@ -127529,7 +127529,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "FullscreenToggle",
           "isExternal" : false,
           "lineNumber" : 24,
           "columnNumber" : 2
@@ -127608,7 +127608,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "LiveDisplay",
           "isExternal" : false,
           "lineNumber" : 26,
           "columnNumber" : 2
@@ -127700,7 +127700,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "MuteToggle",
           "isExternal" : false,
           "lineNumber" : 26,
           "columnNumber" : 2
@@ -127822,7 +127822,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "PictureInPictureToggle",
           "isExternal" : false,
           "lineNumber" : 28,
           "columnNumber" : 2
@@ -127955,7 +127955,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "PlayToggle",
           "isExternal" : false,
           "lineNumber" : 24,
           "columnNumber" : 2
@@ -128119,7 +128119,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "PlaybackRateMenuButton",
           "isExternal" : false,
           "lineNumber" : 25,
           "columnNumber" : 2
@@ -128283,7 +128283,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "PlaybackRateMenuItem",
           "isExternal" : false,
           "lineNumber" : 23,
           "columnNumber" : 2
@@ -128358,7 +128358,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "LoadProgressBar",
           "isExternal" : false,
           "lineNumber" : 28,
           "columnNumber" : 2
@@ -128436,7 +128436,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "MouseTimeDisplay",
           "isExternal" : false,
           "lineNumber" : 28,
           "columnNumber" : 2
@@ -128504,7 +128504,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "PlayProgressBar",
           "isExternal" : false,
           "lineNumber" : 27,
           "columnNumber" : 2
@@ -128642,7 +128642,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "ProgressControl",
           "isExternal" : false,
           "lineNumber" : 29,
           "columnNumber" : 2
@@ -128901,7 +128901,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "SeekBar",
           "isExternal" : false,
           "lineNumber" : 41,
           "columnNumber" : 2
@@ -129178,7 +129178,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "TimeTooltip",
           "isExternal" : false,
           "lineNumber" : 25,
           "columnNumber" : 2
@@ -129281,7 +129281,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "SeekToLive",
           "isExternal" : false,
           "lineNumber" : 24,
           "columnNumber" : 2
@@ -129390,7 +129390,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "SkipBackward",
           "isExternal" : false,
           "lineNumber" : 13,
           "columnNumber" : 2
@@ -129500,7 +129500,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "SkipForward",
           "isExternal" : false,
           "lineNumber" : 13,
           "columnNumber" : 2
@@ -129699,7 +129699,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "CaptionSettingsMenuItem",
           "isExternal" : false,
           "lineNumber" : 23,
           "columnNumber" : 2
@@ -129767,7 +129767,7 @@
             "ANY",
             "Function"
           ],
-          "returnType" : "ANY",
+          "returnType" : "CaptionsButton",
           "isExternal" : false,
           "lineNumber" : 27,
           "columnNumber" : 2
@@ -129887,7 +129887,7 @@
             "ANY",
             "Function"
           ],
-          "returnType" : "ANY",
+          "returnType" : "ChaptersButton",
           "isExternal" : false,
           "lineNumber" : 30,
           "columnNumber" : 2
@@ -130021,7 +130021,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "ChaptersTrackMenuItem",
           "isExternal" : false,
           "lineNumber" : 23,
           "columnNumber" : 2
@@ -130078,7 +130078,7 @@
             "ANY",
             "Function"
           ],
-          "returnType" : "ANY",
+          "returnType" : "DescriptionsButton",
           "isExternal" : false,
           "lineNumber" : 27,
           "columnNumber" : 2
@@ -130156,7 +130156,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "OffTextTrackMenuItem",
           "isExternal" : false,
           "lineNumber" : 23,
           "columnNumber" : 2
@@ -130242,7 +130242,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "SubsCapsButton",
           "isExternal" : false,
           "lineNumber" : 29,
           "columnNumber" : 2
@@ -130355,7 +130355,7 @@
             "ANY",
             "Function"
           ],
-          "returnType" : "ANY",
+          "returnType" : "SubtitlesButton",
           "isExternal" : false,
           "lineNumber" : 26,
           "columnNumber" : 2
@@ -130407,7 +130407,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "TextTrackButton",
           "isExternal" : false,
           "lineNumber" : 25,
           "columnNumber" : 2
@@ -130485,7 +130485,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "TextTrackMenuItem",
           "isExternal" : false,
           "lineNumber" : 25,
           "columnNumber" : 2
@@ -130627,7 +130627,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "DurationDisplay",
           "isExternal" : false,
           "lineNumber" : 23,
           "columnNumber" : 2
@@ -130694,7 +130694,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "RemainingTimeDisplay",
           "isExternal" : false,
           "lineNumber" : 24,
           "columnNumber" : 2
@@ -130779,7 +130779,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "TimeDisplay",
           "isExternal" : false,
           "lineNumber" : 26,
           "columnNumber" : 2
@@ -130887,7 +130887,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "TrackButton",
           "isExternal" : false,
           "lineNumber" : 24,
           "columnNumber" : 2
@@ -130931,7 +130931,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "MouseVolumeLevelDisplay",
           "isExternal" : false,
           "lineNumber" : 28,
           "columnNumber" : 2
@@ -131049,7 +131049,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "VolumeBar",
           "isExternal" : false,
           "lineNumber" : 30,
           "columnNumber" : 2
@@ -131227,7 +131227,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "VolumeControl",
           "isExternal" : false,
           "lineNumber" : 28,
           "columnNumber" : 2
@@ -131332,7 +131332,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "VolumeLevelTooltip",
           "isExternal" : false,
           "lineNumber" : 24,
           "columnNumber" : 2
@@ -131518,7 +131518,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "VolumePanel",
           "isExternal" : false,
           "lineNumber" : 31,
           "columnNumber" : 2
@@ -131658,7 +131658,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "ErrorDisplay",
           "isExternal" : false,
           "lineNumber" : 24,
           "columnNumber" : 2
@@ -132024,7 +132024,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "{ trackingThreshold?: __ecma.Number; liveTolerance?: __ecma.Number; }"
           ],
-          "returnType" : "ANY",
+          "returnType" : "LiveTracker",
           "isExternal" : false,
           "lineNumber" : 39,
           "columnNumber" : 2
@@ -132503,7 +132503,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "MenuButton",
           "isExternal" : false,
           "lineNumber" : 30,
           "columnNumber" : 2
@@ -132815,7 +132815,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "MenuItem",
           "isExternal" : false,
           "lineNumber" : 27,
           "columnNumber" : 2
@@ -132993,7 +132993,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "Menu",
           "isExternal" : false,
           "lineNumber" : 28,
           "columnNumber" : 2
@@ -133310,7 +133310,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "{ content?: Dom.ContentDescriptor; description?: __ecma.String; fillAlways?: __ecma.Boolean; label?: __ecma.String; pauseOnOpen?: __ecma.Boolean; temporary?: __ecma.Boolean; uncloseable?: __ecma.Boolean; }"
           ],
-          "returnType" : "ANY",
+          "returnType" : "ModalDialog",
           "isExternal" : false,
           "lineNumber" : 59,
           "columnNumber" : 2
@@ -134800,7 +134800,7 @@
             "ANY",
             "Function"
           ],
-          "returnType" : "ANY",
+          "returnType" : "Player",
           "isExternal" : false,
           "lineNumber" : 309,
           "columnNumber" : 2
@@ -136592,7 +136592,7 @@
         },
         {
           "name" : "registerPlugin",
-          "typeFullName" : "src/js/plugin.js::program:Plugin:registerPlugin",
+          "typeFullName" : "Function | Plugin",
           "lineNumber" : 346,
           "columnNumber" : 2,
           "label" : "LOCAL"
@@ -136627,7 +136627,7 @@
             "src/js/plugin.js::program:Plugin",
             "Player"
           ],
-          "returnType" : "ANY",
+          "returnType" : "Plugin",
           "isExternal" : false,
           "lineNumber" : 198,
           "columnNumber" : 2
@@ -136819,7 +136819,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "PosterImage",
           "isExternal" : false,
           "lineNumber" : 25,
           "columnNumber" : 2
@@ -136961,7 +136961,7 @@
             "ANY",
             "{ ResizeObserver?: ANY; }"
           ],
-          "returnType" : "ANY",
+          "returnType" : "ResizeManager",
           "isExternal" : false,
           "lineNumber" : 42,
           "columnNumber" : 2
@@ -137157,7 +137157,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "Slider",
           "isExternal" : false,
           "lineNumber" : 27,
           "columnNumber" : 2
@@ -137571,7 +137571,7 @@
             "ANY",
             "Function"
           ],
-          "returnType" : "ANY",
+          "returnType" : "Html5",
           "isExternal" : false,
           "lineNumber" : 34,
           "columnNumber" : 2
@@ -137966,7 +137966,7 @@
             "ANY",
             "Function"
           ],
-          "returnType" : "ANY",
+          "returnType" : "MediaLoader",
           "isExternal" : false,
           "lineNumber" : 29,
           "columnNumber" : 2
@@ -138373,7 +138373,7 @@
         },
         {
           "name" : "getTech",
-          "typeFullName" : "src/js/tech/tech.js::program:Tech:getTech",
+          "typeFullName" : "Tech",
           "lineNumber" : 1046,
           "columnNumber" : 2,
           "label" : "LOCAL"
@@ -138388,7 +138388,7 @@
             "ANY",
             "Function"
           ],
-          "returnType" : "ANY",
+          "returnType" : "Tech",
           "isExternal" : false,
           "lineNumber" : 94,
           "columnNumber" : 2
@@ -138942,7 +138942,7 @@
             "src/js/tech/tech.js::program:Tech",
             "__ecma.String"
           ],
-          "returnType" : "ANY",
+          "returnType" : "Tech",
           "isExternal" : false,
           "lineNumber" : 1046,
           "columnNumber" : 2
@@ -138993,7 +138993,7 @@
             "ANY",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "TitleBar",
           "isExternal" : false,
           "lineNumber" : 17,
           "columnNumber" : 2
@@ -139081,7 +139081,7 @@
             "src/js/tracks/audio-track-list.js::program:AudioTrackList",
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/tracks/audio-track\").default[]"
           ],
-          "returnType" : "ANY",
+          "returnType" : "AudioTrackList",
           "isExternal" : false,
           "lineNumber" : 42,
           "columnNumber" : 2
@@ -139134,7 +139134,7 @@
             "src/js/tracks/audio-track.js::program:AudioTrack",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "AudioTrack",
           "isExternal" : false,
           "lineNumber" : 36,
           "columnNumber" : 2
@@ -139184,7 +139184,7 @@
             "src/js/tracks/html-track-element-list.js::program:HtmlTrackElementList",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "HtmlTrackElementList",
           "isExternal" : false,
           "lineNumber" : 16,
           "columnNumber" : 2
@@ -139277,7 +139277,7 @@
             "src/js/tracks/html-track-element.js::program:HTMLTrackElement",
             "{ tech: import(\"/home/runner/work/src_repos/javascript/videojs/src/js/tech/tech\").default; }"
           ],
-          "returnType" : "ANY",
+          "returnType" : "HTMLTrackElement",
           "isExternal" : false,
           "lineNumber" : 50,
           "columnNumber" : 2
@@ -139313,7 +139313,7 @@
             "src/js/tracks/text-track-cue-list.js::program:TextTrackCueList",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "TextTrackCueList",
           "isExternal" : false,
           "lineNumber" : 36,
           "columnNumber" : 2
@@ -139417,7 +139417,7 @@
             "ANY",
             "Function"
           ],
-          "returnType" : "ANY",
+          "returnType" : "TextTrackDisplay",
           "isExternal" : false,
           "lineNumber" : 114,
           "columnNumber" : 2
@@ -139750,7 +139750,7 @@
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/player\").default",
             "ANY"
           ],
-          "returnType" : "ANY",
+          "returnType" : "TextTrackSettings",
           "isExternal" : false,
           "lineNumber" : 252,
           "columnNumber" : 2
@@ -140155,7 +140155,7 @@
             "src/js/tracks/track-list.js::program:TrackList",
             "import(\"/home/runner/work/src_repos/javascript/videojs/src/js/tracks/track\").default[]"
           ],
-          "returnType" : "ANY",
+          "returnType" : "TrackList",
           "isExternal" : false,
           "lineNumber" : 22,
           "columnNumber" : 2
@@ -140213,7 +140213,7 @@
             "src/js/tracks/track.js::program:Track",
             "{ kind?: __ecma.String; id?: __ecma.String; label?: __ecma.String; language?: __ecma.String; }"
           ],
-          "returnType" : "ANY",
+          "returnType" : "Track",
           "isExternal" : false,
           "lineNumber" : 39,
           "columnNumber" : 2
@@ -140256,7 +140256,7 @@
             "src/js/tracks/video-track-list.js::program:VideoTrackList",
             "VideoTrack[]"
           ],
-          "returnType" : "ANY",
+          "returnType" : "VideoTrackList",
           "isExternal" : false,
           "lineNumber" : 41,
           "columnNumber" : 2
@@ -140302,7 +140302,7 @@
             "src/js/tracks/video-track.js::program:VideoTrack",
             "{ kind?: __ecma.String; id?: __ecma.String; label?: __ecma.String; language?: __ecma.String; selected?: __ecma.Boolean; }"
           ],
-          "returnType" : "ANY",
+          "returnType" : "VideoTrack",
           "isExternal" : false,
           "lineNumber" : 34,
           "columnNumber" : 2
