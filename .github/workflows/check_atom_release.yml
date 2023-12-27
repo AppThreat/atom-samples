@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       filter-projects:
-        description: For use in troubleshooting
+        description: For use in troubleshooting to filter projects
         required: false
         default: ''
         type: string
@@ -24,7 +24,9 @@ jobs:
           ver=$(npm view @appthreat/atom dist-tags.latest)
           current=$(cat atom_version.txt)
           if [ "$current" != "$ver" ]; then
-              echo "release=true" >> "$GITHUB_OUTPUT"
+              if gh pr list -l "slice update" | grep -vq "no pull requests"; then
+                echo "release=true" >> "$GITHUB_OUTPUT"
+              fi
           fi
 
   run_generate:
