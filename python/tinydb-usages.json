@@ -631,30 +631,6 @@
       "usages" : [
         {
           "targetObj" : {
-            "name" : "<operator>.setLiteral",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "<operator>.setLiteral",
-            "isExternal" : true,
-            "lineNumber" : 743,
-            "columnNumber" : 25,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "<operator>.setLiteral",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "<operator>.setLiteral",
-            "isExternal" : true,
-            "lineNumber" : 743,
-            "columnNumber" : 25,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
             "name" : "kwargs",
             "typeFullName" : "ANY",
             "position" : 2,
@@ -752,6 +728,30 @@
             "isExternal" : true,
             "lineNumber" : 127,
             "columnNumber" : 5,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "<operator>.dictLiteral",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "<operator>.dictLiteral",
+            "isExternal" : true,
+            "lineNumber" : 760,
+            "columnNumber" : 29,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "<operator>.dictLiteral",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "<operator>.dictLiteral",
+            "isExternal" : true,
+            "lineNumber" : 760,
+            "columnNumber" : 29,
             "label" : "CALL"
           },
           "invokedCalls" : [
@@ -953,111 +953,7 @@
       "usages" : [
         {
           "targetObj" : {
-            "name" : "format",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "__builtin.str.format",
-            "isExternal" : true,
-            "lineNumber" : 121,
-            "columnNumber" : 16,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "format",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "__builtin.str.format",
-            "isExternal" : true,
-            "lineNumber" : 121,
-            "columnNumber" : 16,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "tmp6",
-            "typeFullName" : "ANY",
-            "lineNumber" : 105,
-            "columnNumber" : 17,
-            "label" : "LOCAL"
-          },
-          "definedBy" : {
-            "name" : "self.tables",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "self.tables",
-            "isExternal" : null,
-            "lineNumber" : 106,
-            "columnNumber" : 31,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-            {
-              "callName" : "__iter__",
-              "resolvedMethod" : null,
-              "paramTypes" : [
-              ],
-              "returnType" : "ANY",
-              "isExternal" : null,
-              "lineNumber" : 105,
-              "columnNumber" : 17
-            }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "len",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "__builtin.len",
-            "isExternal" : true,
-            "lineNumber" : 63,
-            "columnNumber" : 16,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "len",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "__builtin.len",
-            "isExternal" : true,
-            "lineNumber" : 63,
-            "columnNumber" : 16,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "list",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "__builtin.list<meta>",
-            "isExternal" : true,
-            "lineNumber" : 59,
-            "columnNumber" : 16,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "list",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "__builtin.list<meta>",
-            "isExternal" : true,
-            "lineNumber" : 59,
-            "columnNumber" : 16,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "tmp3",
+            "name" : "tmp4",
             "typeFullName" : "__builtin.list",
             "lineNumber" : 105,
             "columnNumber" : 17,
@@ -1090,78 +986,6 @@
         },
         {
           "targetObj" : {
-            "name" : "join",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "__builtin.str.join",
-            "isExternal" : true,
-            "lineNumber" : 121,
-            "columnNumber" : 54,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "join",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "__builtin.str.join",
-            "isExternal" : true,
-            "lineNumber" : 121,
-            "columnNumber" : 54,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "type",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "__builtin.type<meta>",
-            "isExternal" : true,
-            "lineNumber" : 121,
-            "columnNumber" : 33,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "type",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "__builtin.type<meta>",
-            "isExternal" : true,
-            "lineNumber" : 121,
-            "columnNumber" : 33,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "tinydb/database.py:<module>.TinyDB.__repr__",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "tinydb/database.py:<module>.TinyDB.__repr__",
-            "isExternal" : false,
-            "lineNumber" : 99,
-            "columnNumber" : 5,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "tinydb/database.py:<module>.TinyDB.__repr__",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "tinydb/database.py:<module>.TinyDB.__repr__",
-            "isExternal" : false,
-            "lineNumber" : 99,
-            "columnNumber" : 5,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
             "name" : "args",
             "typeFullName" : "__builtin.list",
             "lineNumber" : 100,
@@ -1169,7 +993,7 @@
             "label" : "LOCAL"
           },
           "definedBy" : {
-            "name" : "[tmp0 = 'tables={}'\ntmp0.format",
+            "name" : "[tmp1 = 'tables={}'\ntmp1.format",
             "typeFullName" : "ANY",
             "resolvedMethod" : "<operator>.listLiteral",
             "isExternal" : null,
@@ -1196,21 +1020,149 @@
         },
         {
           "targetObj" : {
-            "name" : "<operator>.listLiteral",
+            "name" : "format",
             "typeFullName" : "ANY",
-            "resolvedMethod" : "<operator>.listLiteral",
+            "resolvedMethod" : "__builtin.str.format",
             "isExternal" : true,
-            "lineNumber" : 582,
-            "columnNumber" : 27,
+            "lineNumber" : 121,
+            "columnNumber" : 16,
             "label" : "CALL"
           },
           "definedBy" : {
-            "name" : "<operator>.listLiteral",
+            "name" : "format",
             "typeFullName" : "ANY",
-            "resolvedMethod" : "<operator>.listLiteral",
+            "resolvedMethod" : "__builtin.str.format",
             "isExternal" : true,
-            "lineNumber" : 582,
-            "columnNumber" : 27,
+            "lineNumber" : 121,
+            "columnNumber" : 16,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "list",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "__builtin.list<meta>",
+            "isExternal" : true,
+            "lineNumber" : 59,
+            "columnNumber" : 16,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "list",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "__builtin.list<meta>",
+            "isExternal" : true,
+            "lineNumber" : 59,
+            "columnNumber" : 16,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "tmp7",
+            "typeFullName" : "ANY",
+            "lineNumber" : 105,
+            "columnNumber" : 17,
+            "label" : "LOCAL"
+          },
+          "definedBy" : {
+            "name" : "self.tables",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "self.tables",
+            "isExternal" : null,
+            "lineNumber" : 106,
+            "columnNumber" : 31,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+            {
+              "callName" : "__iter__",
+              "resolvedMethod" : null,
+              "paramTypes" : [
+              ],
+              "returnType" : "ANY",
+              "isExternal" : null,
+              "lineNumber" : 105,
+              "columnNumber" : 17
+            }
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "join",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "__builtin.str.join",
+            "isExternal" : true,
+            "lineNumber" : 121,
+            "columnNumber" : 54,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "join",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "__builtin.str.join",
+            "isExternal" : true,
+            "lineNumber" : 121,
+            "columnNumber" : 54,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "type",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "__builtin.type<meta>",
+            "isExternal" : true,
+            "lineNumber" : 121,
+            "columnNumber" : 33,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "type",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "__builtin.type<meta>",
+            "isExternal" : true,
+            "lineNumber" : 121,
+            "columnNumber" : 33,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "tinydb/database.py:<module>.TinyDB.__repr__",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "tinydb/database.py:<module>.TinyDB.__repr__",
+            "isExternal" : false,
+            "lineNumber" : 99,
+            "columnNumber" : 5,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "tinydb/database.py:<module>.TinyDB.__repr__",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "tinydb/database.py:<module>.TinyDB.__repr__",
+            "isExternal" : false,
+            "lineNumber" : 99,
+            "columnNumber" : 5,
             "label" : "CALL"
           },
           "invokedCalls" : [
@@ -1227,9 +1179,9 @@
             "label" : "LOCAL"
           },
           "definedBy" : {
-            "name" : "tmp5.__next__",
+            "name" : "tmp6.__next__",
             "typeFullName" : "ANY",
-            "resolvedMethod" : "tmp5.__next__",
+            "resolvedMethod" : "tmp6.__next__",
             "isExternal" : null,
             "lineNumber" : 105,
             "columnNumber" : 17,
@@ -1264,6 +1216,54 @@
               "lineNumber" : 105,
               "columnNumber" : 44
             }
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "len",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "__builtin.len",
+            "isExternal" : true,
+            "lineNumber" : 63,
+            "columnNumber" : 16,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "len",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "__builtin.len",
+            "isExternal" : true,
+            "lineNumber" : 63,
+            "columnNumber" : 16,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "<operator>.listLiteral",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "<operator>.listLiteral",
+            "isExternal" : true,
+            "lineNumber" : 582,
+            "columnNumber" : 27,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "<operator>.listLiteral",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "<operator>.listLiteral",
+            "isExternal" : true,
+            "lineNumber" : 582,
+            "columnNumber" : 27,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
           ]
         },
         {
@@ -1380,7 +1380,7 @@
         },
         {
           "targetObj" : {
-            "name" : "tmp15",
+            "name" : "tmp18",
             "typeFullName" : "tinydb/database.py:<module>.TinyDB.storage",
             "lineNumber" : 230,
             "columnNumber" : 9,
@@ -1476,31 +1476,40 @@
         },
         {
           "targetObj" : {
-            "name" : "<operator>.notIn",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "<operator>.notIn",
-            "isExternal" : true,
-            "lineNumber" : 104,
-            "columnNumber" : 12,
-            "label" : "CALL"
+            "name" : "tmp17",
+            "typeFullName" : "tinydb/database.py:<module>.TinyDB.storage",
+            "lineNumber" : 202,
+            "columnNumber" : 9,
+            "label" : "LOCAL"
           },
           "definedBy" : {
-            "name" : "<operator>.notIn",
+            "name" : "self.storage",
             "typeFullName" : "ANY",
-            "resolvedMethod" : "<operator>.notIn",
-            "isExternal" : true,
-            "lineNumber" : 104,
-            "columnNumber" : 12,
+            "resolvedMethod" : "<operator>.fieldAccess",
+            "isExternal" : null,
+            "lineNumber" : 202,
+            "columnNumber" : 9,
             "label" : "CALL"
           },
           "invokedCalls" : [
+            {
+              "callName" : "write",
+              "resolvedMethod" : "tinydb/database.py:<module>.TinyDB.storage.write",
+              "paramTypes" : [
+                "tinydb/database.py:<module>.TinyDB.storage.read"
+              ],
+              "returnType" : "ANY",
+              "isExternal" : true,
+              "lineNumber" : 202,
+              "columnNumber" : 9
+            }
           ],
           "argToCalls" : [
           ]
         },
         {
           "targetObj" : {
-            "name" : "tmp13",
+            "name" : "tmp16",
             "typeFullName" : "tinydb/database.py:<module>.TinyDB.storage",
             "lineNumber" : 188,
             "columnNumber" : 16,
@@ -1532,21 +1541,21 @@
         },
         {
           "targetObj" : {
-            "name" : "<operator>.delete",
+            "name" : "<operator>.notIn",
             "typeFullName" : "ANY",
-            "resolvedMethod" : "<operator>.delete",
+            "resolvedMethod" : "<operator>.notIn",
             "isExternal" : true,
-            "lineNumber" : 78,
-            "columnNumber" : 9,
+            "lineNumber" : 104,
+            "columnNumber" : 12,
             "label" : "CALL"
           },
           "definedBy" : {
-            "name" : "<operator>.delete",
+            "name" : "<operator>.notIn",
             "typeFullName" : "ANY",
-            "resolvedMethod" : "<operator>.delete",
+            "resolvedMethod" : "<operator>.notIn",
             "isExternal" : true,
-            "lineNumber" : 78,
-            "columnNumber" : 9,
+            "lineNumber" : 104,
+            "columnNumber" : 12,
             "label" : "CALL"
           },
           "invokedCalls" : [
@@ -1556,33 +1565,24 @@
         },
         {
           "targetObj" : {
-            "name" : "tmp14",
-            "typeFullName" : "tinydb/database.py:<module>.TinyDB.storage",
-            "lineNumber" : 202,
+            "name" : "<operator>.delete",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "<operator>.delete",
+            "isExternal" : true,
+            "lineNumber" : 78,
             "columnNumber" : 9,
-            "label" : "LOCAL"
+            "label" : "CALL"
           },
           "definedBy" : {
-            "name" : "self.storage",
+            "name" : "<operator>.delete",
             "typeFullName" : "ANY",
-            "resolvedMethod" : "<operator>.fieldAccess",
-            "isExternal" : null,
-            "lineNumber" : 202,
+            "resolvedMethod" : "<operator>.delete",
+            "isExternal" : true,
+            "lineNumber" : 78,
             "columnNumber" : 9,
             "label" : "CALL"
           },
           "invokedCalls" : [
-            {
-              "callName" : "write",
-              "resolvedMethod" : "tinydb/database.py:<module>.TinyDB.storage.write",
-              "paramTypes" : [
-                "tinydb/database.py:<module>.TinyDB.storage.read"
-              ],
-              "returnType" : "ANY",
-              "isExternal" : true,
-              "lineNumber" : 202,
-              "columnNumber" : 9
-            }
           ],
           "argToCalls" : [
           ]
@@ -1687,31 +1687,39 @@
       "usages" : [
         {
           "targetObj" : {
-            "name" : "tinydb/database.py:<module>.TinyDB.drop_tables",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "tinydb/database.py:<module>.TinyDB.drop_tables",
-            "isExternal" : false,
-            "lineNumber" : 163,
-            "columnNumber" : 5,
-            "label" : "CALL"
+            "name" : "tmp15",
+            "typeFullName" : "__builtin.dict",
+            "lineNumber" : 174,
+            "columnNumber" : 9,
+            "label" : "LOCAL"
           },
           "definedBy" : {
-            "name" : "tinydb/database.py:<module>.TinyDB.drop_tables",
+            "name" : "self._tables",
             "typeFullName" : "ANY",
-            "resolvedMethod" : "tinydb/database.py:<module>.TinyDB.drop_tables",
-            "isExternal" : false,
-            "lineNumber" : 163,
-            "columnNumber" : 5,
+            "resolvedMethod" : "<operator>.fieldAccess",
+            "isExternal" : null,
+            "lineNumber" : 174,
+            "columnNumber" : 9,
             "label" : "CALL"
           },
           "invokedCalls" : [
+            {
+              "callName" : "clear",
+              "resolvedMethod" : "__builtin.dict.clear",
+              "paramTypes" : [
+              ],
+              "returnType" : "ANY",
+              "isExternal" : true,
+              "lineNumber" : 174,
+              "columnNumber" : 9
+            }
           ],
           "argToCalls" : [
           ]
         },
         {
           "targetObj" : {
-            "name" : "tmp11",
+            "name" : "tmp14",
             "typeFullName" : "tinydb/database.py:<module>.TinyDB.storage",
             "lineNumber" : 170,
             "columnNumber" : 9,
@@ -1744,21 +1752,21 @@
         },
         {
           "targetObj" : {
-            "name" : "clear",
+            "name" : "tinydb/database.py:<module>.TinyDB.drop_tables",
             "typeFullName" : "ANY",
-            "resolvedMethod" : "__builtin.set.clear",
-            "isExternal" : true,
-            "lineNumber" : 174,
-            "columnNumber" : 9,
+            "resolvedMethod" : "tinydb/database.py:<module>.TinyDB.drop_tables",
+            "isExternal" : false,
+            "lineNumber" : 163,
+            "columnNumber" : 5,
             "label" : "CALL"
           },
           "definedBy" : {
-            "name" : "clear",
+            "name" : "tinydb/database.py:<module>.TinyDB.drop_tables",
             "typeFullName" : "ANY",
-            "resolvedMethod" : "__builtin.set.clear",
-            "isExternal" : true,
-            "lineNumber" : 174,
-            "columnNumber" : 9,
+            "resolvedMethod" : "tinydb/database.py:<module>.TinyDB.drop_tables",
+            "isExternal" : false,
+            "lineNumber" : 163,
+            "columnNumber" : 5,
             "label" : "CALL"
           },
           "invokedCalls" : [
@@ -1768,32 +1776,24 @@
         },
         {
           "targetObj" : {
-            "name" : "tmp12",
-            "typeFullName" : "__builtin.set",
-            "lineNumber" : 174,
-            "columnNumber" : 9,
-            "label" : "LOCAL"
+            "name" : "clear",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "__builtin.dict.clear",
+            "isExternal" : true,
+            "lineNumber" : 619,
+            "columnNumber" : 42,
+            "label" : "CALL"
           },
           "definedBy" : {
-            "name" : "self._tables",
+            "name" : "clear",
             "typeFullName" : "ANY",
-            "resolvedMethod" : "<operator>.fieldAccess",
-            "isExternal" : null,
-            "lineNumber" : 174,
-            "columnNumber" : 9,
+            "resolvedMethod" : "__builtin.dict.clear",
+            "isExternal" : true,
+            "lineNumber" : 619,
+            "columnNumber" : 42,
             "label" : "CALL"
           },
           "invokedCalls" : [
-            {
-              "callName" : "clear",
-              "resolvedMethod" : "__builtin.set.clear",
-              "paramTypes" : [
-              ],
-              "returnType" : "ANY",
-              "isExternal" : true,
-              "lineNumber" : 174,
-              "columnNumber" : 9
-            }
           ],
           "argToCalls" : [
           ]
@@ -2157,7 +2157,31 @@
         },
         {
           "targetObj" : {
-            "name" : "tmp10",
+            "name" : "read",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "tinydb/database.py:<module>.TinyDB.storage.read",
+            "isExternal" : true,
+            "lineNumber" : 188,
+            "columnNumber" : 16,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "read",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "tinydb/database.py:<module>.TinyDB.storage.read",
+            "isExternal" : true,
+            "lineNumber" : 188,
+            "columnNumber" : 16,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "tmp11",
             "typeFullName" : "tinydb/database.py:<module>.TinyDB.storage",
             "lineNumber" : 161,
             "columnNumber" : 20,
@@ -2183,30 +2207,6 @@
               "lineNumber" : 161,
               "columnNumber" : 20
             }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "read",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "tinydb/database.py:<module>.TinyDB.storage.read",
-            "isExternal" : true,
-            "lineNumber" : 188,
-            "columnNumber" : 16,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "read",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "tinydb/database.py:<module>.TinyDB.storage.read",
-            "isExternal" : true,
-            "lineNumber" : 188,
-            "columnNumber" : 16,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
           ],
           "argToCalls" : [
           ]
@@ -4445,7 +4445,51 @@
         },
         {
           "targetObj" : {
-            "name" : "tmp1",
+            "name" : "<operator>.assert",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "<operator>.assert",
+            "isExternal" : true,
+            "lineNumber" : 28,
+            "columnNumber" : 17,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "<operator>.assert",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "<operator>.assert",
+            "isExternal" : true,
+            "lineNumber" : 28,
+            "columnNumber" : 17,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "<empty>",
+            "typeFullName" : "ANY",
+            "lineNumber" : 20,
+            "columnNumber" : 13,
+            "label" : "UNKNOWN"
+          },
+          "definedBy" : {
+            "name" : "<empty>",
+            "typeFullName" : "ANY",
+            "lineNumber" : 20,
+            "columnNumber" : 13,
+            "label" : "UNKNOWN"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "tmp2",
             "typeFullName" : "api",
             "lineNumber" : 30,
             "columnNumber" : 17,
@@ -4473,50 +4517,6 @@
               "lineNumber" : 30,
               "columnNumber" : 17
             }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "<operator>.assert",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "<operator>.assert",
-            "isExternal" : true,
-            "lineNumber" : 28,
-            "columnNumber" : 17,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "<operator>.assert",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "<operator>.assert",
-            "isExternal" : true,
-            "lineNumber" : 28,
-            "columnNumber" : 17,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "<empty>",
-            "typeFullName" : "ANY",
-            "lineNumber" : 20,
-            "columnNumber" : 13,
-            "label" : "UNKNOWN"
-          },
-          "definedBy" : {
-            "name" : "<empty>",
-            "typeFullName" : "ANY",
-            "lineNumber" : 20,
-            "columnNumber" : 13,
-            "label" : "UNKNOWN"
-          },
-          "invokedCalls" : [
           ],
           "argToCalls" : [
           ]
@@ -7312,16 +7312,6 @@
             "label" : "PARAM"
           },
           "invokedCalls" : [
-            {
-              "callName" : "__iter__",
-              "resolvedMethod" : "typing.Union.__iter__",
-              "paramTypes" : [
-              ],
-              "returnType" : "ANY",
-              "isExternal" : true,
-              "lineNumber" : 460,
-              "columnNumber" : 51
-            }
           ],
           "argToCalls" : [
             {
@@ -7424,30 +7414,6 @@
       "lineNumber" : 455,
       "columnNumber" : 13,
       "usages" : [
-        {
-          "targetObj" : {
-            "name" : "test",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "tinydb/queries.py:<module>.Query.all.test",
-            "isExternal" : false,
-            "lineNumber" : 489,
-            "columnNumber" : 27,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "test",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "tinydb/queries.py:<module>.Query.all.test",
-            "isExternal" : false,
-            "lineNumber" : 489,
-            "columnNumber" : 27,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-          ]
-        },
         {
           "targetObj" : {
             "name" : "e",
@@ -7590,6 +7556,26 @@
           ],
           "argToCalls" : [
           ]
+        },
+        {
+          "targetObj" : {
+            "name" : "<empty>",
+            "typeFullName" : "ANY",
+            "lineNumber" : 455,
+            "columnNumber" : 13,
+            "label" : "UNKNOWN"
+          },
+          "definedBy" : {
+            "name" : "<empty>",
+            "typeFullName" : "ANY",
+            "lineNumber" : 455,
+            "columnNumber" : 13,
+            "label" : "UNKNOWN"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
         }
       ]
     },
@@ -7659,18 +7645,22 @@
         },
         {
           "targetObj" : {
-            "name" : "<empty>",
+            "name" : "test",
             "typeFullName" : "ANY",
-            "lineNumber" : 459,
-            "columnNumber" : 13,
-            "label" : "UNKNOWN"
+            "resolvedMethod" : "tinydb/queries.py:<module>.Query.all.test",
+            "isExternal" : false,
+            "lineNumber" : 489,
+            "columnNumber" : 27,
+            "label" : "CALL"
           },
           "definedBy" : {
-            "name" : "<empty>",
+            "name" : "test",
             "typeFullName" : "ANY",
-            "lineNumber" : 459,
-            "columnNumber" : 13,
-            "label" : "UNKNOWN"
+            "resolvedMethod" : "tinydb/queries.py:<module>.Query.all.test",
+            "isExternal" : false,
+            "lineNumber" : 489,
+            "columnNumber" : 27,
+            "label" : "CALL"
           },
           "invokedCalls" : [
           ],
@@ -7983,6 +7973,149 @@
       "fullName" : "tinydb/queries.py:<module>.Query.any.test",
       "signature" : "",
       "fileName" : "tinydb/queries.py",
+      "lineNumber" : 426,
+      "columnNumber" : 13,
+      "usages" : [
+        {
+          "targetObj" : {
+            "name" : "test",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "tinydb/queries.py:<module>.Query.any.test",
+            "isExternal" : false,
+            "lineNumber" : 489,
+            "columnNumber" : 27,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "test",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "tinydb/queries.py:<module>.Query.any.test",
+            "isExternal" : false,
+            "lineNumber" : 489,
+            "columnNumber" : 27,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "tmp8",
+            "typeFullName" : "ANY",
+            "lineNumber" : 427,
+            "columnNumber" : 51,
+            "label" : "LOCAL"
+          },
+          "definedBy" : {
+            "name" : "<operator>.genExp",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "<operator>.genExp",
+            "isExternal" : null,
+            "lineNumber" : 427,
+            "columnNumber" : 51,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+            {
+              "callName" : "append",
+              "resolvedMethod" : null,
+              "paramTypes" : [
+                "ANY"
+              ],
+              "returnType" : "ANY",
+              "isExternal" : null,
+              "lineNumber" : 427,
+              "columnNumber" : 51
+            }
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "tmp9",
+            "typeFullName" : "ANY",
+            "lineNumber" : 427,
+            "columnNumber" : 51,
+            "label" : "LOCAL"
+          },
+          "definedBy" : {
+            "name" : "value.__iter__",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "typing.Mapping.__iter__",
+            "isExternal" : null,
+            "lineNumber" : 427,
+            "columnNumber" : 51,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+            {
+              "callName" : "__next__",
+              "resolvedMethod" : null,
+              "paramTypes" : [
+              ],
+              "returnType" : "ANY",
+              "isExternal" : null,
+              "lineNumber" : 427,
+              "columnNumber" : 51
+            }
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "value",
+            "typeFullName" : "ANY",
+            "position" : 1,
+            "lineNumber" : 426,
+            "columnNumber" : 22,
+            "label" : "PARAM"
+          },
+          "definedBy" : {
+            "name" : "value",
+            "typeFullName" : "ANY",
+            "position" : 1,
+            "lineNumber" : 426,
+            "columnNumber" : 22,
+            "label" : "PARAM"
+          },
+          "invokedCalls" : [
+            {
+              "callName" : "__iter__",
+              "resolvedMethod" : "typing.Mapping.__iter__",
+              "paramTypes" : [
+              ],
+              "returnType" : "ANY",
+              "isExternal" : true,
+              "lineNumber" : 427,
+              "columnNumber" : 51
+            }
+          ],
+          "argToCalls" : [
+            {
+              "callName" : "is_sequence",
+              "resolvedMethod" : "tinydb/queries.py:<module>.is_sequence",
+              "paramTypes" : [
+                "typing.Mapping"
+              ],
+              "returnType" : "ANY",
+              "position" : 1,
+              "isExternal" : false,
+              "lineNumber" : 427,
+              "columnNumber" : 24
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code" : "",
+      "fullName" : "tinydb/queries.py:<module>.Query.any.test",
+      "signature" : "",
+      "fileName" : "tinydb/queries.py",
       "lineNumber" : 422,
       "columnNumber" : 13,
       "usages" : [
@@ -8219,149 +8352,6 @@
           "invokedCalls" : [
           ],
           "argToCalls" : [
-          ]
-        }
-      ]
-    },
-    {
-      "code" : "",
-      "fullName" : "tinydb/queries.py:<module>.Query.any.test",
-      "signature" : "",
-      "fileName" : "tinydb/queries.py",
-      "lineNumber" : 426,
-      "columnNumber" : 13,
-      "usages" : [
-        {
-          "targetObj" : {
-            "name" : "test",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "tinydb/queries.py:<module>.Query.any.test",
-            "isExternal" : false,
-            "lineNumber" : 489,
-            "columnNumber" : 27,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "test",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "tinydb/queries.py:<module>.Query.any.test",
-            "isExternal" : false,
-            "lineNumber" : 489,
-            "columnNumber" : 27,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "tmp8",
-            "typeFullName" : "ANY",
-            "lineNumber" : 427,
-            "columnNumber" : 51,
-            "label" : "LOCAL"
-          },
-          "definedBy" : {
-            "name" : "<operator>.genExp",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "<operator>.genExp",
-            "isExternal" : null,
-            "lineNumber" : 427,
-            "columnNumber" : 51,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-            {
-              "callName" : "append",
-              "resolvedMethod" : null,
-              "paramTypes" : [
-                "ANY"
-              ],
-              "returnType" : "ANY",
-              "isExternal" : null,
-              "lineNumber" : 427,
-              "columnNumber" : 51
-            }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "tmp9",
-            "typeFullName" : "ANY",
-            "lineNumber" : 427,
-            "columnNumber" : 51,
-            "label" : "LOCAL"
-          },
-          "definedBy" : {
-            "name" : "value.__iter__",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "typing.Mapping.__iter__",
-            "isExternal" : null,
-            "lineNumber" : 427,
-            "columnNumber" : 51,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-            {
-              "callName" : "__next__",
-              "resolvedMethod" : null,
-              "paramTypes" : [
-              ],
-              "returnType" : "ANY",
-              "isExternal" : null,
-              "lineNumber" : 427,
-              "columnNumber" : 51
-            }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "value",
-            "typeFullName" : "ANY",
-            "position" : 1,
-            "lineNumber" : 426,
-            "columnNumber" : 22,
-            "label" : "PARAM"
-          },
-          "definedBy" : {
-            "name" : "value",
-            "typeFullName" : "ANY",
-            "position" : 1,
-            "lineNumber" : 426,
-            "columnNumber" : 22,
-            "label" : "PARAM"
-          },
-          "invokedCalls" : [
-            {
-              "callName" : "__iter__",
-              "resolvedMethod" : "typing.Mapping.__iter__",
-              "paramTypes" : [
-              ],
-              "returnType" : "ANY",
-              "isExternal" : true,
-              "lineNumber" : 427,
-              "columnNumber" : 51
-            }
-          ],
-          "argToCalls" : [
-            {
-              "callName" : "is_sequence",
-              "resolvedMethod" : "tinydb/queries.py:<module>.is_sequence",
-              "paramTypes" : [
-                "typing.Mapping"
-              ],
-              "returnType" : "ANY",
-              "position" : 1,
-              "isExternal" : false,
-              "lineNumber" : 427,
-              "columnNumber" : 24
-            }
           ]
         }
       ]
@@ -16976,6 +16966,103 @@
       "usages" : [
         {
           "targetObj" : {
+            "name" : "tmp59",
+            "typeFullName" : "tinydb/storages.py:<module>.Storage",
+            "lineNumber" : 766,
+            "columnNumber" : 9,
+            "label" : "LOCAL"
+          },
+          "definedBy" : {
+            "name" : "self._storage",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "<operator>.fieldAccess",
+            "isExternal" : null,
+            "lineNumber" : 766,
+            "columnNumber" : 9,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+            {
+              "callName" : "write",
+              "resolvedMethod" : "tinydb/storages.py:<module>.Storage.write",
+              "paramTypes" : [
+                "__builtin.dict"
+              ],
+              "returnType" : "ANY",
+              "isExternal" : false,
+              "lineNumber" : 766,
+              "columnNumber" : 9
+            }
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "tmp53",
+            "typeFullName" : "ANY",
+            "lineNumber" : 749,
+            "columnNumber" : 17,
+            "label" : "LOCAL"
+          },
+          "definedBy" : {
+            "name" : "raw_table.items",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "__builtin.dict.items",
+            "isExternal" : null,
+            "lineNumber" : 751,
+            "columnNumber" : 32,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+            {
+              "callName" : "__iter__",
+              "resolvedMethod" : null,
+              "paramTypes" : [
+              ],
+              "returnType" : "ANY",
+              "isExternal" : null,
+              "lineNumber" : 749,
+              "columnNumber" : 17
+            }
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "raw_table",
+            "typeFullName" : "__builtin.dict",
+            "lineNumber" : 740,
+            "columnNumber" : 13,
+            "label" : "LOCAL"
+          },
+          "definedBy" : {
+            "name" : "tables[self.name]",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "<operator>.indexAccess",
+            "isExternal" : null,
+            "lineNumber" : 740,
+            "columnNumber" : 25,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+            {
+              "callName" : "items",
+              "resolvedMethod" : "__builtin.dict.items",
+              "paramTypes" : [
+              ],
+              "returnType" : "ANY",
+              "isExternal" : true,
+              "lineNumber" : 751,
+              "columnNumber" : 32
+            }
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
             "name" : "doc_id",
             "typeFullName" : "__builtin.int",
             "lineNumber" : null,
@@ -16983,7 +17070,7 @@
             "label" : "LOCAL"
           },
           "definedBy" : {
-            "name" : "tmp50[0]",
+            "name" : "tmp54[0]",
             "typeFullName" : "ANY",
             "resolvedMethod" : "<operator>.indexAccess",
             "isExternal" : null,
@@ -17034,63 +17121,41 @@
         },
         {
           "targetObj" : {
-            "name" : "tmp46",
-            "typeFullName" : "tinydb/storages.py:<module>.Storage",
-            "lineNumber" : 733,
-            "columnNumber" : 18,
+            "name" : "doc_id",
+            "typeFullName" : "__builtin.int",
+            "lineNumber" : null,
+            "columnNumber" : null,
             "label" : "LOCAL"
           },
           "definedBy" : {
-            "name" : "self._storage",
+            "name" : "tmp58[0]",
             "typeFullName" : "ANY",
-            "resolvedMethod" : "<operator>.fieldAccess",
+            "resolvedMethod" : "<operator>.indexAccess",
             "isExternal" : null,
-            "lineNumber" : 733,
-            "columnNumber" : 18,
+            "lineNumber" : 760,
+            "columnNumber" : 29,
             "label" : "CALL"
           },
           "invokedCalls" : [
+          ],
+          "argToCalls" : [
             {
-              "callName" : "read",
-              "resolvedMethod" : "tinydb/storages.py:<module>.Storage.read",
+              "callName" : "str",
+              "resolvedMethod" : "__builtin.str<meta>",
               "paramTypes" : [
+                "ANY"
               ],
               "returnType" : "ANY",
-              "isExternal" : false,
-              "lineNumber" : 733,
-              "columnNumber" : 18
+              "position" : 1,
+              "isExternal" : true,
+              "lineNumber" : 761,
+              "columnNumber" : 13
             }
-          ],
-          "argToCalls" : [
           ]
         },
         {
           "targetObj" : {
-            "name" : "<operator>.dictLiteral",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "<operator>.dictLiteral",
-            "isExternal" : true,
-            "lineNumber" : 760,
-            "columnNumber" : 29,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "<operator>.dictLiteral",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "<operator>.dictLiteral",
-            "isExternal" : true,
-            "lineNumber" : 760,
-            "columnNumber" : 29,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "tmp53",
+            "name" : "tmp57",
             "typeFullName" : "ANY",
             "lineNumber" : 760,
             "columnNumber" : 29,
@@ -17122,10 +17187,10 @@
         },
         {
           "targetObj" : {
-            "name" : "tmp55",
+            "name" : "tmp48",
             "typeFullName" : "tinydb/storages.py:<module>.Storage",
-            "lineNumber" : 766,
-            "columnNumber" : 9,
+            "lineNumber" : 733,
+            "columnNumber" : 18,
             "label" : "LOCAL"
           },
           "definedBy" : {
@@ -17133,143 +17198,20 @@
             "typeFullName" : "ANY",
             "resolvedMethod" : "<operator>.fieldAccess",
             "isExternal" : null,
-            "lineNumber" : 766,
-            "columnNumber" : 9,
+            "lineNumber" : 733,
+            "columnNumber" : 18,
             "label" : "CALL"
           },
           "invokedCalls" : [
             {
-              "callName" : "write",
-              "resolvedMethod" : "tinydb/storages.py:<module>.Storage.write",
+              "callName" : "read",
+              "resolvedMethod" : "tinydb/storages.py:<module>.Storage.read",
               "paramTypes" : [
-                "__builtin.set"
               ],
               "returnType" : "ANY",
               "isExternal" : false,
-              "lineNumber" : 766,
-              "columnNumber" : 9
-            }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "doc_id",
-            "typeFullName" : "__builtin.int",
-            "lineNumber" : null,
-            "columnNumber" : null,
-            "label" : "LOCAL"
-          },
-          "definedBy" : {
-            "name" : "tmp54[0]",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "<operator>.indexAccess",
-            "isExternal" : null,
-            "lineNumber" : 760,
-            "columnNumber" : 29,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-            {
-              "callName" : "str",
-              "resolvedMethod" : "__builtin.str<meta>",
-              "paramTypes" : [
-                "ANY"
-              ],
-              "returnType" : "ANY",
-              "position" : 1,
-              "isExternal" : true,
-              "lineNumber" : 761,
-              "columnNumber" : 13
-            }
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "tmp49",
-            "typeFullName" : "ANY",
-            "lineNumber" : 749,
-            "columnNumber" : 17,
-            "label" : "LOCAL"
-          },
-          "definedBy" : {
-            "name" : "raw_table.items",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "__builtin.set.items",
-            "isExternal" : null,
-            "lineNumber" : 751,
-            "columnNumber" : 32,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-            {
-              "callName" : "__iter__",
-              "resolvedMethod" : null,
-              "paramTypes" : [
-              ],
-              "returnType" : "ANY",
-              "isExternal" : null,
-              "lineNumber" : 749,
-              "columnNumber" : 17
-            }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "items",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "__builtin.set.items",
-            "isExternal" : true,
-            "lineNumber" : 751,
-            "columnNumber" : 32,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "items",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "__builtin.set.items",
-            "isExternal" : true,
-            "lineNumber" : 751,
-            "columnNumber" : 32,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "raw_table",
-            "typeFullName" : "__builtin.set",
-            "lineNumber" : 740,
-            "columnNumber" : 13,
-            "label" : "LOCAL"
-          },
-          "definedBy" : {
-            "name" : "tables[self.name]",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "<operator>.indexAccess",
-            "isExternal" : null,
-            "lineNumber" : 740,
-            "columnNumber" : 25,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-            {
-              "callName" : "items",
-              "resolvedMethod" : "__builtin.set.items",
-              "paramTypes" : [
-              ],
-              "returnType" : "ANY",
-              "isExternal" : true,
-              "lineNumber" : 751,
-              "columnNumber" : 32
+              "lineNumber" : 733,
+              "columnNumber" : 18
             }
           ],
           "argToCalls" : [
@@ -19497,53 +19439,17 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "append",
-              "resolvedMethod" : "__builtin.list.append",
+              "callName" : "__iter__",
+              "resolvedMethod" : "__builtin.list.__iter__",
               "paramTypes" : [
-                "ANY"
               ],
               "returnType" : "ANY",
               "isExternal" : true,
-              "lineNumber" : 601,
-              "columnNumber" : 25
+              "lineNumber" : 573,
+              "columnNumber" : 17
             }
           ],
           "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "cond",
-            "typeFullName" : "typing.Optional",
-            "position" : 1,
-            "lineNumber" : 552,
-            "columnNumber" : 9,
-            "label" : "PARAM"
-          },
-          "definedBy" : {
-            "name" : "cond",
-            "typeFullName" : "typing.Optional",
-            "position" : 1,
-            "lineNumber" : 552,
-            "columnNumber" : 9,
-            "label" : "PARAM"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-            {
-              "callName" : "cast",
-              "resolvedMethod" : "typing.py:<module>.cast",
-              "paramTypes" : [
-                "tinydb/queries.py:<module>.QueryLike",
-                "ANY"
-              ],
-              "returnType" : "ANY",
-              "position" : 2,
-              "isExternal" : true,
-              "lineNumber" : 591,
-              "columnNumber" : 25
-            }
           ]
         },
         {
@@ -19659,30 +19565,6 @@
         },
         {
           "targetObj" : {
-            "name" : "updater",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "tinydb/table.py:<module>.Table.remove.updater",
-            "isExternal" : false,
-            "lineNumber" : 755,
-            "columnNumber" : 9,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "updater",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "tinydb/table.py:<module>.Table.remove.updater",
-            "isExternal" : false,
-            "lineNumber" : 755,
-            "columnNumber" : 9,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
             "name" : "pop",
             "typeFullName" : "ANY",
             "resolvedMethod" : "__builtin.dict.pop",
@@ -19736,6 +19618,26 @@
           ],
           "argToCalls" : [
           ]
+        },
+        {
+          "targetObj" : {
+            "name" : "<empty>",
+            "typeFullName" : "ANY",
+            "lineNumber" : 572,
+            "columnNumber" : 13,
+            "label" : "UNKNOWN"
+          },
+          "definedBy" : {
+            "name" : "<empty>",
+            "typeFullName" : "ANY",
+            "lineNumber" : 572,
+            "columnNumber" : 13,
+            "label" : "UNKNOWN"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
         }
       ]
     },
@@ -19749,18 +19651,22 @@
       "usages" : [
         {
           "targetObj" : {
-            "name" : "<empty>",
+            "name" : "updater",
             "typeFullName" : "ANY",
-            "lineNumber" : 587,
-            "columnNumber" : 13,
-            "label" : "UNKNOWN"
+            "resolvedMethod" : "tinydb/table.py:<module>.Table.remove.updater",
+            "isExternal" : false,
+            "lineNumber" : 755,
+            "columnNumber" : 9,
+            "label" : "CALL"
           },
           "definedBy" : {
-            "name" : "<empty>",
+            "name" : "updater",
             "typeFullName" : "ANY",
-            "lineNumber" : 587,
-            "columnNumber" : 13,
-            "label" : "UNKNOWN"
+            "resolvedMethod" : "tinydb/table.py:<module>.Table.remove.updater",
+            "isExternal" : false,
+            "lineNumber" : 755,
+            "columnNumber" : 9,
+            "label" : "CALL"
           },
           "invokedCalls" : [
           ],
@@ -20502,30 +20408,6 @@
           ],
           "argToCalls" : [
           ]
-        },
-        {
-          "targetObj" : {
-            "name" : "clear",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "__builtin.dict.clear",
-            "isExternal" : true,
-            "lineNumber" : 619,
-            "columnNumber" : 42,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "clear",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "__builtin.dict.clear",
-            "isExternal" : true,
-            "lineNumber" : 619,
-            "columnNumber" : 42,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-          ]
         }
       ]
     },
@@ -20610,14 +20492,15 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "__iter__",
-              "resolvedMethod" : "__builtin.list.__iter__",
+              "callName" : "append",
+              "resolvedMethod" : "__builtin.list.append",
               "paramTypes" : [
+                "ANY"
               ],
               "returnType" : "ANY",
               "isExternal" : true,
-              "lineNumber" : 401,
-              "columnNumber" : 17
+              "lineNumber" : 447,
+              "columnNumber" : 21
             }
           ],
           "argToCalls" : [
@@ -20654,6 +20537,18 @@
               "isExternal" : true,
               "lineNumber" : 383,
               "columnNumber" : 12
+            },
+            {
+              "callName" : "update",
+              "resolvedMethod" : "__builtin.dict<meta>.update",
+              "paramTypes" : [
+                "typing.Union"
+              ],
+              "returnType" : "ANY",
+              "position" : 1,
+              "isExternal" : true,
+              "lineNumber" : 391,
+              "columnNumber" : 17
             }
           ]
         },
@@ -20703,22 +20598,18 @@
       "usages" : [
         {
           "targetObj" : {
-            "name" : "perform_update",
+            "name" : "<empty>",
             "typeFullName" : "ANY",
-            "resolvedMethod" : "tinydb/table.py:<module>.Table.update.perform_update",
-            "isExternal" : false,
-            "lineNumber" : 502,
-            "columnNumber" : 25,
-            "label" : "CALL"
+            "lineNumber" : 389,
+            "columnNumber" : 13,
+            "label" : "UNKNOWN"
           },
           "definedBy" : {
-            "name" : "perform_update",
+            "name" : "<empty>",
             "typeFullName" : "ANY",
-            "resolvedMethod" : "tinydb/table.py:<module>.Table.update.perform_update",
-            "isExternal" : false,
-            "lineNumber" : 502,
-            "columnNumber" : 25,
-            "label" : "CALL"
+            "lineNumber" : 389,
+            "columnNumber" : 13,
+            "label" : "UNKNOWN"
           },
           "invokedCalls" : [
           ],
@@ -20794,18 +20685,22 @@
       "usages" : [
         {
           "targetObj" : {
-            "name" : "<empty>",
+            "name" : "perform_update",
             "typeFullName" : "ANY",
-            "lineNumber" : 384,
-            "columnNumber" : 13,
-            "label" : "UNKNOWN"
+            "resolvedMethod" : "tinydb/table.py:<module>.Table.update.perform_update",
+            "isExternal" : false,
+            "lineNumber" : 502,
+            "columnNumber" : 25,
+            "label" : "CALL"
           },
           "definedBy" : {
-            "name" : "<empty>",
+            "name" : "perform_update",
             "typeFullName" : "ANY",
-            "lineNumber" : 384,
-            "columnNumber" : 13,
-            "label" : "UNKNOWN"
+            "resolvedMethod" : "tinydb/table.py:<module>.Table.update.perform_update",
+            "isExternal" : false,
+            "lineNumber" : 502,
+            "columnNumber" : 25,
+            "label" : "CALL"
           },
           "invokedCalls" : [
           ],
@@ -20824,18 +20719,22 @@
       "usages" : [
         {
           "targetObj" : {
-            "name" : "<empty>",
+            "name" : "updater",
             "typeFullName" : "ANY",
-            "lineNumber" : 399,
-            "columnNumber" : 13,
-            "label" : "UNKNOWN"
+            "resolvedMethod" : "tinydb/table.py:<module>.Table.update.updater",
+            "isExternal" : false,
+            "lineNumber" : 755,
+            "columnNumber" : 9,
+            "label" : "CALL"
           },
           "definedBy" : {
-            "name" : "<empty>",
+            "name" : "updater",
             "typeFullName" : "ANY",
-            "lineNumber" : 399,
-            "columnNumber" : 13,
-            "label" : "UNKNOWN"
+            "resolvedMethod" : "tinydb/table.py:<module>.Table.update.updater",
+            "isExternal" : false,
+            "lineNumber" : 755,
+            "columnNumber" : 9,
+            "label" : "CALL"
           },
           "invokedCalls" : [
           ],
@@ -21189,30 +21088,6 @@
         },
         {
           "targetObj" : {
-            "name" : "updater",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "tinydb/table.py:<module>.Table.update.updater",
-            "isExternal" : false,
-            "lineNumber" : 755,
-            "columnNumber" : 9,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "updater",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "tinydb/table.py:<module>.Table.update.updater",
-            "isExternal" : false,
-            "lineNumber" : 755,
-            "columnNumber" : 9,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
             "name" : "table",
             "typeFullName" : "__builtin.dict",
             "position" : 1,
@@ -21254,6 +21129,26 @@
               "lineNumber" : 431,
               "columnNumber" : 25
             }
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "<empty>",
+            "typeFullName" : "ANY",
+            "lineNumber" : 415,
+            "columnNumber" : 13,
+            "label" : "UNKNOWN"
+          },
+          "definedBy" : {
+            "name" : "<empty>",
+            "typeFullName" : "ANY",
+            "lineNumber" : 415,
+            "columnNumber" : 13,
+            "label" : "UNKNOWN"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
           ]
         },
         {
@@ -26023,7 +25918,7 @@
           "targetObj" : {
             "name" : "clear",
             "typeFullName" : "",
-            "resolvedMethod" : "__builtin.set.clear",
+            "resolvedMethod" : "__builtin.dict.clear",
             "isExternal" : true,
             "lineNumber" : null,
             "columnNumber" : null,
@@ -26032,7 +25927,7 @@
           "definedBy" : {
             "name" : "clear",
             "typeFullName" : "",
-            "resolvedMethod" : "__builtin.set.clear",
+            "resolvedMethod" : "__builtin.dict.clear",
             "isExternal" : true,
             "lineNumber" : null,
             "columnNumber" : null,
@@ -26041,7 +25936,7 @@
           "invokedCalls" : [
             {
               "callName" : "clear",
-              "resolvedMethod" : "__builtin.set.clear",
+              "resolvedMethod" : "__builtin.dict.clear",
               "paramTypes" : [
               ],
               "returnType" : "",
@@ -34825,7 +34720,7 @@
             "typeFullName" : "",
             "resolvedMethod" : "tinydb/table.py:<module>.Table.update.perform_update",
             "isExternal" : false,
-            "lineNumber" : 389,
+            "lineNumber" : 384,
             "columnNumber" : 13,
             "label" : "CALL"
           },
@@ -34834,7 +34729,7 @@
             "typeFullName" : "",
             "resolvedMethod" : "tinydb/table.py:<module>.Table.update.perform_update",
             "isExternal" : false,
-            "lineNumber" : 389,
+            "lineNumber" : 384,
             "columnNumber" : 13,
             "label" : "CALL"
           },
@@ -35001,7 +34896,7 @@
             "typeFullName" : "",
             "resolvedMethod" : "tinydb/table.py:<module>.Table.update.perform_update",
             "isExternal" : false,
-            "lineNumber" : 389,
+            "lineNumber" : 384,
             "columnNumber" : 13,
             "label" : "CALL"
           },
@@ -35010,7 +34905,7 @@
             "typeFullName" : "",
             "resolvedMethod" : "tinydb/table.py:<module>.Table.update.perform_update",
             "isExternal" : false,
-            "lineNumber" : 389,
+            "lineNumber" : 384,
             "columnNumber" : 13,
             "label" : "CALL"
           },
@@ -35177,7 +35072,7 @@
             "typeFullName" : "",
             "resolvedMethod" : "tinydb/table.py:<module>.Table.update.perform_update",
             "isExternal" : false,
-            "lineNumber" : 389,
+            "lineNumber" : 384,
             "columnNumber" : 13,
             "label" : "CALL"
           },
@@ -35186,7 +35081,7 @@
             "typeFullName" : "",
             "resolvedMethod" : "tinydb/table.py:<module>.Table.update.perform_update",
             "isExternal" : false,
-            "lineNumber" : 389,
+            "lineNumber" : 384,
             "columnNumber" : 13,
             "label" : "CALL"
           },
@@ -35485,7 +35380,7 @@
             "typeFullName" : "",
             "resolvedMethod" : "tinydb/table.py:<module>.Table.update.perform_update",
             "isExternal" : false,
-            "lineNumber" : 389,
+            "lineNumber" : 384,
             "columnNumber" : 13,
             "label" : "CALL"
           },
@@ -35494,7 +35389,7 @@
             "typeFullName" : "",
             "resolvedMethod" : "tinydb/table.py:<module>.Table.update.perform_update",
             "isExternal" : false,
-            "lineNumber" : 389,
+            "lineNumber" : 384,
             "columnNumber" : 13,
             "label" : "CALL"
           },
@@ -36407,7 +36302,7 @@
           "targetObj" : {
             "name" : "items",
             "typeFullName" : "",
-            "resolvedMethod" : "__builtin.set.items",
+            "resolvedMethod" : "__builtin.dict.items",
             "isExternal" : true,
             "lineNumber" : null,
             "columnNumber" : null,
@@ -36416,7 +36311,7 @@
           "definedBy" : {
             "name" : "items",
             "typeFullName" : "",
-            "resolvedMethod" : "__builtin.set.items",
+            "resolvedMethod" : "__builtin.dict.items",
             "isExternal" : true,
             "lineNumber" : null,
             "columnNumber" : null,
@@ -36425,7 +36320,7 @@
           "invokedCalls" : [
             {
               "callName" : "items",
-              "resolvedMethod" : "__builtin.set.items",
+              "resolvedMethod" : "__builtin.dict.items",
               "paramTypes" : [
               ],
               "returnType" : "",
@@ -39813,7 +39708,7 @@
         },
         {
           "name" : "_tables",
-          "typeFullName" : "__builtin.set",
+          "typeFullName" : "__builtin.dict",
           "lineNumber" : 97,
           "columnNumber" : 9,
           "label" : "LOCAL"
@@ -40448,7 +40343,7 @@
       "fields" : [
         {
           "name" : "named_placeholders",
-          "typeFullName" : "__builtin.set",
+          "typeFullName" : "__builtin.dict",
           "lineNumber" : 16,
           "columnNumber" : 9,
           "label" : "LOCAL"
