@@ -17,16 +17,32 @@ jobs:
     outputs:
       release: ${{ steps.check.outputs.release }}
     steps:
-      - uses: actions/checkout@v4
-      - id: check
+      - name: Check for existing PR
+        id: check_pr
+        shell: bash
+        run: |
+          git fetch
+          git_cmd='git branch --list -r "origin/update/slice-update"'
+          pr=$(eval $git_cmd)
+          if [ "$pr" != "  origin/update/slice-update" ]; then
+            echo "BRANCH=new" >> "$GITHUB_ENV"
+          else
+            echo "BRANCH=exists" >> "$GITHUB_ENV"
+            git checkout --force -B update/slice-update refs/remotes/origin/update/slice-update --
+          fi
+      - name: Checkout main
+        if: ${{ env.BRANCH == 'new' }}
+        uses: actions/checkout@v4
+      - name: Check version
+        id: check
         shell: bash
         run: |
           ver=$(npm view @appthreat/atom dist-tags.latest)
           current=$(cat atom_version.txt)
           if [ "$current" != "$ver" ]; then
-              if gh pr list -l "slice update" | grep -vq "no pull requests"; then
-                echo "release=true" >> "$GITHUB_OUTPUT"
-              fi
+              echo "release=true" >> "$GITHUB_OUTPUT"
+          else
+              echo "release=false" >> "$GITHUB_OUTPUT"
           fi
 
   run_generate:

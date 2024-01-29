@@ -279,15 +279,19 @@ jobs:
           git push --set-upstream origin update/slice-update
           echo "CHANGES=pushed" >> "$GITHUB_ENV"
 
-      - name: Create PR
-        if: ${{ env.CHANGES == 'pushed' || env.BRANCH == 'exists' }}
+      - name: Create/Update PR
+        if: ${{ env.CHANGES == 'pushed' }}
         shell: bash
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
             gh repo set-default appthreat/atom-samples
             if gh pr list -l "slice update" | grep -vq "no pull requests"; then
-              echo "Pull request already exists.";
+              pr_id=$(gh pr list -l "slice update" --json number -q .[0].number)
+              (echo ${{ env.COMMIT_MSG }};gh pr view $pr_id --json body -q .body) >> /home/runner/work/atom-samples/atom-samples/files.txt
+              gh pr edit $pr_id --title "${{ env.COMMIT_MSG }}" --body-file /home/runner/work/atom-samples/atom-samples/files.txt
+              echo "Pull request updated.";
             else
               gh pr create -l "slice update" --title "${{ env.COMMIT_MSG }}" --body-file /home/runner/work/atom-samples/atom-samples/files.txt --reviewer cerrussell,prabhu
+              echo "Pull request created.";
             fi
