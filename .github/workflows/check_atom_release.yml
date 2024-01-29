@@ -17,6 +17,8 @@ jobs:
     outputs:
       release: ${{ steps.check.outputs.release }}
     steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
       - name: Check for existing PR
         id: check_pr
         shell: bash
@@ -30,9 +32,6 @@ jobs:
             echo "BRANCH=exists" >> "$GITHUB_ENV"
             git checkout --force -B update/slice-update refs/remotes/origin/update/slice-update --
           fi
-      - name: Checkout main
-        if: ${{ env.BRANCH == 'new' }}
-        uses: actions/checkout@v4
       - name: Check version
         id: check
         shell: bash
