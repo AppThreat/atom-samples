@@ -95,7 +95,6 @@ jobs:
           fi
           echo "LANGS=${{ inputs.filter-lang }}" >> "$GITHUB_ENV"
 
-
       - name: Echo inputs
         run: |
           echo "commit-updates: ${{ inputs.commit-updates }}"
@@ -127,7 +126,12 @@ jobs:
             git checkout --force -B update/slice-update refs/remotes/origin/update/slice-update --
             echo "BRANCH=exists" >> "$GITHUB_ENV"
           fi
-
+          
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4.0.1
+        with:
+          node-version: 20
+        
       -  name: Atom, cdxgen, sdkman installs
          run: |
            npm install -g @cyclonedx/cdxgen
@@ -142,7 +146,7 @@ jobs:
 
       - name: Sample repo cache (python and javascript)
 #        if: contains(inputs.filter, 'python') || contains(inputs.filter, 'javascript') || contains(inputs.run-twice, 'python') || contains(inputs.run-twice, 'javascript')
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         id: cache
         with:
           path: |
@@ -152,7 +156,7 @@ jobs:
 
       - name: Sample repo cache (java)
 #        if: startsWith(inputs.filter,'java') || contains(inputs.run-twice, 'java') || endsWith(inputs.filter,'java') || contains(fromJSON('["python java javascript", "javascript java python"]'), inputs.filter)
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         id: jcache
         with:
           path: /home/runner/work/src_repos/java
