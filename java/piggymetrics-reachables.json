@@ -204,7 +204,7 @@
           "parentClassName" : "com.piggymetrics.notification.controller.RecipientController",
           "lineNumber" : 23,
           "columnNumber" : 45,
-          "tags" : ""
+          "tags" : "crypto"
         },
         {
           "id" : 3249,
@@ -222,7 +222,7 @@
           "parentClassName" : "com.piggymetrics.notification.controller.RecipientController",
           "lineNumber" : 23,
           "columnNumber" : 45,
-          "tags" : ""
+          "tags" : "crypto"
         },
         {
           "id" : 4386,
@@ -1754,7 +1754,7 @@
           "parentClassName" : "com.piggymetrics.statistics.controller.StatisticsController",
           "lineNumber" : 22,
           "columnNumber" : 46,
-          "tags" : ""
+          "tags" : "crypto"
         },
         {
           "id" : 4872,
@@ -1772,7 +1772,7 @@
           "parentClassName" : "com.piggymetrics.statistics.controller.StatisticsController",
           "lineNumber" : 22,
           "columnNumber" : 46,
-          "tags" : ""
+          "tags" : "crypto"
         },
         {
           "id" : 6458,
@@ -2108,7 +2108,7 @@
           "parentClassName" : "com.piggymetrics.account.controller.AccountController",
           "lineNumber" : 27,
           "columnNumber" : 36,
-          "tags" : ""
+          "tags" : "crypto"
         },
         {
           "id" : 387,
@@ -2126,7 +2126,7 @@
           "parentClassName" : "com.piggymetrics.account.controller.AccountController",
           "lineNumber" : 27,
           "columnNumber" : 36,
-          "tags" : ""
+          "tags" : "crypto"
         },
         {
           "id" : 1325,
@@ -2481,7 +2481,7 @@
           "parentClassName" : "com.piggymetrics.notification.controller.RecipientController",
           "lineNumber" : 28,
           "columnNumber" : 32,
-          "tags" : ""
+          "tags" : "crypto"
         },
         {
           "id" : 3272,
@@ -2499,7 +2499,7 @@
           "parentClassName" : "com.piggymetrics.notification.controller.RecipientController",
           "lineNumber" : 28,
           "columnNumber" : 32,
-          "tags" : ""
+          "tags" : "crypto"
         },
         {
           "id" : 3268,

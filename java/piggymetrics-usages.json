@@ -61,7 +61,7 @@
         {
           "targetObj" : {
             "name" : "run",
-            "typeFullName" : "void",
+            "typeFullName" : "org.springframework.context.ConfigurableApplicationContext",
             "resolvedMethod" : "org.springframework.boot.SpringApplication.run:org.springframework.context.ConfigurableApplicationContext(java.lang.Class,java.lang.String[])",
             "isExternal" : true,
             "lineNumber" : 14,
@@ -70,7 +70,7 @@
           },
           "definedBy" : {
             "name" : "run",
-            "typeFullName" : "void",
+            "typeFullName" : "org.springframework.context.ConfigurableApplicationContext",
             "resolvedMethod" : "org.springframework.boot.SpringApplication.run:org.springframework.context.ConfigurableApplicationContext(java.lang.Class,java.lang.String[])",
             "isExternal" : true,
             "lineNumber" : 14,

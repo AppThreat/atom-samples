@@ -3,7 +3,7 @@
     {
       "flows" : [
         {
-          "id" : 130959,
+          "id" : 130999,
           "label" : "IDENTIFIER",
           "name" : "this",
           "fullName" : "",
@@ -18,17 +18,18 @@
           "parentClassName" : "packages/core/src/dialects/snowflake/connection-manager.ts::program:SnowflakeConnectionManager",
           "lineNumber" : 35,
           "columnNumber" : 15,
-          "tags" : "pkg:npm/snowflake-sdk@1.9.2, framework"
+          "tags" : "pkg:npm/mariadb@3.2.3, pkg:npm/snowflake-sdk@1.9.3, framework"
         }
       ],
       "purls" : [
-        "pkg:npm/snowflake-sdk@1.9.2"
+        "pkg:npm/mariadb@3.2.3",
+        "pkg:npm/snowflake-sdk@1.9.3"
       ]
     },
     {
       "flows" : [
         {
-          "id" : 131442,
+          "id" : 131475,
           "label" : "IDENTIFIER",
           "name" : "this",
           "fullName" : "",
@@ -43,17 +44,18 @@
           "parentClassName" : "packages/core/src/dialects/snowflake/connection-manager.ts::program",
           "lineNumber" : 1,
           "columnNumber" : 0,
-          "tags" : "pkg:npm/snowflake-sdk@1.9.2, framework"
+          "tags" : "pkg:npm/mariadb@3.2.3, pkg:npm/snowflake-sdk@1.9.3, framework"
         }
       ],
       "purls" : [
-        "pkg:npm/snowflake-sdk@1.9.2"
+        "pkg:npm/mariadb@3.2.3",
+        "pkg:npm/snowflake-sdk@1.9.3"
       ]
     },
     {
       "flows" : [
         {
-          "id" : 131435,
+          "id" : 131482,
           "label" : "IDENTIFIER",
           "name" : "this",
           "fullName" : "",
@@ -68,17 +70,18 @@
           "parentClassName" : "packages/core/src/dialects/snowflake/connection-manager.ts::program",
           "lineNumber" : 1,
           "columnNumber" : 0,
-          "tags" : "pkg:npm/snowflake-sdk@1.9.2, framework"
+          "tags" : "pkg:npm/mariadb@3.2.3, pkg:npm/snowflake-sdk@1.9.3, framework"
         }
       ],
       "purls" : [
-        "pkg:npm/snowflake-sdk@1.9.2"
+        "pkg:npm/mariadb@3.2.3",
+        "pkg:npm/snowflake-sdk@1.9.3"
       ]
     },
     {
       "flows" : [
         {
-          "id" : 131435,
+          "id" : 131475,
           "label" : "IDENTIFIER",
           "name" : "this",
           "fullName" : "",
@@ -93,11 +96,12 @@
           "parentClassName" : "packages/core/src/dialects/snowflake/connection-manager.ts::program",
           "lineNumber" : 1,
           "columnNumber" : 0,
-          "tags" : "pkg:npm/snowflake-sdk@1.9.2, framework"
+          "tags" : "pkg:npm/mariadb@3.2.3, pkg:npm/snowflake-sdk@1.9.3, framework"
         }
       ],
       "purls" : [
-        "pkg:npm/snowflake-sdk@1.9.2"
+        "pkg:npm/mariadb@3.2.3",
+        "pkg:npm/snowflake-sdk@1.9.3"
       ]
     }
   ]
