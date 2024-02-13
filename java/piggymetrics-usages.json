@@ -61,7 +61,7 @@
         {
           "targetObj" : {
             "name" : "run",
-            "typeFullName" : "void",
+            "typeFullName" : "org.springframework.context.ConfigurableApplicationContext",
             "resolvedMethod" : "org.springframework.boot.SpringApplication.run:org.springframework.context.ConfigurableApplicationContext(java.lang.Class,java.lang.String[])",
             "isExternal" : true,
             "lineNumber" : 14,
@@ -70,7 +70,7 @@
           },
           "definedBy" : {
             "name" : "run",
-            "typeFullName" : "void",
+            "typeFullName" : "org.springframework.context.ConfigurableApplicationContext",
             "resolvedMethod" : "org.springframework.boot.SpringApplication.run:org.springframework.context.ConfigurableApplicationContext(java.lang.Class,java.lang.String[])",
             "isExternal" : true,
             "lineNumber" : 14,
@@ -279,7 +279,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -682,7 +682,7 @@
         {
           "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 54,
@@ -691,7 +691,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 54,
@@ -700,7 +700,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -3091,6 +3091,40 @@
       "usages" : [
         {
           "targetObj" : {
+            "name" : "create",
+            "typeFullName" : "com.piggymetrics.account.domain.Account",
+            "resolvedMethod" : "com.piggymetrics.account.service.AccountServiceImpl.create:com.piggymetrics.account.domain.Account(com.piggymetrics.account.domain.User)",
+            "isExternal" : false,
+            "lineNumber" : 37,
+            "columnNumber" : 10,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "create",
+            "typeFullName" : "com.piggymetrics.account.domain.Account",
+            "resolvedMethod" : "com.piggymetrics.account.service.AccountServiceImpl.create:com.piggymetrics.account.domain.Account(com.piggymetrics.account.domain.User)",
+            "isExternal" : false,
+            "lineNumber" : 37,
+            "columnNumber" : 10,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+            {
+              "callName" : "java.lang.Override",
+              "resolvedMethod" : "@Override",
+              "paramTypes" : [
+              ],
+              "returnType" : "",
+              "isExternal" : false,
+              "lineNumber" : 45,
+              "columnNumber" : 2
+            }
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
             "name" : "<operator>.addition",
             "typeFullName" : "java.lang.String",
             "resolvedMethod" : "<operator>.addition",
@@ -3418,40 +3452,6 @@
         },
         {
           "targetObj" : {
-            "name" : "create",
-            "typeFullName" : "com.piggymetrics.account.domain.Account",
-            "resolvedMethod" : "com.piggymetrics.account.service.AccountServiceImpl.create:com.piggymetrics.account.domain.Account(com.piggymetrics.account.domain.User)",
-            "isExternal" : false,
-            "lineNumber" : 37,
-            "columnNumber" : 10,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "create",
-            "typeFullName" : "com.piggymetrics.account.domain.Account",
-            "resolvedMethod" : "com.piggymetrics.account.service.AccountServiceImpl.create:com.piggymetrics.account.domain.Account(com.piggymetrics.account.domain.User)",
-            "isExternal" : false,
-            "lineNumber" : 37,
-            "columnNumber" : 10,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-            {
-              "callName" : "<unresolvedNamespace>.Override",
-              "resolvedMethod" : "@Override",
-              "paramTypes" : [
-              ],
-              "returnType" : "",
-              "isExternal" : false,
-              "lineNumber" : 45,
-              "columnNumber" : 2
-            }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
             "name" : "info",
             "typeFullName" : "void",
             "resolvedMethod" : "org.slf4j.Logger.info:void(java.lang.String)",
@@ -3602,7 +3602,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -3697,6 +3697,40 @@
       "usages" : [
         {
           "targetObj" : {
+            "name" : "saveChanges",
+            "typeFullName" : "void",
+            "resolvedMethod" : "com.piggymetrics.account.service.AccountServiceImpl.saveChanges:void(java.lang.String,com.piggymetrics.account.domain.Account)",
+            "isExternal" : false,
+            "lineNumber" : 32,
+            "columnNumber" : 3,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "saveChanges",
+            "typeFullName" : "void",
+            "resolvedMethod" : "com.piggymetrics.account.service.AccountServiceImpl.saveChanges:void(java.lang.String,com.piggymetrics.account.domain.Account)",
+            "isExternal" : false,
+            "lineNumber" : 32,
+            "columnNumber" : 3,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+            {
+              "callName" : "java.lang.Override",
+              "resolvedMethod" : "@Override",
+              "paramTypes" : [
+              ],
+              "returnType" : "",
+              "isExternal" : false,
+              "lineNumber" : 75,
+              "columnNumber" : 2
+            }
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
             "name" : "name",
             "typeFullName" : "java.lang.String",
             "position" : 1,
@@ -3753,6 +3787,68 @@
               "lineNumber" : 90,
               "columnNumber" : 3
             }
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "update",
+            "typeFullName" : "com.piggymetrics.account.domain.Account",
+            "position" : 2,
+            "lineNumber" : 76,
+            "columnNumber" : 39,
+            "label" : "PARAM"
+          },
+          "definedBy" : {
+            "name" : "update",
+            "typeFullName" : "com.piggymetrics.account.domain.Account",
+            "position" : 2,
+            "lineNumber" : 76,
+            "columnNumber" : 39,
+            "label" : "PARAM"
+          },
+          "invokedCalls" : [
+            {
+              "callName" : "getIncomes",
+              "resolvedMethod" : "com.piggymetrics.account.domain.Account.getIncomes:java.util.List()",
+              "paramTypes" : [
+              ],
+              "returnType" : "ANY",
+              "isExternal" : false,
+              "lineNumber" : 81,
+              "columnNumber" : 22
+            },
+            {
+              "callName" : "getExpenses",
+              "resolvedMethod" : "com.piggymetrics.account.domain.Account.getExpenses:java.util.List()",
+              "paramTypes" : [
+              ],
+              "returnType" : "ANY",
+              "isExternal" : false,
+              "lineNumber" : 82,
+              "columnNumber" : 23
+            },
+            {
+              "callName" : "getSaving",
+              "resolvedMethod" : "com.piggymetrics.account.domain.Account.getSaving:com.piggymetrics.account.domain.Saving()",
+              "paramTypes" : [
+              ],
+              "returnType" : "ANY",
+              "isExternal" : false,
+              "lineNumber" : 83,
+              "columnNumber" : 21
+            },
+            {
+              "callName" : "getNote",
+              "resolvedMethod" : "com.piggymetrics.account.domain.Account.getNote:java.lang.String()",
+              "paramTypes" : [
+              ],
+              "returnType" : "ANY",
+              "isExternal" : false,
+              "lineNumber" : 84,
+              "columnNumber" : 19
+            }
+          ],
+          "argToCalls" : [
           ]
         },
         {
@@ -3867,102 +3963,6 @@
               "lineNumber" : 90,
               "columnNumber" : 3
             }
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "saveChanges",
-            "typeFullName" : "void",
-            "resolvedMethod" : "com.piggymetrics.account.service.AccountServiceImpl.saveChanges:void(java.lang.String,com.piggymetrics.account.domain.Account)",
-            "isExternal" : false,
-            "lineNumber" : 32,
-            "columnNumber" : 3,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "saveChanges",
-            "typeFullName" : "void",
-            "resolvedMethod" : "com.piggymetrics.account.service.AccountServiceImpl.saveChanges:void(java.lang.String,com.piggymetrics.account.domain.Account)",
-            "isExternal" : false,
-            "lineNumber" : 32,
-            "columnNumber" : 3,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-            {
-              "callName" : "<unresolvedNamespace>.Override",
-              "resolvedMethod" : "@Override",
-              "paramTypes" : [
-              ],
-              "returnType" : "",
-              "isExternal" : false,
-              "lineNumber" : 75,
-              "columnNumber" : 2
-            }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "update",
-            "typeFullName" : "com.piggymetrics.account.domain.Account",
-            "position" : 2,
-            "lineNumber" : 76,
-            "columnNumber" : 39,
-            "label" : "PARAM"
-          },
-          "definedBy" : {
-            "name" : "update",
-            "typeFullName" : "com.piggymetrics.account.domain.Account",
-            "position" : 2,
-            "lineNumber" : 76,
-            "columnNumber" : 39,
-            "label" : "PARAM"
-          },
-          "invokedCalls" : [
-            {
-              "callName" : "getIncomes",
-              "resolvedMethod" : "com.piggymetrics.account.domain.Account.getIncomes:java.util.List()",
-              "paramTypes" : [
-              ],
-              "returnType" : "ANY",
-              "isExternal" : false,
-              "lineNumber" : 81,
-              "columnNumber" : 22
-            },
-            {
-              "callName" : "getExpenses",
-              "resolvedMethod" : "com.piggymetrics.account.domain.Account.getExpenses:java.util.List()",
-              "paramTypes" : [
-              ],
-              "returnType" : "ANY",
-              "isExternal" : false,
-              "lineNumber" : 82,
-              "columnNumber" : 23
-            },
-            {
-              "callName" : "getSaving",
-              "resolvedMethod" : "com.piggymetrics.account.domain.Account.getSaving:com.piggymetrics.account.domain.Saving()",
-              "paramTypes" : [
-              ],
-              "returnType" : "ANY",
-              "isExternal" : false,
-              "lineNumber" : 83,
-              "columnNumber" : 21
-            },
-            {
-              "callName" : "getNote",
-              "resolvedMethod" : "com.piggymetrics.account.domain.Account.getNote:java.lang.String()",
-              "paramTypes" : [
-              ],
-              "returnType" : "ANY",
-              "isExternal" : false,
-              "lineNumber" : 84,
-              "columnNumber" : 19
-            }
-          ],
-          "argToCalls" : [
           ]
         },
         {
@@ -6455,8 +6455,32 @@
         },
         {
           "targetObj" : {
+            "name" : "inMemory",
+            "typeFullName" : "org.springframework.security.oauth2.config.annotation.builders.InMemoryClientDetailsServiceBuilder",
+            "resolvedMethod" : "org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer.inMemory:org.springframework.security.oauth2.config.annotation.builders.InMemoryClientDetailsServiceBuilder()",
+            "isExternal" : true,
+            "lineNumber" : 44,
+            "columnNumber" : 9,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "inMemory",
+            "typeFullName" : "org.springframework.security.oauth2.config.annotation.builders.InMemoryClientDetailsServiceBuilder",
+            "resolvedMethod" : "org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer.inMemory:org.springframework.security.oauth2.config.annotation.builders.InMemoryClientDetailsServiceBuilder()",
+            "isExternal" : true,
+            "lineNumber" : 44,
+            "columnNumber" : 9,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 38,
@@ -6465,7 +6489,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 38,
@@ -6474,7 +6498,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -6483,30 +6507,6 @@
               "lineNumber" : 38,
               "columnNumber" : 5
             }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "inMemory",
-            "typeFullName" : "org.springframework.security.oauth2.config.annotation.builders.InMemoryClientDetailsServiceBuilder",
-            "resolvedMethod" : "org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer.inMemory:org.springframework.security.oauth2.config.annotation.builders.InMemoryClientDetailsServiceBuilder()",
-            "isExternal" : true,
-            "lineNumber" : 44,
-            "columnNumber" : 9,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "inMemory",
-            "typeFullName" : "org.springframework.security.oauth2.config.annotation.builders.InMemoryClientDetailsServiceBuilder",
-            "resolvedMethod" : "org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer.inMemory:org.springframework.security.oauth2.config.annotation.builders.InMemoryClientDetailsServiceBuilder()",
-            "isExternal" : true,
-            "lineNumber" : 44,
-            "columnNumber" : 9,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
           ],
           "argToCalls" : [
           ]
@@ -6732,32 +6732,8 @@
         },
         {
           "targetObj" : {
-            "name" : "authenticationManager",
-            "typeFullName" : "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer",
-            "resolvedMethod" : "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer.authenticationManager:org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer(org.springframework.security.authentication.AuthenticationManager)",
-            "isExternal" : true,
-            "lineNumber" : 68,
-            "columnNumber" : 9,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "authenticationManager",
-            "typeFullName" : "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer",
-            "resolvedMethod" : "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer.authenticationManager:org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer(org.springframework.security.authentication.AuthenticationManager)",
-            "isExternal" : true,
-            "lineNumber" : 68,
-            "columnNumber" : 9,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 66,
@@ -6766,7 +6742,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 66,
@@ -6775,7 +6751,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -6784,6 +6760,30 @@
               "lineNumber" : 66,
               "columnNumber" : 5
             }
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "authenticationManager",
+            "typeFullName" : "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer",
+            "resolvedMethod" : "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer.authenticationManager:org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer(org.springframework.security.authentication.AuthenticationManager)",
+            "isExternal" : true,
+            "lineNumber" : 68,
+            "columnNumber" : 9,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "authenticationManager",
+            "typeFullName" : "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer",
+            "resolvedMethod" : "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer.authenticationManager:org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer(org.springframework.security.authentication.AuthenticationManager)",
+            "isExternal" : true,
+            "lineNumber" : 68,
+            "columnNumber" : 9,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
           ],
           "argToCalls" : [
           ]
@@ -6824,40 +6824,6 @@
       "usages" : [
         {
           "targetObj" : {
-            "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
-            "resolvedMethod" : "@Override",
-            "isExternal" : false,
-            "lineNumber" : 74,
-            "columnNumber" : 5,
-            "label" : "ANNOTATION"
-          },
-          "definedBy" : {
-            "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
-            "resolvedMethod" : "@Override",
-            "isExternal" : false,
-            "lineNumber" : 74,
-            "columnNumber" : 5,
-            "label" : "ANNOTATION"
-          },
-          "invokedCalls" : [
-            {
-              "callName" : "<unresolvedNamespace>.Override",
-              "resolvedMethod" : "@Override",
-              "paramTypes" : [
-              ],
-              "returnType" : "",
-              "isExternal" : false,
-              "lineNumber" : 74,
-              "columnNumber" : 5
-            }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
             "name" : "getInstance",
             "typeFullName" : "org.springframework.security.crypto.password.PasswordEncoder",
             "resolvedMethod" : "org.springframework.security.crypto.password.NoOpPasswordEncoder.getInstance:org.springframework.security.crypto.password.PasswordEncoder()",
@@ -6873,30 +6839,6 @@
             "isExternal" : true,
             "lineNumber" : 79,
             "columnNumber" : 34,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "tokenKeyAccess",
-            "typeFullName" : "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer",
-            "resolvedMethod" : "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer.tokenKeyAccess:org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer(java.lang.String)",
-            "isExternal" : true,
-            "lineNumber" : 76,
-            "columnNumber" : 9,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "tokenKeyAccess",
-            "typeFullName" : "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer",
-            "resolvedMethod" : "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer.tokenKeyAccess:org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer(java.lang.String)",
-            "isExternal" : true,
-            "lineNumber" : 76,
-            "columnNumber" : 9,
             "label" : "CALL"
           },
           "invokedCalls" : [
@@ -6984,6 +6926,64 @@
           ],
           "argToCalls" : [
           ]
+        },
+        {
+          "targetObj" : {
+            "name" : "tokenKeyAccess",
+            "typeFullName" : "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer",
+            "resolvedMethod" : "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer.tokenKeyAccess:org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer(java.lang.String)",
+            "isExternal" : true,
+            "lineNumber" : 76,
+            "columnNumber" : 9,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "tokenKeyAccess",
+            "typeFullName" : "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer",
+            "resolvedMethod" : "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer.tokenKeyAccess:org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer(java.lang.String)",
+            "isExternal" : true,
+            "lineNumber" : 76,
+            "columnNumber" : 9,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "Override",
+            "typeFullName" : "java.lang.Override",
+            "resolvedMethod" : "@Override",
+            "isExternal" : false,
+            "lineNumber" : 74,
+            "columnNumber" : 5,
+            "label" : "ANNOTATION"
+          },
+          "definedBy" : {
+            "name" : "Override",
+            "typeFullName" : "java.lang.Override",
+            "resolvedMethod" : "@Override",
+            "isExternal" : false,
+            "lineNumber" : 74,
+            "columnNumber" : 5,
+            "label" : "ANNOTATION"
+          },
+          "invokedCalls" : [
+            {
+              "callName" : "java.lang.Override",
+              "resolvedMethod" : "@Override",
+              "paramTypes" : [
+              ],
+              "returnType" : "",
+              "isExternal" : false,
+              "lineNumber" : 74,
+              "columnNumber" : 5
+            }
+          ],
+          "argToCalls" : [
+          ]
         }
       ]
     },
@@ -7046,7 +7046,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -7153,8 +7153,32 @@
         },
         {
           "targetObj" : {
+            "name" : "passwordEncoder",
+            "typeFullName" : "com.piggymetrics.auth.service.security.MongoUserDetailsService",
+            "resolvedMethod" : "org.springframework.security.config.annotation.authentication.configurers.userdetails.DaoAuthenticationConfigurer.passwordEncoder:org.springframework.security.config.annotation.authentication.configurers.userdetails.AbstractDaoAuthenticationConfigurer(org.springframework.security.crypto.password.PasswordEncoder)",
+            "isExternal" : true,
+            "lineNumber" : 34,
+            "columnNumber" : 9,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "passwordEncoder",
+            "typeFullName" : "com.piggymetrics.auth.service.security.MongoUserDetailsService",
+            "resolvedMethod" : "org.springframework.security.config.annotation.authentication.configurers.userdetails.DaoAuthenticationConfigurer.passwordEncoder:org.springframework.security.config.annotation.authentication.configurers.userdetails.AbstractDaoAuthenticationConfigurer(org.springframework.security.crypto.password.PasswordEncoder)",
+            "isExternal" : true,
+            "lineNumber" : 34,
+            "columnNumber" : 9,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 32,
@@ -7163,7 +7187,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 32,
@@ -7172,7 +7196,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -7181,30 +7205,6 @@
               "lineNumber" : 32,
               "columnNumber" : 5
             }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "passwordEncoder",
-            "typeFullName" : "com.piggymetrics.auth.service.security.MongoUserDetailsService",
-            "resolvedMethod" : "org.springframework.security.config.annotation.authentication.configurers.userdetails.DaoAuthenticationConfigurer.passwordEncoder:org.springframework.security.config.annotation.authentication.configurers.userdetails.AbstractDaoAuthenticationConfigurer(org.springframework.security.crypto.password.PasswordEncoder)",
-            "isExternal" : true,
-            "lineNumber" : 34,
-            "columnNumber" : 9,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "passwordEncoder",
-            "typeFullName" : "com.piggymetrics.auth.service.security.MongoUserDetailsService",
-            "resolvedMethod" : "org.springframework.security.config.annotation.authentication.configurers.userdetails.DaoAuthenticationConfigurer.passwordEncoder:org.springframework.security.config.annotation.authentication.configurers.userdetails.AbstractDaoAuthenticationConfigurer(org.springframework.security.crypto.password.PasswordEncoder)",
-            "isExternal" : true,
-            "lineNumber" : 34,
-            "columnNumber" : 9,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
           ],
           "argToCalls" : [
           ]
@@ -7278,8 +7278,32 @@
         },
         {
           "targetObj" : {
+            "name" : "csrf",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "org.springframework.security.config.annotation.web.HttpSecurityBuilder.csrf:<unresolvedSignature>(0)",
+            "isExternal" : true,
+            "lineNumber" : 25,
+            "columnNumber" : 9,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "csrf",
+            "typeFullName" : "ANY",
+            "resolvedMethod" : "org.springframework.security.config.annotation.web.HttpSecurityBuilder.csrf:<unresolvedSignature>(0)",
+            "isExternal" : true,
+            "lineNumber" : 25,
+            "columnNumber" : 9,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 22,
@@ -7288,7 +7312,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 22,
@@ -7297,7 +7321,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -7306,30 +7330,6 @@
               "lineNumber" : 22,
               "columnNumber" : 5
             }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "csrf",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "org.springframework.security.config.annotation.web.HttpSecurityBuilder.csrf:<unresolvedSignature>(0)",
-            "isExternal" : true,
-            "lineNumber" : 25,
-            "columnNumber" : 9,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "csrf",
-            "typeFullName" : "ANY",
-            "resolvedMethod" : "org.springframework.security.config.annotation.web.HttpSecurityBuilder.csrf:<unresolvedSignature>(0)",
-            "isExternal" : true,
-            "lineNumber" : 25,
-            "columnNumber" : 9,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
           ],
           "argToCalls" : [
           ]
@@ -7595,7 +7595,7 @@
         {
           "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 28,
@@ -7604,7 +7604,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 28,
@@ -7613,7 +7613,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -7657,7 +7657,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -7701,7 +7701,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -7727,7 +7727,7 @@
         {
           "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 41,
@@ -7736,7 +7736,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 41,
@@ -7745,7 +7745,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -7771,7 +7771,7 @@
         {
           "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 46,
@@ -7780,7 +7780,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 46,
@@ -7789,7 +7789,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -7815,7 +7815,7 @@
         {
           "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 51,
@@ -7824,7 +7824,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 51,
@@ -7833,7 +7833,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -7859,7 +7859,7 @@
         {
           "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 56,
@@ -7868,7 +7868,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 56,
@@ -7877,7 +7877,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -8078,30 +8078,6 @@
         },
         {
           "targetObj" : {
-            "name" : "ifPresent",
-            "typeFullName" : "void",
-            "resolvedMethod" : "java.util.Optional.ifPresent:void(java.util.function.Consumer)",
-            "isExternal" : true,
-            "lineNumber" : 28,
-            "columnNumber" : 3,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "ifPresent",
-            "typeFullName" : "void",
-            "resolvedMethod" : "java.util.Optional.ifPresent:void(java.util.function.Consumer)",
-            "isExternal" : true,
-            "lineNumber" : 28,
-            "columnNumber" : 3,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
             "name" : "hash",
             "typeFullName" : "java.lang.String",
             "lineNumber" : 30,
@@ -8259,40 +8235,6 @@
         },
         {
           "targetObj" : {
-            "name" : "create",
-            "typeFullName" : "void",
-            "resolvedMethod" : "com.piggymetrics.auth.service.UserServiceImpl.create:void(com.piggymetrics.auth.domain.User)",
-            "isExternal" : false,
-            "lineNumber" : 30,
-            "columnNumber" : 3,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "create",
-            "typeFullName" : "void",
-            "resolvedMethod" : "com.piggymetrics.auth.service.UserServiceImpl.create:void(com.piggymetrics.auth.domain.User)",
-            "isExternal" : false,
-            "lineNumber" : 30,
-            "columnNumber" : 3,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-            {
-              "callName" : "<unresolvedNamespace>.Override",
-              "resolvedMethod" : "@Override",
-              "paramTypes" : [
-              ],
-              "returnType" : "",
-              "isExternal" : false,
-              "lineNumber" : 24,
-              "columnNumber" : 2
-            }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
             "name" : "existing",
             "typeFullName" : "java.util.Optional",
             "lineNumber" : 27,
@@ -8341,6 +8283,64 @@
             "isExternal" : true,
             "lineNumber" : 30,
             "columnNumber" : 17,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "create",
+            "typeFullName" : "void",
+            "resolvedMethod" : "com.piggymetrics.auth.service.UserServiceImpl.create:void(com.piggymetrics.auth.domain.User)",
+            "isExternal" : false,
+            "lineNumber" : 30,
+            "columnNumber" : 3,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "create",
+            "typeFullName" : "void",
+            "resolvedMethod" : "com.piggymetrics.auth.service.UserServiceImpl.create:void(com.piggymetrics.auth.domain.User)",
+            "isExternal" : false,
+            "lineNumber" : 30,
+            "columnNumber" : 3,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+            {
+              "callName" : "java.lang.Override",
+              "resolvedMethod" : "@Override",
+              "paramTypes" : [
+              ],
+              "returnType" : "",
+              "isExternal" : false,
+              "lineNumber" : 24,
+              "columnNumber" : 2
+            }
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
+            "name" : "ifPresent",
+            "typeFullName" : "void",
+            "resolvedMethod" : "java.util.Optional.ifPresent:void(java.util.function.Consumer)",
+            "isExternal" : true,
+            "lineNumber" : 28,
+            "columnNumber" : 3,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "ifPresent",
+            "typeFullName" : "void",
+            "resolvedMethod" : "java.util.Optional.ifPresent:void(java.util.function.Consumer)",
+            "isExternal" : true,
+            "lineNumber" : 28,
+            "columnNumber" : 3,
             "label" : "CALL"
           },
           "invokedCalls" : [
@@ -8531,7 +8531,7 @@
         {
           "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 16,
@@ -8540,7 +8540,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 16,
@@ -8549,7 +8549,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -8776,6 +8776,30 @@
         },
         {
           "targetObj" : {
+            "name" : "httpBasic",
+            "typeFullName" : "void",
+            "resolvedMethod" : "org.springframework.security.config.annotation.web.HttpSecurityBuilder.httpBasic:<unresolvedSignature>(0)",
+            "isExternal" : true,
+            "lineNumber" : 16,
+            "columnNumber" : 9,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "httpBasic",
+            "typeFullName" : "void",
+            "resolvedMethod" : "org.springframework.security.config.annotation.web.HttpSecurityBuilder.httpBasic:<unresolvedSignature>(0)",
+            "isExternal" : true,
+            "lineNumber" : 16,
+            "columnNumber" : 9,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
             "name" : "disable",
             "typeFullName" : "org.springframework.security.config.annotation.web.builders.HttpSecurity",
             "resolvedMethod" : "org.springframework.security.config.annotation.web.configurers.CsrfConfigurer.disable:org.springframework.security.config.annotation.web.HttpSecurityBuilder()",
@@ -8825,7 +8849,7 @@
         {
           "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 13,
@@ -8834,7 +8858,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 13,
@@ -8843,7 +8867,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -8852,30 +8876,6 @@
               "lineNumber" : 13,
               "columnNumber" : 5
             }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "httpBasic",
-            "typeFullName" : "void",
-            "resolvedMethod" : "org.springframework.security.config.annotation.web.HttpSecurityBuilder.httpBasic:<unresolvedSignature>(0)",
-            "isExternal" : true,
-            "lineNumber" : 16,
-            "columnNumber" : 9,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "httpBasic",
-            "typeFullName" : "void",
-            "resolvedMethod" : "org.springframework.security.config.annotation.web.HttpSecurityBuilder.httpBasic:<unresolvedSignature>(0)",
-            "isExternal" : true,
-            "lineNumber" : 16,
-            "columnNumber" : 9,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
           ],
           "argToCalls" : [
           ]
@@ -10460,7 +10460,7 @@
         {
           "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 48,
@@ -10469,7 +10469,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 48,
@@ -10478,7 +10478,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -10660,7 +10660,7 @@
         {
           "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 10,
@@ -10669,7 +10669,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 10,
@@ -10678,7 +10678,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -10772,7 +10772,7 @@
         {
           "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 10,
@@ -10781,7 +10781,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 10,
@@ -10790,7 +10790,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -11201,6 +11201,40 @@
         },
         {
           "targetObj" : {
+            "name" : "Override",
+            "typeFullName" : "java.lang.Override",
+            "resolvedMethod" : "@Override",
+            "isExternal" : false,
+            "lineNumber" : 33,
+            "columnNumber" : 2,
+            "label" : "ANNOTATION"
+          },
+          "definedBy" : {
+            "name" : "Override",
+            "typeFullName" : "java.lang.Override",
+            "resolvedMethod" : "@Override",
+            "isExternal" : false,
+            "lineNumber" : 33,
+            "columnNumber" : 2,
+            "label" : "ANNOTATION"
+          },
+          "invokedCalls" : [
+            {
+              "callName" : "java.lang.Override",
+              "resolvedMethod" : "@Override",
+              "paramTypes" : [
+              ],
+              "returnType" : "",
+              "isExternal" : false,
+              "lineNumber" : 33,
+              "columnNumber" : 2
+            }
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
             "name" : "type",
             "typeFullName" : "com.piggymetrics.notification.domain.NotificationType",
             "position" : 1,
@@ -11263,40 +11297,6 @@
               "lineNumber" : 52,
               "columnNumber" : 3
             }
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
-            "resolvedMethod" : "@Override",
-            "isExternal" : false,
-            "lineNumber" : 33,
-            "columnNumber" : 2,
-            "label" : "ANNOTATION"
-          },
-          "definedBy" : {
-            "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
-            "resolvedMethod" : "@Override",
-            "isExternal" : false,
-            "lineNumber" : 33,
-            "columnNumber" : 2,
-            "label" : "ANNOTATION"
-          },
-          "invokedCalls" : [
-            {
-              "callName" : "<unresolvedNamespace>.Override",
-              "resolvedMethod" : "@Override",
-              "paramTypes" : [
-              ],
-              "returnType" : "",
-              "isExternal" : false,
-              "lineNumber" : 33,
-              "columnNumber" : 2
-            }
-          ],
-          "argToCalls" : [
           ]
         },
         {
@@ -12202,50 +12202,6 @@
         },
         {
           "targetObj" : {
-            "name" : "Scheduled",
-            "typeFullName" : "org.springframework.scheduling.annotation.Scheduled",
-            "resolvedMethod" : "@Scheduled(cron = \"${backup.cron}\")",
-            "isExternal" : false,
-            "lineNumber" : 30,
-            "columnNumber" : 2,
-            "label" : "ANNOTATION"
-          },
-          "definedBy" : {
-            "name" : "Scheduled",
-            "typeFullName" : "org.springframework.scheduling.annotation.Scheduled",
-            "resolvedMethod" : "@Scheduled(cron = \"${backup.cron}\")",
-            "isExternal" : false,
-            "lineNumber" : 30,
-            "columnNumber" : 2,
-            "label" : "ANNOTATION"
-          },
-          "invokedCalls" : [
-            {
-              "callName" : "<unresolvedNamespace>.Override",
-              "resolvedMethod" : "@Override",
-              "paramTypes" : [
-              ],
-              "returnType" : "",
-              "isExternal" : false,
-              "lineNumber" : 29,
-              "columnNumber" : 2
-            },
-            {
-              "callName" : "org.springframework.scheduling.annotation.Scheduled",
-              "resolvedMethod" : "@Scheduled(cron = \"${backup.cron}\")",
-              "paramTypes" : [
-              ],
-              "returnType" : "",
-              "isExternal" : false,
-              "lineNumber" : 30,
-              "columnNumber" : 2
-            }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
             "name" : "type",
             "typeFullName" : "com.piggymetrics.notification.domain.NotificationType",
             "lineNumber" : 33,
@@ -12347,6 +12303,50 @@
           ],
           "argToCalls" : [
           ]
+        },
+        {
+          "targetObj" : {
+            "name" : "Scheduled",
+            "typeFullName" : "org.springframework.scheduling.annotation.Scheduled",
+            "resolvedMethod" : "@Scheduled(cron = \"${backup.cron}\")",
+            "isExternal" : false,
+            "lineNumber" : 30,
+            "columnNumber" : 2,
+            "label" : "ANNOTATION"
+          },
+          "definedBy" : {
+            "name" : "Scheduled",
+            "typeFullName" : "org.springframework.scheduling.annotation.Scheduled",
+            "resolvedMethod" : "@Scheduled(cron = \"${backup.cron}\")",
+            "isExternal" : false,
+            "lineNumber" : 30,
+            "columnNumber" : 2,
+            "label" : "ANNOTATION"
+          },
+          "invokedCalls" : [
+            {
+              "callName" : "java.lang.Override",
+              "resolvedMethod" : "@Override",
+              "paramTypes" : [
+              ],
+              "returnType" : "",
+              "isExternal" : false,
+              "lineNumber" : 29,
+              "columnNumber" : 2
+            },
+            {
+              "callName" : "org.springframework.scheduling.annotation.Scheduled",
+              "resolvedMethod" : "@Scheduled(cron = \"${backup.cron}\")",
+              "paramTypes" : [
+              ],
+              "returnType" : "",
+              "isExternal" : false,
+              "lineNumber" : 30,
+              "columnNumber" : 2
+            }
+          ],
+          "argToCalls" : [
+          ]
         }
       ]
     },
@@ -12379,7 +12379,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -12723,7 +12723,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -12813,7 +12813,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -12935,7 +12935,7 @@
         {
           "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 68,
@@ -12944,7 +12944,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 68,
@@ -12953,7 +12953,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -13157,7 +13157,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -13561,7 +13561,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -14608,7 +14608,7 @@
         {
           "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 42,
@@ -14617,7 +14617,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 42,
@@ -14626,7 +14626,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -15850,7 +15850,7 @@
         {
           "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 27,
@@ -15859,7 +15859,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 27,
@@ -15868,7 +15868,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -15925,40 +15925,6 @@
       "lineNumber" : 31,
       "columnNumber" : 2,
       "usages" : [
-        {
-          "targetObj" : {
-            "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
-            "resolvedMethod" : "@Override",
-            "isExternal" : false,
-            "lineNumber" : 31,
-            "columnNumber" : 2,
-            "label" : "ANNOTATION"
-          },
-          "definedBy" : {
-            "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
-            "resolvedMethod" : "@Override",
-            "isExternal" : false,
-            "lineNumber" : 31,
-            "columnNumber" : 2,
-            "label" : "ANNOTATION"
-          },
-          "invokedCalls" : [
-            {
-              "callName" : "<unresolvedNamespace>.Override",
-              "resolvedMethod" : "@Override",
-              "paramTypes" : [
-              ],
-              "returnType" : "",
-              "isExternal" : false,
-              "lineNumber" : 31,
-              "columnNumber" : 2
-            }
-          ],
-          "argToCalls" : [
-          ]
-        },
         {
           "targetObj" : {
             "name" : "getClass",
@@ -16065,6 +16031,40 @@
         },
         {
           "targetObj" : {
+            "name" : "Override",
+            "typeFullName" : "java.lang.Override",
+            "resolvedMethod" : "@Override",
+            "isExternal" : false,
+            "lineNumber" : 31,
+            "columnNumber" : 2,
+            "label" : "ANNOTATION"
+          },
+          "definedBy" : {
+            "name" : "Override",
+            "typeFullName" : "java.lang.Override",
+            "resolvedMethod" : "@Override",
+            "isExternal" : false,
+            "lineNumber" : 31,
+            "columnNumber" : 2,
+            "label" : "ANNOTATION"
+          },
+          "invokedCalls" : [
+            {
+              "callName" : "java.lang.Override",
+              "resolvedMethod" : "@Override",
+              "paramTypes" : [
+              ],
+              "returnType" : "",
+              "isExternal" : false,
+              "lineNumber" : 31,
+              "columnNumber" : 2
+            }
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
             "name" : "getClass",
             "typeFullName" : "java.lang.Class",
             "resolvedMethod" : "com.piggymetrics.statistics.domain.timeseries.ItemMetric.getClass:java.lang.Class()",
@@ -16160,7 +16160,7 @@
         {
           "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 42,
@@ -16169,7 +16169,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 42,
@@ -16178,7 +16178,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -16361,7 +16361,7 @@
         {
           "targetObj" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 13,
@@ -16370,7 +16370,7 @@
           },
           "definedBy" : {
             "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
+            "typeFullName" : "java.lang.Override",
             "resolvedMethod" : "@Override",
             "isExternal" : false,
             "lineNumber" : 13,
@@ -16379,7 +16379,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -16541,6 +16541,40 @@
       "usages" : [
         {
           "targetObj" : {
+            "name" : "Override",
+            "typeFullName" : "java.lang.Override",
+            "resolvedMethod" : "@Override",
+            "isExternal" : false,
+            "lineNumber" : 14,
+            "columnNumber" : 2,
+            "label" : "ANNOTATION"
+          },
+          "definedBy" : {
+            "name" : "Override",
+            "typeFullName" : "java.lang.Override",
+            "resolvedMethod" : "@Override",
+            "isExternal" : false,
+            "lineNumber" : 14,
+            "columnNumber" : 2,
+            "label" : "ANNOTATION"
+          },
+          "invokedCalls" : [
+            {
+              "callName" : "java.lang.Override",
+              "resolvedMethod" : "@Override",
+              "paramTypes" : [
+              ],
+              "returnType" : "",
+              "isExternal" : false,
+              "lineNumber" : 14,
+              "columnNumber" : 2
+            }
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
             "name" : "object",
             "typeFullName" : "com.mongodb.DBObject",
             "lineNumber" : 17,
@@ -16644,40 +16678,6 @@
               "isExternal" : false,
               "lineNumber" : 20,
               "columnNumber" : 25
-            }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
-            "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
-            "resolvedMethod" : "@Override",
-            "isExternal" : false,
-            "lineNumber" : 14,
-            "columnNumber" : 2,
-            "label" : "ANNOTATION"
-          },
-          "definedBy" : {
-            "name" : "Override",
-            "typeFullName" : "<unresolvedNamespace>.Override",
-            "resolvedMethod" : "@Override",
-            "isExternal" : false,
-            "lineNumber" : 14,
-            "columnNumber" : 2,
-            "label" : "ANNOTATION"
-          },
-          "invokedCalls" : [
-            {
-              "callName" : "<unresolvedNamespace>.Override",
-              "resolvedMethod" : "@Override",
-              "paramTypes" : [
-              ],
-              "returnType" : "",
-              "isExternal" : false,
-              "lineNumber" : 14,
-              "columnNumber" : 2
             }
           ],
           "argToCalls" : [
@@ -16899,40 +16899,6 @@
         },
         {
           "targetObj" : {
-            "name" : "convert",
-            "typeFullName" : "java.math.BigDecimal",
-            "resolvedMethod" : "com.piggymetrics.statistics.service.ExchangeRatesServiceImpl.convert:java.math.BigDecimal(com.piggymetrics.statistics.domain.Currency,com.piggymetrics.statistics.domain.Currency,java.math.BigDecimal)",
-            "isExternal" : false,
-            "lineNumber" : 105,
-            "columnNumber" : 23,
-            "label" : "CALL"
-          },
-          "definedBy" : {
-            "name" : "convert",
-            "typeFullName" : "java.math.BigDecimal",
-            "resolvedMethod" : "com.piggymetrics.statistics.service.ExchangeRatesServiceImpl.convert:java.math.BigDecimal(com.piggymetrics.statistics.domain.Currency,com.piggymetrics.statistics.domain.Currency,java.math.BigDecimal)",
-            "isExternal" : false,
-            "lineNumber" : 105,
-            "columnNumber" : 23,
-            "label" : "CALL"
-          },
-          "invokedCalls" : [
-            {
-              "callName" : "<unresolvedNamespace>.Override",
-              "resolvedMethod" : "@Override",
-              "paramTypes" : [
-              ],
-              "returnType" : "",
-              "isExternal" : false,
-              "lineNumber" : 49,
-              "columnNumber" : 2
-            }
-          ],
-          "argToCalls" : [
-          ]
-        },
-        {
-          "targetObj" : {
             "name" : "rates",
             "typeFullName" : "java.util.Map",
             "lineNumber" : 54,
@@ -17080,6 +17046,40 @@
         },
         {
           "targetObj" : {
+            "name" : "convert",
+            "typeFullName" : "java.math.BigDecimal",
+            "resolvedMethod" : "com.piggymetrics.statistics.service.ExchangeRatesServiceImpl.convert:java.math.BigDecimal(com.piggymetrics.statistics.domain.Currency,com.piggymetrics.statistics.domain.Currency,java.math.BigDecimal)",
+            "isExternal" : false,
+            "lineNumber" : 105,
+            "columnNumber" : 23,
+            "label" : "CALL"
+          },
+          "definedBy" : {
+            "name" : "convert",
+            "typeFullName" : "java.math.BigDecimal",
+            "resolvedMethod" : "com.piggymetrics.statistics.service.ExchangeRatesServiceImpl.convert:java.math.BigDecimal(com.piggymetrics.statistics.domain.Currency,com.piggymetrics.statistics.domain.Currency,java.math.BigDecimal)",
+            "isExternal" : false,
+            "lineNumber" : 105,
+            "columnNumber" : 23,
+            "label" : "CALL"
+          },
+          "invokedCalls" : [
+            {
+              "callName" : "java.lang.Override",
+              "resolvedMethod" : "@Override",
+              "paramTypes" : [
+              ],
+              "returnType" : "",
+              "isExternal" : false,
+              "lineNumber" : 49,
+              "columnNumber" : 2
+            }
+          ],
+          "argToCalls" : [
+          ]
+        },
+        {
+          "targetObj" : {
             "name" : "to",
             "typeFullName" : "com.piggymetrics.statistics.domain.Currency",
             "position" : 2,
@@ -17167,7 +17167,7 @@
           },
           "invokedCalls" : [
             {
-              "callName" : "<unresolvedNamespace>.Override",
+              "callName" : "java.lang.Override",
               "resolvedMethod" : "@Override",
               "paramTypes" : [
               ],
@@ -20003,6 +20003,836 @@
           "argToCalls" : [
           ]
         }
+      ]
+    },
+    {
+      "code" : "@SpringBootApplication",
+      "fullName" : "org.springframework.boot.autoconfigure.SpringBootApplication",
+      "signature" : "@SpringBootApplication",
+      "fileName" : "account-service/src/main/java/com/piggymetrics/account/AccountApplication.java",
+      "lineNumber" : 11,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableDiscoveryClient",
+      "fullName" : "org.springframework.cloud.client.discovery.EnableDiscoveryClient",
+      "signature" : "@EnableDiscoveryClient",
+      "fileName" : "account-service/src/main/java/com/piggymetrics/account/AccountApplication.java",
+      "lineNumber" : 12,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableOAuth2Client",
+      "fullName" : "org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client",
+      "signature" : "@EnableOAuth2Client",
+      "fileName" : "account-service/src/main/java/com/piggymetrics/account/AccountApplication.java",
+      "lineNumber" : 13,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableFeignClients",
+      "fullName" : "org.springframework.cloud.openfeign.EnableFeignClients",
+      "signature" : "@EnableFeignClients",
+      "fileName" : "account-service/src/main/java/com/piggymetrics/account/AccountApplication.java",
+      "lineNumber" : 14,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableCircuitBreaker",
+      "fullName" : "org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker",
+      "signature" : "@EnableCircuitBreaker",
+      "fileName" : "account-service/src/main/java/com/piggymetrics/account/AccountApplication.java",
+      "lineNumber" : 15,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableGlobalMethodSecurity(prePostEnabled=true)",
+      "fullName" : "org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity",
+      "signature" : "@EnableGlobalMethodSecurity",
+      "fileName" : "account-service/src/main/java/com/piggymetrics/account/AccountApplication.java",
+      "lineNumber" : 16,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@FeignClient(name=\"auth-service\")",
+      "fullName" : "org.springframework.cloud.openfeign.FeignClient",
+      "signature" : "@FeignClient",
+      "fileName" : "account-service/src/main/java/com/piggymetrics/account/client/AuthServiceClient.java",
+      "lineNumber" : 9,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@FeignClient(name=\"statistics-service\",fallback=StatisticsServiceClientFallback.class)",
+      "fullName" : "org.springframework.cloud.openfeign.FeignClient",
+      "signature" : "@FeignClient",
+      "fileName" : "account-service/src/main/java/com/piggymetrics/account/client/StatisticsServiceClient.java",
+      "lineNumber" : 10,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Component",
+      "fullName" : "org.springframework.stereotype.Component",
+      "signature" : "@Component",
+      "fileName" : "account-service/src/main/java/com/piggymetrics/account/client/StatisticsServiceClientFallback.java",
+      "lineNumber" : 11,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Configuration",
+      "fullName" : "org.springframework.context.annotation.Configuration",
+      "signature" : "@Configuration",
+      "fileName" : "account-service/src/main/java/com/piggymetrics/account/config/ResourceServerConfig.java",
+      "lineNumber" : 22,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableResourceServer",
+      "fullName" : "org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer",
+      "signature" : "@EnableResourceServer",
+      "fileName" : "account-service/src/main/java/com/piggymetrics/account/config/ResourceServerConfig.java",
+      "lineNumber" : 23,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@RestController",
+      "fullName" : "org.springframework.web.bind.annotation.RestController",
+      "signature" : "@RestController",
+      "fileName" : "account-service/src/main/java/com/piggymetrics/account/controller/AccountController.java",
+      "lineNumber" : 13,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@ControllerAdvice",
+      "fullName" : "org.springframework.web.bind.annotation.ControllerAdvice",
+      "signature" : "@ControllerAdvice",
+      "fileName" : "account-service/src/main/java/com/piggymetrics/account/controller/ErrorHandler.java",
+      "lineNumber" : 10,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Document(collection=\"accounts\")",
+      "fullName" : "org.springframework.data.mongodb.core.mapping.Document",
+      "signature" : "@Document",
+      "fileName" : "account-service/src/main/java/com/piggymetrics/account/domain/Account.java",
+      "lineNumber" : 13,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@JsonIgnoreProperties(ignoreUnknown=true)",
+      "fullName" : "org.codehaus.jackson.annotate.JsonIgnoreProperties",
+      "signature" : "@JsonIgnoreProperties",
+      "fileName" : "account-service/src/main/java/com/piggymetrics/account/domain/Account.java",
+      "lineNumber" : 14,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Repository",
+      "fullName" : "org.springframework.stereotype.Repository",
+      "signature" : "@Repository",
+      "fileName" : "account-service/src/main/java/com/piggymetrics/account/repository/AccountRepository.java",
+      "lineNumber" : 7,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Service",
+      "fullName" : "org.springframework.stereotype.Service",
+      "signature" : "@Service",
+      "fileName" : "account-service/src/main/java/com/piggymetrics/account/service/AccountServiceImpl.java",
+      "lineNumber" : 19,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@SpringBootApplication",
+      "fullName" : "org.springframework.boot.autoconfigure.SpringBootApplication",
+      "signature" : "@SpringBootApplication",
+      "fileName" : "auth-service/src/main/java/com/piggymetrics/auth/AuthApplication.java",
+      "lineNumber" : 9,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableResourceServer",
+      "fullName" : "org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer",
+      "signature" : "@EnableResourceServer",
+      "fileName" : "auth-service/src/main/java/com/piggymetrics/auth/AuthApplication.java",
+      "lineNumber" : 10,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableDiscoveryClient",
+      "fullName" : "org.springframework.cloud.client.discovery.EnableDiscoveryClient",
+      "signature" : "@EnableDiscoveryClient",
+      "fileName" : "auth-service/src/main/java/com/piggymetrics/auth/AuthApplication.java",
+      "lineNumber" : 11,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableGlobalMethodSecurity(prePostEnabled=true)",
+      "fullName" : "org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity",
+      "signature" : "@EnableGlobalMethodSecurity",
+      "fileName" : "auth-service/src/main/java/com/piggymetrics/auth/AuthApplication.java",
+      "lineNumber" : 12,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Configuration",
+      "fullName" : "org.springframework.context.annotation.Configuration",
+      "signature" : "@Configuration",
+      "fileName" : "auth-service/src/main/java/com/piggymetrics/auth/config/OAuth2AuthorizationConfig.java",
+      "lineNumber" : 21,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableAuthorizationServer",
+      "fullName" : "org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer",
+      "signature" : "@EnableAuthorizationServer",
+      "fileName" : "auth-service/src/main/java/com/piggymetrics/auth/config/OAuth2AuthorizationConfig.java",
+      "lineNumber" : 22,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Configuration",
+      "fullName" : "org.springframework.context.annotation.Configuration",
+      "signature" : "@Configuration",
+      "fileName" : "auth-service/src/main/java/com/piggymetrics/auth/config/WebSecurityConfig.java",
+      "lineNumber" : 16,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@RestController",
+      "fullName" : "org.springframework.web.bind.annotation.RestController",
+      "signature" : "@RestController",
+      "fileName" : "auth-service/src/main/java/com/piggymetrics/auth/controller/UserController.java",
+      "lineNumber" : 15,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@RequestMapping(\"/users\")",
+      "fullName" : "org.springframework.web.bind.annotation.RequestMapping",
+      "signature" : "@RequestMapping",
+      "fileName" : "auth-service/src/main/java/com/piggymetrics/auth/controller/UserController.java",
+      "lineNumber" : 16,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Document(collection=\"users\")",
+      "fullName" : "org.springframework.data.mongodb.core.mapping.Document",
+      "signature" : "@Document",
+      "fileName" : "auth-service/src/main/java/com/piggymetrics/auth/domain/User.java",
+      "lineNumber" : 10,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Repository",
+      "fullName" : "org.springframework.stereotype.Repository",
+      "signature" : "@Repository",
+      "fileName" : "auth-service/src/main/java/com/piggymetrics/auth/repository/UserRepository.java",
+      "lineNumber" : 7,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Service",
+      "fullName" : "org.springframework.stereotype.Service",
+      "signature" : "@Service",
+      "fileName" : "auth-service/src/main/java/com/piggymetrics/auth/service/UserServiceImpl.java",
+      "lineNumber" : 14,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Service",
+      "fullName" : "org.springframework.stereotype.Service",
+      "signature" : "@Service",
+      "fileName" : "auth-service/src/main/java/com/piggymetrics/auth/service/security/MongoUserDetailsService.java",
+      "lineNumber" : 10,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@SpringBootApplication",
+      "fullName" : "org.springframework.boot.autoconfigure.SpringBootApplication",
+      "signature" : "@SpringBootApplication",
+      "fileName" : "config/src/main/java/com/piggymetrics/config/ConfigApplication.java",
+      "lineNumber" : 7,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableConfigServer",
+      "fullName" : "org.springframework.cloud.config.server.EnableConfigServer",
+      "signature" : "@EnableConfigServer",
+      "fileName" : "config/src/main/java/com/piggymetrics/config/ConfigApplication.java",
+      "lineNumber" : 8,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Configuration",
+      "fullName" : "org.springframework.context.annotation.Configuration",
+      "signature" : "@Configuration",
+      "fileName" : "config/src/main/java/com/piggymetrics/config/SecurityConfig.java",
+      "lineNumber" : 10,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@SpringBootApplication",
+      "fullName" : "org.springframework.boot.autoconfigure.SpringBootApplication",
+      "signature" : "@SpringBootApplication",
+      "fileName" : "gateway/src/main/java/com/piggymetrics/gateway/GatewayApplication.java",
+      "lineNumber" : 8,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableDiscoveryClient",
+      "fullName" : "org.springframework.cloud.client.discovery.EnableDiscoveryClient",
+      "signature" : "@EnableDiscoveryClient",
+      "fileName" : "gateway/src/main/java/com/piggymetrics/gateway/GatewayApplication.java",
+      "lineNumber" : 9,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableZuulProxy",
+      "fullName" : "org.springframework.cloud.netflix.zuul.EnableZuulProxy",
+      "signature" : "@EnableZuulProxy",
+      "fileName" : "gateway/src/main/java/com/piggymetrics/gateway/GatewayApplication.java",
+      "lineNumber" : 10,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@SpringBootApplication",
+      "fullName" : "org.springframework.boot.autoconfigure.SpringBootApplication",
+      "signature" : "@SpringBootApplication",
+      "fileName" : "monitoring/src/main/java/com/piggymetrics/monitoring/MonitoringApplication.java",
+      "lineNumber" : 7,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableHystrixDashboard",
+      "fullName" : "org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard",
+      "signature" : "@EnableHystrixDashboard",
+      "fileName" : "monitoring/src/main/java/com/piggymetrics/monitoring/MonitoringApplication.java",
+      "lineNumber" : 8,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Configuration",
+      "fullName" : "org.springframework.context.annotation.Configuration",
+      "signature" : "@Configuration",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/NotificationServiceApplication.java",
+      "lineNumber" : 30,
+      "columnNumber" : 2,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@SpringBootApplication",
+      "fullName" : "org.springframework.boot.autoconfigure.SpringBootApplication",
+      "signature" : "@SpringBootApplication",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/NotificationServiceApplication.java",
+      "lineNumber" : 18,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableDiscoveryClient",
+      "fullName" : "org.springframework.cloud.client.discovery.EnableDiscoveryClient",
+      "signature" : "@EnableDiscoveryClient",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/NotificationServiceApplication.java",
+      "lineNumber" : 19,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableOAuth2Client",
+      "fullName" : "org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client",
+      "signature" : "@EnableOAuth2Client",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/NotificationServiceApplication.java",
+      "lineNumber" : 20,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableFeignClients",
+      "fullName" : "org.springframework.cloud.openfeign.EnableFeignClients",
+      "signature" : "@EnableFeignClients",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/NotificationServiceApplication.java",
+      "lineNumber" : 21,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableGlobalMethodSecurity(prePostEnabled=true)",
+      "fullName" : "org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity",
+      "signature" : "@EnableGlobalMethodSecurity",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/NotificationServiceApplication.java",
+      "lineNumber" : 22,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableScheduling",
+      "fullName" : "org.springframework.scheduling.annotation.EnableScheduling",
+      "signature" : "@EnableScheduling",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/NotificationServiceApplication.java",
+      "lineNumber" : 23,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@FeignClient(name=\"account-service\")",
+      "fullName" : "org.springframework.cloud.openfeign.FeignClient",
+      "signature" : "@FeignClient",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/client/AccountServiceClient.java",
+      "lineNumber" : 9,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Configuration",
+      "fullName" : "org.springframework.context.annotation.Configuration",
+      "signature" : "@Configuration",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/config/ResourceServerConfig.java",
+      "lineNumber" : 17,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableResourceServer",
+      "fullName" : "org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer",
+      "signature" : "@EnableResourceServer",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/config/ResourceServerConfig.java",
+      "lineNumber" : 18,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@RestController",
+      "fullName" : "org.springframework.web.bind.annotation.RestController",
+      "signature" : "@RestController",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/controller/RecipientController.java",
+      "lineNumber" : 14,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@RequestMapping(\"/recipients\")",
+      "fullName" : "org.springframework.web.bind.annotation.RequestMapping",
+      "signature" : "@RequestMapping",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/controller/RecipientController.java",
+      "lineNumber" : 15,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Document(collection=\"recipients\")",
+      "fullName" : "org.springframework.data.mongodb.core.mapping.Document",
+      "signature" : "@Document",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/domain/Recipient.java",
+      "lineNumber" : 11,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Repository",
+      "fullName" : "org.springframework.stereotype.Repository",
+      "signature" : "@Repository",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/repository/RecipientRepository.java",
+      "lineNumber" : 10,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Component",
+      "fullName" : "org.springframework.stereotype.Component",
+      "signature" : "@Component",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/repository/converter/FrequencyReaderConverter.java",
+      "lineNumber" : 7,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Component",
+      "fullName" : "org.springframework.stereotype.Component",
+      "signature" : "@Component",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/repository/converter/FrequencyWriterConverter.java",
+      "lineNumber" : 7,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Service",
+      "fullName" : "org.springframework.stereotype.Service",
+      "signature" : "@Service",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/service/EmailServiceImpl.java",
+      "lineNumber" : 21,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@RefreshScope",
+      "fullName" : "org.springframework.cloud.context.config.annotation.RefreshScope",
+      "signature" : "@RefreshScope",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/service/EmailServiceImpl.java",
+      "lineNumber" : 22,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Service",
+      "fullName" : "org.springframework.stereotype.Service",
+      "signature" : "@Service",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/service/NotificationServiceImpl.java",
+      "lineNumber" : 15,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Service",
+      "fullName" : "org.springframework.stereotype.Service",
+      "signature" : "@Service",
+      "fileName" : "notification-service/src/main/java/com/piggymetrics/notification/service/RecipientServiceImpl.java",
+      "lineNumber" : 15,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@SpringBootApplication",
+      "fullName" : "org.springframework.boot.autoconfigure.SpringBootApplication",
+      "signature" : "@SpringBootApplication",
+      "fileName" : "registry/src/main/java/com/piggymetrics/registry/RegistryApplication.java",
+      "lineNumber" : 7,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableEurekaServer",
+      "fullName" : "org.springframework.cloud.netflix.eureka.server.EnableEurekaServer",
+      "signature" : "@EnableEurekaServer",
+      "fileName" : "registry/src/main/java/com/piggymetrics/registry/RegistryApplication.java",
+      "lineNumber" : 8,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Configuration",
+      "fullName" : "org.springframework.context.annotation.Configuration",
+      "signature" : "@Configuration",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/StatisticsApplication.java",
+      "lineNumber" : 32,
+      "columnNumber" : 2,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@SpringBootApplication",
+      "fullName" : "org.springframework.boot.autoconfigure.SpringBootApplication",
+      "signature" : "@SpringBootApplication",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/StatisticsApplication.java",
+      "lineNumber" : 21,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableDiscoveryClient",
+      "fullName" : "org.springframework.cloud.client.discovery.EnableDiscoveryClient",
+      "signature" : "@EnableDiscoveryClient",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/StatisticsApplication.java",
+      "lineNumber" : 22,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableOAuth2Client",
+      "fullName" : "org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client",
+      "signature" : "@EnableOAuth2Client",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/StatisticsApplication.java",
+      "lineNumber" : 23,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableFeignClients",
+      "fullName" : "org.springframework.cloud.openfeign.EnableFeignClients",
+      "signature" : "@EnableFeignClients",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/StatisticsApplication.java",
+      "lineNumber" : 24,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableGlobalMethodSecurity(prePostEnabled=true)",
+      "fullName" : "org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity",
+      "signature" : "@EnableGlobalMethodSecurity",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/StatisticsApplication.java",
+      "lineNumber" : 25,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@FeignClient(url=\"${rates.url}\",name=\"rates-client\",fallback=ExchangeRatesClientFallback.class)",
+      "fullName" : "org.springframework.cloud.openfeign.FeignClient",
+      "signature" : "@FeignClient",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/client/ExchangeRatesClient.java",
+      "lineNumber" : 10,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Component",
+      "fullName" : "org.springframework.stereotype.Component",
+      "signature" : "@Component",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/client/ExchangeRatesClientFallback.java",
+      "lineNumber" : 9,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableResourceServer",
+      "fullName" : "org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer",
+      "signature" : "@EnableResourceServer",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/config/ResourceServerConfig.java",
+      "lineNumber" : 15,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Configuration",
+      "fullName" : "org.springframework.context.annotation.Configuration",
+      "signature" : "@Configuration",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/config/ResourceServerConfig.java",
+      "lineNumber" : 16,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@RestController",
+      "fullName" : "org.springframework.web.bind.annotation.RestController",
+      "signature" : "@RestController",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/controller/StatisticsController.java",
+      "lineNumber" : 14,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Document(collection=\"accounts\")",
+      "fullName" : "org.springframework.data.mongodb.core.mapping.Document",
+      "signature" : "@Document",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/domain/Account.java",
+      "lineNumber" : 10,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@JsonIgnoreProperties(ignoreUnknown=true)",
+      "fullName" : "org.codehaus.jackson.annotate.JsonIgnoreProperties",
+      "signature" : "@JsonIgnoreProperties",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/domain/Account.java",
+      "lineNumber" : 11,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@JsonIgnoreProperties(ignoreUnknown=true,value={\"date\"})",
+      "fullName" : "com.fasterxml.jackson.annotation.JsonIgnoreProperties",
+      "signature" : "@JsonIgnoreProperties",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/domain/ExchangeRatesContainer.java",
+      "lineNumber" : 9,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Document(collection=\"datapoints\")",
+      "fullName" : "org.springframework.data.mongodb.core.mapping.Document",
+      "signature" : "@Document",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/domain/timeseries/DataPoint.java",
+      "lineNumber" : 15,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Repository",
+      "fullName" : "org.springframework.stereotype.Repository",
+      "signature" : "@Repository",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/repository/DataPointRepository.java",
+      "lineNumber" : 10,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Component",
+      "fullName" : "org.springframework.stereotype.Component",
+      "signature" : "@Component",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/repository/converter/DataPointIdReaderConverter.java",
+      "lineNumber" : 10,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Component",
+      "fullName" : "org.springframework.stereotype.Component",
+      "signature" : "@Component",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/repository/converter/DataPointIdWriterConverter.java",
+      "lineNumber" : 9,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Service",
+      "fullName" : "org.springframework.stereotype.Service",
+      "signature" : "@Service",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/service/ExchangeRatesServiceImpl.java",
+      "lineNumber" : 18,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@Service",
+      "fullName" : "org.springframework.stereotype.Service",
+      "signature" : "@Service",
+      "fileName" : "statistics-service/src/main/java/com/piggymetrics/statistics/service/StatisticsServiceImpl.java",
+      "lineNumber" : 27,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@SpringBootApplication",
+      "fullName" : "org.springframework.boot.autoconfigure.SpringBootApplication",
+      "signature" : "@SpringBootApplication",
+      "fileName" : "turbine-stream-service/src/main/java/com/piggymetrics/turbine/TurbineStreamServiceApplication.java",
+      "lineNumber" : 8,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableTurbineStream",
+      "fullName" : "org.springframework.cloud.netflix.turbine.stream.EnableTurbineStream",
+      "signature" : "@EnableTurbineStream",
+      "fileName" : "turbine-stream-service/src/main/java/com/piggymetrics/turbine/TurbineStreamServiceApplication.java",
+      "lineNumber" : 9,
+      "columnNumber" : 1,
+      "usages" : [
+      ]
+    },
+    {
+      "code" : "@EnableDiscoveryClient",
+      "fullName" : "org.springframework.cloud.client.discovery.EnableDiscoveryClient",
+      "signature" : "@EnableDiscoveryClient",
+      "fileName" : "turbine-stream-service/src/main/java/com/piggymetrics/turbine/TurbineStreamServiceApplication.java",
+      "lineNumber" : 10,
+      "columnNumber" : 1,
+      "usages" : [
       ]
     }
   ],

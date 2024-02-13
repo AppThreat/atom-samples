@@ -1,0 +1,108 @@
+{
+  "reachables" : [
+    {
+      "flows" : [
+        {
+          "id" : 130999,
+          "label" : "IDENTIFIER",
+          "name" : "this",
+          "fullName" : "",
+          "signature" : "",
+          "isExternal" : false,
+          "code" : "this._loadDialectModule('snowflake-sdk')",
+          "typeFullName" : "",
+          "parentMethodName" : "<init>",
+          "parentMethodSignature" : "",
+          "parentFileName" : "packages/core/src/dialects/snowflake/connection-manager.ts",
+          "parentPackageName" : "",
+          "parentClassName" : "packages/core/src/dialects/snowflake/connection-manager.ts::program:SnowflakeConnectionManager",
+          "lineNumber" : 35,
+          "columnNumber" : 15,
+          "tags" : "pkg:npm/mariadb@3.2.3, pkg:npm/snowflake-sdk@1.9.3, framework"
+        }
+      ],
+      "purls" : [
+        "pkg:npm/mariadb@3.2.3",
+        "pkg:npm/snowflake-sdk@1.9.3"
+      ]
+    },
+    {
+      "flows" : [
+        {
+          "id" : 131475,
+          "label" : "IDENTIFIER",
+          "name" : "this",
+          "fullName" : "",
+          "signature" : "",
+          "isExternal" : false,
+          "code" : "require(\"snowflake-sdk\")",
+          "typeFullName" : "",
+          "parentMethodName" : ":program",
+          "parentMethodSignature" : "",
+          "parentFileName" : "packages/core/src/dialects/snowflake/connection-manager.ts",
+          "parentPackageName" : "<global>",
+          "parentClassName" : "packages/core/src/dialects/snowflake/connection-manager.ts::program",
+          "lineNumber" : 1,
+          "columnNumber" : 0,
+          "tags" : "pkg:npm/mariadb@3.2.3, pkg:npm/snowflake-sdk@1.9.3, framework"
+        }
+      ],
+      "purls" : [
+        "pkg:npm/mariadb@3.2.3",
+        "pkg:npm/snowflake-sdk@1.9.3"
+      ]
+    },
+    {
+      "flows" : [
+        {
+          "id" : 131482,
+          "label" : "IDENTIFIER",
+          "name" : "this",
+          "fullName" : "",
+          "signature" : "",
+          "isExternal" : false,
+          "code" : "require(\"snowflake-sdk\")",
+          "typeFullName" : "",
+          "parentMethodName" : ":program",
+          "parentMethodSignature" : "",
+          "parentFileName" : "packages/core/src/dialects/snowflake/connection-manager.ts",
+          "parentPackageName" : "<global>",
+          "parentClassName" : "packages/core/src/dialects/snowflake/connection-manager.ts::program",
+          "lineNumber" : 1,
+          "columnNumber" : 0,
+          "tags" : "pkg:npm/mariadb@3.2.3, pkg:npm/snowflake-sdk@1.9.3, framework"
+        }
+      ],
+      "purls" : [
+        "pkg:npm/mariadb@3.2.3",
+        "pkg:npm/snowflake-sdk@1.9.3"
+      ]
+    },
+    {
+      "flows" : [
+        {
+          "id" : 131475,
+          "label" : "IDENTIFIER",
+          "name" : "this",
+          "fullName" : "",
+          "signature" : "",
+          "isExternal" : false,
+          "code" : "require(\"snowflake-sdk\")",
+          "typeFullName" : "",
+          "parentMethodName" : ":program",
+          "parentMethodSignature" : "",
+          "parentFileName" : "packages/core/src/dialects/snowflake/connection-manager.ts",
+          "parentPackageName" : "<global>",
+          "parentClassName" : "packages/core/src/dialects/snowflake/connection-manager.ts::program",
+          "lineNumber" : 1,
+          "columnNumber" : 0,
+          "tags" : "pkg:npm/mariadb@3.2.3, pkg:npm/snowflake-sdk@1.9.3, framework"
+        }
+      ],
+      "purls" : [
+        "pkg:npm/mariadb@3.2.3",
+        "pkg:npm/snowflake-sdk@1.9.3"
+      ]
+    }
+  ]
+}
