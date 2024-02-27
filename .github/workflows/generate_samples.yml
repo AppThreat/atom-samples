@@ -163,7 +163,7 @@ jobs:
           key: ${{ runner.os }}-java-sample-repos-${{ hashFiles('sources.csv') }}
 
       - name: sdkman install cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         id: sdkman-cache
         with:
           path: /home/runner/.sdkman/candidates
@@ -211,20 +211,20 @@ jobs:
 
       - name: Upload slices as artifact
         if: ${{ ! inputs.debug-cmds && ! inputs.commit-updates  }}
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: slices
           path: /home/runner/work/atom-samples/atom-samples/**/*.json
 
       - name: Upload shell scripts generated as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: scripts
           path: /home/runner/work/atom-samples/atom-samples/*.sh
 
       - name: Upload cdxgen boms
         if: ${{ contains(inputs.filter-lang, 'java') || contains(inputs.filter-lang, 'javascript') }}
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: cdxgen_boms
           path: |
