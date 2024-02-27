@@ -76,8 +76,7 @@ def build_args():
         action='store_false',
         dest='skip_clone',
         default=True,
-        help='Skip cloning the repositories (must be used with the --repo-dir '
-             'argument)'
+        help='Skip cloning the repositories (must be used with the --repo-dir argument)'
     )
     parser.add_argument(
         '--debug-cmds',
@@ -90,16 +89,14 @@ def build_args():
         action='store_true',
         dest='skip_build',
         default=False,
-        help='Skip building the samples and just run atom. Should be used '
-             'with --skip-clone'
+        help='Skip building the samples and just run atom. Should be used with --skip-clone'
     )
     parser.add_argument(
         '--cleanup',
         action='store_true',
         dest='cleanup',
         default=False,
-        help='Remove slices that are 1kb or less in size (successful slices '
-             'are always larger than 1kb)'
+        help='Remove slices that are <= 1kb or > 100MB.'
     )
     return parser.parse_args()
 
@@ -164,13 +161,7 @@ def add_repo_dirs(clone_dir, repo_data):
     return new_data
 
 
-def exec_on_repo(
-        clone,
-        output_dir,
-        skip_build,
-        slice_types,
-        repo
-):
+def exec_on_repo(clone, output_dir, skip_build, slice_types, repo):
     """
     Determines a sequence of commands on a repository.
 
@@ -213,8 +204,7 @@ def exec_on_repo(
     for stype in slice_types:
         slice_file = Path.joinpath(output_dir, lang, f'{project}-{stype}.json')
         atom_file = Path.joinpath(repo_dir, f'{project}.atom')
-        cmd = ['atom', stype, '-l', lang, '-o', atom_file, '-s', slice_file,
-               repo_dir]
+        cmd = ['atom', stype, '-l', lang, '-o', atom_file, '-s', slice_file, repo_dir]
         commands += f'\n{subprocess.list2cmdline(cmd)}'
     commands += '\n\n'
     return commands
@@ -303,8 +293,7 @@ def write_script_file(file_path, commands, debug_cmds):
         None
     """
     with open(file_path, 'w', encoding='utf-8') as f:
-        sdkman_path = Path.joinpath(
-            Path('$SDKMAN_DIR'), 'bin', 'sdkman-init.sh')
+        sdkman_path = Path.joinpath(Path('$SDKMAN_DIR'), 'bin', 'sdkman-init.sh')
         f.write(f'#!/usr/bin/bash\nsource {sdkman_path}\n\n')
         f.write(commands)
     if debug_cmds:
@@ -331,7 +320,7 @@ def check_dirs(clone, clone_dir, output_dir):
 
 def cleanup(output_dir):
     """
-    Remove slice files 1kb or less.
+    Remove slice files 1kb or less, or 100MB or more (due to GitHub limits).
 
     Args:
         output_dir (pathlib.Path): The path to the output directory.
@@ -343,8 +332,12 @@ def cleanup(output_dir):
         for file in files:
             if file.endswith('.json'):
                 path = os.path.join(root, file)
-                if os.path.getsize(path) <= 1024:
+                size = os.path.getsize(path)
+                if size <= 1024:
                     os.remove(path)
+                elif size > 100000000:
+                    os.remove(path)
+                    logging.warning('File %s exceeds the GitHub size limit of 100MB.', path)
 
 
 def run_cdxgen(repos):
