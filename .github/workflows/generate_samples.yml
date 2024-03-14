@@ -130,12 +130,19 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.0.1
         with:
-          node-version: 20
+          node-version: 21
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
         
       -  name: Atom, cdxgen, sdkman installs
          run: |
            npm install -g @cyclonedx/cdxgen
            npm install -g @appthreat/atom
+           python -m pip install --upgrade pip
+           python -m pip install atom-tools
            curl -s "https://get.sdkman.io" | bash
            source "/home/runner/.sdkman/bin/sdkman-init.sh"
 
