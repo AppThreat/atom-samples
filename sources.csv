@@ -1,12 +1,16 @@
-project,link,language,pre_build_cmd,build_cmd
-"apollo","https://github.com/apolloconfig/apollo.git","java","sdk use maven 3.5.4;sdk use java 17.0.9-zulu","mvn -B clean compile -Dmaven.gitcommitid.skip=true -DskipTests=true"
-"karate","https://github.com/karatelabs/karate.git","java","sdk use java 21.ea.35-open","mvn -B clean install -P pre-release -pl '!karate-gatling' -Djavacpp.platform=linux-x86_64 -DskipTests=true"
-"piggymetrics","https://github.com/sqshq/piggymetrics.git","java","sdk use java 8.0.392-zulu","mvn -B -ntp package -DskipTests=true"
-"axios","https://github.com/axios/axios.git","javascript","",""
-"videojs","https://github.com/videojs/video.js.git","javascript","",""
-"sequelize","https://github.com/sequelize/sequelize.git","javascript","","yarn install"
-"ava","https://github.com/avajs/ava.git","javascript","","npm install"
-"spaCy","https://github.com/explosion/spaCy.git","python","",""
-"scrapy","https://github.com/scrapy/scrapy.git","python","","python -m venv venv; source venv/bin/activate && pip install ."
-"tinydb","https://github.com/msiemens/tinydb.git","python","","python -m venv venv; source venv/bin/activate && pip install ."
-"tornado","https://github.com/tornadoweb/tornado.git","python","","python -m venv venv; source venv/bin/activate && pip install ."
+project,link,language,pre_build_cmd,build_cmd,gen_api
+"apollo","https://github.com/apolloconfig/apollo.git","java","sdk use maven 3.5.4;sdk use java 17.0.9-zulu","mvn -B clean compile -Dmaven.gitcommitid.skip=true -DskipTests=true",""
+"java-sec-code","https://github.com/JoyChou93/java-sec-code.git","java","sdk use java 8.0.392-zulu","mvn -B clean compile -DskipTests=true",1
+"karate","https://github.com/karatelabs/karate.git","java","sdk use java 21.ea.35-open","mvn -B clean install -P pre-release -pl '!karate-gatling' -Djavacpp.platform=linux-x86_64 -DskipTests=true",""
+"piggymetrics","https://github.com/sqshq/piggymetrics.git","java","sdk use java 8.0.392-zulu","mvn -B -ntp package -DskipTests=true",1
+"axios","https://github.com/axios/axios.git","javascript","","",""
+"juiceshop","https://github.com/juice-shop/juice-shop.git","javascript","","npm install",1
+"node-goat","https://github.com/OWASP/NodeGoat.git","javascript","","npm install",1
+"sequelize","https://github.com/sequelize/sequelize.git","javascript","","yarn install",""
+"videojs","https://github.com/videojs/video.js.git","javascript","","",""
+"ava","https://github.com/avajs/ava.git","javascript","","npm install",""
+"django-goat","https://github.com/red-and-black/DjangoGoat.git","python","","python -m venv venv; source venv/bin/activate && pip install -r requirements_app.txt",1
+"spaCy","https://github.com/explosion/spaCy.git","python","","",""
+"scrapy","https://github.com/scrapy/scrapy.git","python","","python -m venv venv; source venv/bin/activate && pip install .",""
+"tinydb","https://github.com/msiemens/tinydb.git","python","","python -m venv venv; source venv/bin/activate && pip install .",""
+"tornado","https://github.com/tornadoweb/tornado.git","python","","python -m venv venv; source venv/bin/activate && pip install .",""

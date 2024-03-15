@@ -180,6 +180,7 @@ def exec_on_repo(clone, output_dir, skip_build, slice_types, repo):
     lang = repo['language']
     loc = Path.cwd()
     repo_dir = repo['repo_dir']
+    gen_api = repo['gen_api']
     commands = ''
 
     if clone:
@@ -204,10 +205,24 @@ def exec_on_repo(clone, output_dir, skip_build, slice_types, repo):
     for stype in slice_types:
         slice_file = Path.joinpath(output_dir, lang, f'{project}-{stype}.json')
         atom_file = Path.joinpath(repo_dir, f'{project}.atom')
-        cmd = ['atom', stype, '-l', lang, '-o', atom_file, '-s', slice_file, repo_dir]
+        if stype == 'usages' and gen_api:
+            commands += generate_openapi(project, output_dir, lang, slice_file, atom_file, repo_dir)
+            continue
+        cmd = ['atom', stype,'-l', lang, '-o', atom_file, '-s', slice_file, repo_dir]
         commands += f'\n{subprocess.list2cmdline(cmd)}'
     commands += '\n\n'
     return commands
+
+
+def generate_openapi(project, output_dir, lang, slice_file, atom_file, repo_dir):
+    cmds = ''
+    cmd = ['atom', 'usages', '--extract-endpoints', '-l', lang, '-o', atom_file, '-s', slice_file,
+           repo_dir]
+    cmds += f'\n{subprocess.list2cmdline(cmd)}'
+    openapi_file = Path.joinpath(repo_dir, 'openapi.generated.json')
+    cmd = ['mv', openapi_file, Path.joinpath(output_dir, lang, f'{project}_openapi.json')]
+    cmds += f'\n{subprocess.list2cmdline(cmd)}'
+    return cmds
 
 
 def read_csv(csv_file, langs, projects, clone_dir):
