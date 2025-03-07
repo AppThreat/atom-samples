@@ -55,11 +55,11 @@
                 "parameters": [
                     {
                         "in": "header",
-                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                        "name": "__ecma.String"
                     },
                     {
                         "in": "header",
-                        "name": "__ecma.String"
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
                     }
                 ],
                 "responses": {}
@@ -68,11 +68,11 @@
                 "parameters": [
                     {
                         "in": "header",
-                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                        "name": "__ecma.String"
                     },
                     {
                         "in": "header",
-                        "name": "__ecma.String"
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
                     }
                 ],
                 "responses": {}
@@ -80,8 +80,8 @@
             "x-atom-usages": {
                 "call": {
                     "app/routes/index.js": [
-                        56,
-                        55
+                        55,
+                        56
                     ]
                 }
             }
@@ -91,11 +91,11 @@
                 "parameters": [
                     {
                         "in": "header",
-                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                        "name": "__ecma.String"
                     },
                     {
                         "in": "header",
-                        "name": "__ecma.String"
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
                     }
                 ],
                 "responses": {}
@@ -104,11 +104,11 @@
                 "parameters": [
                     {
                         "in": "header",
-                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                        "name": "__ecma.String"
                     },
                     {
                         "in": "header",
-                        "name": "__ecma.String"
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
                     }
                 ],
                 "responses": {}
@@ -127,11 +127,11 @@
                 "parameters": [
                     {
                         "in": "header",
-                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                        "name": "__ecma.String"
                     },
                     {
                         "in": "header",
-                        "name": "__ecma.String"
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
                     }
                 ],
                 "responses": {}
@@ -149,15 +149,15 @@
                 "parameters": [
                     {
                         "in": "header",
+                        "name": "__ecma.String"
+                    },
+                    {
+                        "in": "header",
                         "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
                     },
                     {
                         "in": "header",
                         "name": "LAMBDA"
-                    },
-                    {
-                        "in": "header",
-                        "name": "__ecma.String"
                     }
                 ],
                 "responses": {}
@@ -192,8 +192,8 @@
             "x-atom-usages": {
                 "call": {
                     "app/routes/index.js": [
-                        33,
-                        34
+                        34,
+                        33
                     ]
                 }
             }
@@ -221,11 +221,11 @@
                 "parameters": [
                     {
                         "in": "header",
-                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                        "name": "__ecma.String"
                     },
                     {
                         "in": "header",
-                        "name": "__ecma.String"
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
                     }
                 ],
                 "responses": {}
@@ -234,11 +234,11 @@
                 "parameters": [
                     {
                         "in": "header",
-                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                        "name": "__ecma.String"
                     },
                     {
                         "in": "header",
-                        "name": "__ecma.String"
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
                     }
                 ],
                 "responses": {}
@@ -246,8 +246,8 @@
             "x-atom-usages": {
                 "call": {
                     "app/routes/index.js": [
-                        66,
-                        67
+                        67,
+                        66
                     ]
                 }
             }
@@ -257,11 +257,11 @@
                 "parameters": [
                     {
                         "in": "header",
-                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                        "name": "__ecma.String"
                     },
                     {
                         "in": "header",
-                        "name": "__ecma.String"
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
                     }
                 ],
                 "responses": {}
@@ -270,11 +270,11 @@
                 "parameters": [
                     {
                         "in": "header",
-                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                        "name": "__ecma.String"
                     },
                     {
                         "in": "header",
-                        "name": "__ecma.String"
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
                     }
                 ],
                 "responses": {}
@@ -293,11 +293,11 @@
                 "parameters": [
                     {
                         "in": "header",
-                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                        "name": "__ecma.String"
                     },
                     {
                         "in": "header",
-                        "name": "__ecma.String"
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
                     }
                 ],
                 "responses": {}
@@ -343,11 +343,11 @@
                 "parameters": [
                     {
                         "in": "header",
-                        "name": "LAMBDA"
+                        "name": "__ecma.String"
                     },
                     {
                         "in": "header",
-                        "name": "__ecma.String"
+                        "name": "LAMBDA"
                     }
                 ],
                 "responses": {}

@@ -133,8 +133,8 @@
             "x-atom-usages": {
                 "call": {
                     "statistics-service/src/main/java/com/piggymetrics/statistics/controller/StatisticsController.java": [
-                        26,
-                        32
+                        32,
+                        26
                     ]
                 },
                 "target": {

@@ -172,8 +172,8 @@
             "x-atom-usages": {
                 "call": {
                     "djangogoat/urls.py": [
-                        60,
-                        59
+                        59,
+                        60
                     ]
                 }
             }
