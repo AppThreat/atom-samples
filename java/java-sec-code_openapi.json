@@ -1,0 +1,1572 @@
+{
+    "info": {
+        "title": "OpenAPI Specification for java",
+        "version": "1.0.0"
+    },
+    "openapi": "3.1.0",
+    "paths": {
+        "/": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/CSRF.java": [
+                        19
+                    ],
+                    "src/main/java/org/joychou/controller/Index.java": [
+                        41
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/Index.java": [
+                        41
+                    ]
+                }
+            }
+        },
+        "/Digester/sec": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XXE.java": [
+                        213
+                    ]
+                }
+            }
+        },
+        "/Digester/vuln": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XXE.java": [
+                        198
+                    ]
+                }
+            }
+        },
+        "/DocumentBuilder/Sec": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XXE.java": [
+                        263
+                    ]
+                }
+            }
+        },
+        "/DocumentBuilder/vuln": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XXE.java": [
+                        236
+                    ]
+                }
+            }
+        },
+        "/DocumentBuilder/xinclude/sec": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XXE.java": [
+                        312
+                    ]
+                }
+            }
+        },
+        "/DocumentBuilder/xinclude/vuln": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XXE.java": [
+                        286
+                    ]
+                }
+            }
+        },
+        "/DocumentHelper/vuln": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XXE.java": [
+                        388
+                    ]
+                }
+            }
+        },
+        "/HttpSyncClients/vuln": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SSRF.java": [
+                        265
+                    ]
+                }
+            }
+        },
+        "/HttpURLConnection/sec": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SSRF.java": [
+                        74
+                    ]
+                }
+            }
+        },
+        "/HttpURLConnection/vuln": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SSRF.java": [
+                        87
+                    ]
+                }
+            }
+        },
+        "/IOUtils/sec": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SSRF.java": [
+                        246
+                    ]
+                }
+            }
+        },
+        "/ImageIO/sec": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SSRF.java": [
+                        153
+                    ]
+                }
+            }
+        },
+        "/Jsoup/sec": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SSRF.java": [
+                        226
+                    ]
+                }
+            }
+        },
+        "/ProcessBuilder": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Rce.java": [
+                        62
+                    ]
+                }
+            }
+        },
+        "/SAXBuilder/sec": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XXE.java": [
+                        102
+                    ]
+                }
+            }
+        },
+        "/SAXBuilder/vuln": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XXE.java": [
+                        86
+                    ]
+                }
+            }
+        },
+        "/SAXParser/sec": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XXE.java": [
+                        178
+                    ]
+                }
+            }
+        },
+        "/SAXParser/vuln": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XXE.java": [
+                        160
+                    ]
+                }
+            }
+        },
+        "/SAXReader/sec": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XXE.java": [
+                        141
+                    ]
+                }
+            }
+        },
+        "/SAXReader/vuln": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XXE.java": [
+                        123
+                    ]
+                }
+            }
+        },
+        "/XMLReader/sec": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XXE.java": [
+                        362
+                    ]
+                }
+            }
+        },
+        "/XMLReader/vuln": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XXE.java": [
+                        342
+                    ]
+                }
+            }
+        },
+        "/any": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/FileUpload.java": [
+                        39
+                    ]
+                }
+            }
+        },
+        "/appInfo": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Index.java": [
+                        24
+                    ]
+                }
+            }
+        },
+        "/classloader": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/ClassDataLoader.java": [
+                        15
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/ClassDataLoader.java": [
+                        15
+                    ]
+                }
+            }
+        },
+        "/codeinject": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/CommandInject.java": [
+                        24
+                    ]
+                }
+            }
+        },
+        "/codeinject/host": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/CommandInject.java": [
+                        39
+                    ]
+                }
+            }
+        },
+        "/codeinject/sec": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/CommandInject.java": [
+                        51
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/CommandInject.java": [
+                        51
+                    ]
+                }
+            }
+        },
+        "/commonsHttpClient/sec": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SSRF.java": [
+                        207
+                    ]
+                }
+            }
+        },
+        "/createToken": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Jwt.java": [
+                        31
+                    ]
+                }
+            }
+        },
+        "/db2": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Jdbc.java": [
+                        28
+                    ]
+                }
+            }
+        },
+        "/deserialize": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Fastjson.java": [
+                        17
+                    ]
+                }
+            }
+        },
+        "/dnsrebind/vuln": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SSRF.java": [
+                        308
+                    ]
+                }
+            }
+        },
+        "/exclued/vuln": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/GetRequestURI.java": [
+                        34
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/GetRequestURI.java": [
+                        34
+                    ]
+                }
+            }
+        },
+        "/fastjsonp/getToken": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Jsonp.java": [
+                        127
+                    ]
+                }
+            }
+        },
+        "/forward": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/URLRedirect.java": [
+                        64
+                    ]
+                }
+            }
+        },
+        "/getName": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Jwt.java": [
+                        58
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/Jwt.java": [
+                        58
+                    ]
+                }
+            }
+        },
+        "/getToken": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Jsonp.java": [
+                        117
+                    ]
+                }
+            }
+        },
+        "/groovy": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Rce.java": [
+                        126
+                    ]
+                }
+            }
+        },
+        "/httpclient/sec": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SSRF.java": [
+                        187
+                    ]
+                }
+            }
+        },
+        "/hutool/vuln": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SSRF.java": [
+                        298
+                    ]
+                }
+            }
+        },
+        "/index": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Index.java": [
+                        46
+                    ]
+                }
+            }
+        },
+        "/jackson": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Deserialize.java": [
+                        88
+                    ]
+                }
+            }
+        },
+        "/jdbc/ps/vuln": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SQLI.java": [
+                        138
+                    ]
+                }
+            }
+        },
+        "/jdbc/sec": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SQLI.java": [
+                        94
+                    ]
+                }
+            }
+        },
+        "/jdbc/vuln": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SQLI.java": [
+                        51
+                    ]
+                }
+            }
+        },
+        "/jscmd": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Rce.java": [
+                        94
+                    ]
+                }
+            }
+        },
+        "/log4j": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Log4j.java": [
+                        18
+                    ]
+                }
+            }
+        },
+        "/login": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Login.java": [
+                        22
+                    ]
+                }
+            }
+        },
+        "/logout": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Login.java": [
+                        27
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/Login.java": [
+                        27
+                    ]
+                }
+            }
+        },
+        "/mybatis/orderby/sec04": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SQLI.java": [
+                        240
+                    ]
+                }
+            }
+        },
+        "/mybatis/orderby/vuln03": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SQLI.java": [
+                        201
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/SQLI.java": [
+                        201
+                    ]
+                }
+            }
+        },
+        "/mybatis/sec01": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SQLI.java": [
+                        211
+                    ]
+                }
+            }
+        },
+        "/mybatis/sec02": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SQLI.java": [
+                        220
+                    ]
+                }
+            }
+        },
+        "/mybatis/sec03": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SQLI.java": [
+                        230
+                    ]
+                }
+            }
+        },
+        "/mybatis/vuln01": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SQLI.java": [
+                        181
+                    ]
+                }
+            }
+        },
+        "/mybatis/vuln02": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SQLI.java": [
+                        191
+                    ]
+                }
+            }
+        },
+        "/noproxy": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/IPForge.java": [
+                        20
+                    ]
+                }
+            }
+        },
+        "/object2jsonp": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Jsonp.java": [
+                        75
+                    ]
+                }
+            }
+        },
+        "/okhttp/sec": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SSRF.java": [
+                        168
+                    ]
+                }
+            }
+        },
+        "/openStream": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SSRF.java": [
+                        118
+                    ]
+                }
+            }
+        },
+        "/path_traversal/sec": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/PathTraversal.java": [
+                        29
+                    ]
+                }
+            }
+        },
+        "/path_traversal/vul": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/PathTraversal.java": [
+                        24
+                    ]
+                }
+            }
+        },
+        "/pic": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/FileUpload.java": [
+                        45
+                    ]
+                }
+            }
+        },
+        "/postgresql": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Jdbc.java": [
+                        20
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/Jdbc.java": [
+                        20
+                    ]
+                }
+            }
+        },
+        "/proxy": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/IPForge.java": [
+                        31
+                    ]
+                }
+            }
+        },
+        "/readxlsx": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/othervulns/ooxmlXXE.java": [
+                        43
+                    ],
+                    "src/main/java/org/joychou/controller/othervulns/xlsxStreamerXXE.java": [
+                        34
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/othervulns/xlsxStreamerXXE.java": [
+                        34
+                    ]
+                }
+            }
+        },
+        "/redirect": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/URLRedirect.java": [
+                        31
+                    ]
+                }
+            }
+        },
+        "/reflect": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XSS.java": [
+                        27
+                    ]
+                }
+            }
+        },
+        "/rememberMe/security": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Deserialize.java": [
+                        61
+                    ]
+                }
+            }
+        },
+        "/rememberMe/vuln": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Deserialize.java": [
+                        36
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/Deserialize.java": [
+                        36
+                    ]
+                }
+            }
+        },
+        "/request/sec": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SSRF.java": [
+                        97
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/SSRF.java": [
+                        97
+                    ]
+                }
+            }
+        },
+        "/restTemplate/vuln1": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SSRF.java": [
+                        277
+                    ]
+                }
+            }
+        },
+        "/restTemplate/vuln2": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SSRF.java": [
+                        285
+                    ]
+                }
+            }
+        },
+        "/runtime/exec": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Rce.java": [
+                        30
+                    ]
+                }
+            }
+        },
+        "/safe": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XSS.java": [
+                        65
+                    ]
+                }
+            }
+        },
+        "/safecode": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/CRLFInjection.java": [
+                        20
+                    ]
+                }
+            }
+        },
+        "/sec": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/QLExpress.java": [
+                        31
+                    ],
+                    "src/main/java/org/joychou/controller/URLWhiteList.java": [
+                        125
+                    ]
+                }
+            }
+        },
+        "/sec/array_indexOf": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/URLWhiteList.java": [
+                        151
+                    ]
+                }
+            }
+        },
+        "/sec/checkOrigin": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Cors.java": [
+                        104
+                    ]
+                }
+            }
+        },
+        "/sec/checkReferer": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Jsonp.java": [
+                        101
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/Jsonp.java": [
+                        101
+                    ]
+                }
+            }
+        },
+        "/sec/corsFilter": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Cors.java": [
+                        98
+                    ]
+                }
+            }
+        },
+        "/sec/crossOrigin": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Cors.java": [
+                        54
+                    ]
+                }
+            }
+        },
+        "/sec/httpCors": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Cors.java": [
+                        76
+                    ]
+                }
+            }
+        },
+        "/sec/originFilter": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Cors.java": [
+                        87
+                    ]
+                }
+            }
+        },
+        "/sec/webMvcConfigurer": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Cors.java": [
+                        65
+                    ]
+                }
+            }
+        },
+        "/sec/yarm": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Rce.java": [
+                        116
+                    ]
+                }
+            }
+        },
+        "/sendRedirect": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/URLRedirect.java": [
+                        52
+                    ]
+                }
+            }
+        },
+        "/sendRedirect/sec": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/URLRedirect.java": [
+                        81
+                    ]
+                }
+            }
+        },
+        "/setHeader": {
+            "head": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/URLRedirect.java": [
+                        40
+                    ]
+                }
+            }
+        },
+        "/shiro/deserialize": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Shiro.java": [
+                        25
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/Shiro.java": [
+                        25
+                    ]
+                }
+            }
+        },
+        "/spel/sec": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SpEL.java": [
+                        47
+                    ]
+                }
+            }
+        },
+        "/spel/vuln1": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SpEL.java": [
+                        24
+                    ]
+                }
+            }
+        },
+        "/spel/vuln2": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SpEL.java": [
+                        35
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/SpEL.java": [
+                        35
+                    ]
+                }
+            }
+        },
+        "/status": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/FileUpload.java": [
+                        76
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/FileUpload.java": [
+                        76
+                    ]
+                }
+            }
+        },
+        "/stored/show": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XSS.java": [
+                        55
+                    ]
+                }
+            }
+        },
+        "/stored/store": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XSS.java": [
+                        40
+                    ]
+                }
+            }
+        },
+        "/upload": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/FileUpload.java": [
+                        50
+                    ],
+                    "src/main/java/org/joychou/controller/othervulns/ooxmlXXE.java": [
+                        37
+                    ],
+                    "src/main/java/org/joychou/controller/othervulns/xlsxStreamerXXE.java": [
+                        28
+                    ]
+                }
+            }
+        },
+        "/upload/picture": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/FileUpload.java": [
+                        82
+                    ]
+                }
+            }
+        },
+        "/urlConnection/sec": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SSRF.java": [
+                        50
+                    ]
+                }
+            }
+        },
+        "/urlConnection/vuln": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SSRF.java": [
+                        44
+                    ]
+                }
+            }
+        },
+        "/velocity": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/SSTI.java": [
+                        26
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/SSTI.java": [
+                        26
+                    ]
+                }
+            }
+        },
+        "/vuln/contains": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/URLWhiteList.java": [
+                        56
+                    ]
+                }
+            }
+        },
+        "/vuln/crossOrigin": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Cors.java": [
+                        42
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/Cors.java": [
+                        42
+                    ]
+                }
+            }
+        },
+        "/vuln/emptyReferer": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Jsonp.java": [
+                        56
+                    ]
+                }
+            }
+        },
+        "/vuln/endsWith": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/URLWhiteList.java": [
+                        36
+                    ]
+                }
+            }
+        },
+        "/vuln/mappingJackson2JsonView": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Jsonp.java": [
+                        88
+                    ]
+                }
+            }
+        },
+        "/vuln/origin": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Cors.java": [
+                        25
+                    ]
+                }
+            }
+        },
+        "/vuln/referer": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Jsonp.java": [
+                        44
+                    ]
+                }
+            }
+        },
+        "/vuln/regex": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/URLWhiteList.java": [
+                        74
+                    ]
+                }
+            }
+        },
+        "/vuln/setHeader": {
+            "get": {
+                "responses": {}
+            },
+            "head": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Cors.java": [
+                        33
+                    ]
+                }
+            }
+        },
+        "/vuln/url_bypass": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/URLWhiteList.java": [
+                        98
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/URLWhiteList.java": [
+                        98
+                    ]
+                }
+            }
+        },
+        "/vuln/yarm": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Rce.java": [
+                        110
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/Rce.java": [
+                        110
+                    ]
+                }
+            }
+        },
+        "/vuln01": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Cookies.java": [
+                        25
+                    ]
+                }
+            }
+        },
+        "/vuln02": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Cookies.java": [
+                        32
+                    ]
+                }
+            }
+        },
+        "/vuln03": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Cookies.java": [
+                        45
+                    ]
+                }
+            }
+        },
+        "/vuln04": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Cookies.java": [
+                        61
+                    ]
+                }
+            }
+        },
+        "/vuln05": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Cookies.java": [
+                        76
+                    ]
+                }
+            }
+        },
+        "/vuln06": {
+            "get": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/Cookies.java": [
+                        82
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/Cookies.java": [
+                        82
+                    ]
+                }
+            }
+        },
+        "/vuln1": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/QLExpress.java": [
+                        20
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/QLExpress.java": [
+                        20
+                    ]
+                }
+            }
+        },
+        "/websocket/cmd": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/WebSockets.java": [
+                        30
+                    ]
+                }
+            }
+        },
+        "/websocket/proxy": {
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/WebSockets.java": [
+                        53
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/WebSockets.java": [
+                        53
+                    ]
+                }
+            }
+        },
+        "/xmlReader/sec": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XXE.java": [
+                        63
+                    ]
+                }
+            }
+        },
+        "/xmlReader/vuln": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XXE.java": [
+                        48
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/XXE.java": [
+                        48
+                    ]
+                }
+            }
+        },
+        "/xmlbeam/vuln": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XXE.java": [
+                        419
+                    ]
+                }
+            }
+        },
+        "/xstream": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "src/main/java/org/joychou/controller/XStreamRce.java": [
+                        24
+                    ]
+                },
+                "target": {
+                    "src/main/java/org/joychou/controller/XStreamRce.java": [
+                        24
+                    ]
+                }
+            }
+        }
+    }
+}

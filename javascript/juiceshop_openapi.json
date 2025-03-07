@@ -1,0 +1,2116 @@
+{
+    "info": {
+        "title": "OpenAPI Specification for javascript",
+        "version": "1.0.0"
+    },
+    "openapi": "3.1.0",
+    "paths": {
+        "/": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "LAMBDA"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "LAMBDA"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "routes/dataErasure.ts": [
+                        54,
+                        18
+                    ]
+                }
+            }
+        },
+        "/.well-known/security.txt": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "ANY"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        206
+                    ]
+                }
+            }
+        },
+        "/api/Addresss": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        427,
+                        426
+                    ]
+                }
+            }
+        },
+        "/api/Addresss/{id}": {
+            "delete": {
+                "parameters": [],
+                "responses": {}
+            },
+            "get": {
+                "parameters": [],
+                "responses": {}
+            },
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "id",
+                    "required": true
+                }
+            ],
+            "put": {
+                "parameters": [],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        428,
+                        429,
+                        430
+                    ]
+                }
+            }
+        },
+        "/api/BasketItems": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        405
+                    ]
+                }
+            }
+        },
+        "/api/BasketItems/{id}": {
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "id",
+                    "required": true
+                }
+            ],
+            "put": {
+                "parameters": [],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        404
+                    ]
+                }
+            }
+        },
+        "/api/Cards": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        417,
+                        416
+                    ]
+                }
+            }
+        },
+        "/api/Cards/{id}": {
+            "delete": {
+                "parameters": [],
+                "responses": {}
+            },
+            "get": {
+                "parameters": [],
+                "responses": {}
+            },
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "id",
+                    "required": true
+                }
+            ],
+            "put": {
+                "parameters": [],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        419,
+                        420,
+                        418
+                    ]
+                }
+            }
+        },
+        "/api/Challenges": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "express-jwt:expressJwt:<returnValue>"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        356
+                    ]
+                }
+            }
+        },
+        "/api/Complaints": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "express-jwt:expressJwt:<returnValue>"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "express-jwt:expressJwt:<returnValue>"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        360,
+                        359
+                    ]
+                }
+            }
+        },
+        "/api/Deliverys": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        431
+                    ]
+                }
+            }
+        },
+        "/api/Deliverys/{id}": {
+            "get": {
+                "parameters": [],
+                "responses": {}
+            },
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "id",
+                    "required": true
+                }
+            ],
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        432
+                    ]
+                }
+            }
+        },
+        "/api/Feedbacks": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        382,
+                        380,
+                        384
+                    ]
+                }
+            }
+        },
+        "/api/Feedbacks/{id}": {
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "id",
+                    "required": true
+                }
+            ],
+            "put": {
+                "parameters": [],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        411
+                    ]
+                }
+            }
+        },
+        "/api/PrivacyRequests": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "express-jwt:expressJwt:<returnValue>"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "express-jwt:expressJwt:<returnValue>"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        423,
+                        422
+                    ]
+                }
+            }
+        },
+        "/api/Products": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "express-jwt:expressJwt:<returnValue>"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        352
+                    ]
+                }
+            }
+        },
+        "/api/Products/{id}": {
+            "delete": {
+                "parameters": [],
+                "responses": {}
+            },
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "id",
+                    "required": true
+                }
+            ],
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        354
+                    ]
+                }
+            }
+        },
+        "/api/Quantitys": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "express-jwt:expressJwt:<returnValue>"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        408
+                    ]
+                }
+            }
+        },
+        "/api/Quantitys/{id}": {
+            "delete": {
+                "parameters": [],
+                "responses": {}
+            },
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "id",
+                    "required": true
+                }
+            ],
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        407
+                    ]
+                }
+            }
+        },
+        "/api/Recycles": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "express-jwt:expressJwt:<returnValue>"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        363,
+                        364
+                    ]
+                }
+            }
+        },
+        "/api/Recycles/{id}": {
+            "delete": {
+                "parameters": [],
+                "responses": {}
+            },
+            "get": {
+                "parameters": [],
+                "responses": {}
+            },
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "id",
+                    "required": true
+                }
+            ],
+            "put": {
+                "parameters": [],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        368,
+                        367,
+                        366
+                    ]
+                }
+            }
+        },
+        "/api/SecurityAnswers": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "express-jwt:expressJwt:<returnValue>"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        373
+                    ]
+                }
+            }
+        },
+        "/api/SecurityQuestions": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "express-jwt:expressJwt:<returnValue>"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        370
+                    ]
+                }
+            }
+        },
+        "/api/Users": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "express-jwt:expressJwt:<returnValue>"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "LAMBDA"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        386,
+                        399,
+                        400,
+                        346,
+                        398
+                    ]
+                }
+            }
+        },
+        "/api/Users/{id}": {
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "id",
+                    "required": true
+                }
+            ],
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        347
+                    ]
+                }
+            }
+        },
+        "/b2b/v2/orders": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        616
+                    ]
+                }
+            }
+        },
+        "/ctf.key": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "LAMBDA"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "routes/dataErasure.ts": [
+                        54
+                    ]
+                }
+            }
+        },
+        "/dataErasureForm": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "LAMBDA"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "routes/dataErasure.ts": [
+                        18
+                    ]
+                }
+            }
+        },
+        "/dataErasureResult": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "LAMBDA"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "routes/dataErasure.ts": [
+                        54
+                    ]
+                }
+            }
+        },
+        "/encryptionkeys": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "LAMBDA"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "routes/dataErasure.ts": [
+                        54
+                    ]
+                }
+            }
+        },
+        "/file": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "_tmp_0:handleZipFileUpload:<returnValue>:<member>(handleZipFileUpload)"
+                    },
+                    {
+                        "in": "header",
+                        "name": "_tmp_0:checkUploadSize:<returnValue>:<member>(checkUploadSize)"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    },
+                    {
+                        "in": "header",
+                        "name": "_tmp_0:ensureFileIsPassed:<returnValue>:<member>(ensureFileIsPassed)"
+                    },
+                    {
+                        "in": "header",
+                        "name": "_tmp_0:handleXmlUpload:<returnValue>:<member>(handleXmlUpload)"
+                    },
+                    {
+                        "in": "header",
+                        "name": "_tmp_0:checkFileType:<returnValue>:<member>(checkFileType)"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        295,
+                        297,
+                        296
+                    ]
+                }
+            }
+        },
+        "/file-upload": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "_tmp_0:handleZipFileUpload:<returnValue>:<member>(handleZipFileUpload)"
+                    },
+                    {
+                        "in": "header",
+                        "name": "_tmp_0:checkUploadSize:<returnValue>:<member>(checkUploadSize)"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    },
+                    {
+                        "in": "header",
+                        "name": "_tmp_0:ensureFileIsPassed:<returnValue>:<member>(ensureFileIsPassed)"
+                    },
+                    {
+                        "in": "header",
+                        "name": "_tmp_0:handleXmlUpload:<returnValue>:<member>(handleXmlUpload)"
+                    },
+                    {
+                        "in": "header",
+                        "name": "_tmp_0:checkFileType:<returnValue>:<member>(checkFileType)"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        295
+                    ]
+                }
+            }
+        },
+        "/ftp": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "LAMBDA"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "routes/dataErasure.ts": [
+                        54
+                    ],
+                    "server.ts": [
+                        260
+                    ]
+                }
+            }
+        },
+        "/ftp/quarantine/{file}": {
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "file",
+                    "required": true
+                }
+            ],
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        262
+                    ]
+                }
+            }
+        },
+        "/image": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    },
+                    {
+                        "in": "header",
+                        "name": "_tmp_0:ensureFileIsPassed:<returnValue>:<member>(ensureFileIsPassed)"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        298
+                    ]
+                }
+            }
+        },
+        "/metrics": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        691
+                    ]
+                }
+            }
+        },
+        "/profile": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        635,
+                        634
+                    ]
+                }
+            }
+        },
+        "/profile/image/file": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    },
+                    {
+                        "in": "header",
+                        "name": "_tmp_0:ensureFileIsPassed:<returnValue>:<member>(ensureFileIsPassed)"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        296
+                    ]
+                }
+            }
+        },
+        "/profile/image/url": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        297
+                    ]
+                }
+            }
+        },
+        "/promotion": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        630
+                    ]
+                }
+            }
+        },
+        "/redirect": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        627
+                    ]
+                }
+            }
+        },
+        "/rest/2fa/disable": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        449
+                    ]
+                }
+            }
+        },
+        "/rest/2fa/setup": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        443
+                    ]
+                }
+            }
+        },
+        "/rest/2fa/status": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "express-jwt:expressJwt:<returnValue>"
+                    },
+                    {
+                        "in": "header",
+                        "name": "routes/2fa.ts::program:status"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        441
+                    ]
+                }
+            }
+        },
+        "/rest/2fa/verify": {
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        436
+                    ]
+                }
+            }
+        },
+        "/rest/admin/application-configuration": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        575
+                    ]
+                }
+            }
+        },
+        "/rest/admin/application-version": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        574,
+                        583
+                    ]
+                }
+            }
+        },
+        "/rest/basket/{id}": {
+            "get": {
+                "parameters": [],
+                "responses": {}
+            },
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "id",
+                    "required": true
+                }
+            ],
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        571
+                    ]
+                }
+            }
+        },
+        "/rest/basket/{id}/checkout": {
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "id",
+                    "required": true
+                }
+            ],
+            "post": {
+                "parameters": [],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        572
+                    ]
+                }
+            }
+        },
+        "/rest/basket/{id}/coupon/{coupon}": {
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "id",
+                    "required": true
+                },
+                {
+                    "in": "path",
+                    "name": "coupon",
+                    "required": true
+                }
+            ],
+            "put": {
+                "parameters": [],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        573
+                    ]
+                }
+            }
+        },
+        "/rest/captcha": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        584
+                    ]
+                }
+            }
+        },
+        "/rest/chatbot/respond": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        601
+                    ]
+                }
+            }
+        },
+        "/rest/chatbot/status": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        600
+                    ]
+                }
+            }
+        },
+        "/rest/continue-code": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        577
+                    ]
+                }
+            }
+        },
+        "/rest/continue-code-findIt": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        578
+                    ]
+                }
+            }
+        },
+        "/rest/continue-code-findIt/apply/{continueCode}": {
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "continueCode",
+                    "required": true
+                }
+            ],
+            "put": {
+                "parameters": [],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        580
+                    ]
+                }
+            }
+        },
+        "/rest/continue-code-fixIt": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        579
+                    ]
+                }
+            }
+        },
+        "/rest/continue-code-fixIt/apply/{continueCode}": {
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "continueCode",
+                    "required": true
+                }
+            ],
+            "put": {
+                "parameters": [],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        581
+                    ]
+                }
+            }
+        },
+        "/rest/continue-code/apply/{continueCode}": {
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "continueCode",
+                    "required": true
+                }
+            ],
+            "put": {
+                "parameters": [],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        582
+                    ]
+                }
+            }
+        },
+        "/rest/country-mapping": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        587
+                    ]
+                }
+            }
+        },
+        "/rest/deluxe-membership": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        597,
+                        598
+                    ]
+                }
+            }
+        },
+        "/rest/image-captcha": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        585
+                    ]
+                }
+            }
+        },
+        "/rest/languages": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        591
+                    ]
+                }
+            }
+        },
+        "/rest/memories": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    },
+                    {
+                        "in": "header",
+                        "name": "_tmp_0:ensureFileIsPassed:<returnValue>:<member>(ensureFileIsPassed)"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        599,
+                        298
+                    ]
+                }
+            }
+        },
+        "/rest/order-history": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        592
+                    ]
+                }
+            }
+        },
+        "/rest/order-history/orders": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        593
+                    ]
+                }
+            }
+        },
+        "/rest/order-history/{id}/delivery-status": {
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "id",
+                    "required": true
+                }
+            ],
+            "put": {
+                "parameters": [],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        594
+                    ]
+                }
+            }
+        },
+        "/rest/products/reviews": {
+            "patch": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "express-jwt:expressJwt:<returnValue>"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "express-jwt:expressJwt:<returnValue>"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        606,
+                        605
+                    ]
+                }
+            }
+        },
+        "/rest/products/search": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        570
+                    ]
+                }
+            }
+        },
+        "/rest/products/{id}/reviews": {
+            "get": {
+                "parameters": [],
+                "responses": {}
+            },
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "id",
+                    "required": true
+                }
+            ],
+            "put": {
+                "parameters": [],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        604,
+                        603
+                    ]
+                }
+            }
+        },
+        "/rest/repeat-notification": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        576
+                    ]
+                }
+            }
+        },
+        "/rest/saveLoginIp": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        588
+                    ]
+                }
+            }
+        },
+        "/rest/track-order/{id}": {
+            "get": {
+                "parameters": [],
+                "responses": {}
+            },
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "id",
+                    "required": true
+                }
+            ],
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        586
+                    ]
+                }
+            }
+        },
+        "/rest/user/authentication-details": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        569
+                    ]
+                }
+            }
+        },
+        "/rest/user/change-password": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        565
+                    ]
+                }
+            }
+        },
+        "/rest/user/data-export": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        590,
+                        589
+                    ]
+                }
+            }
+        },
+        "/rest/user/login": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        564
+                    ]
+                }
+            }
+        },
+        "/rest/user/reset-password": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        566
+                    ]
+                }
+            }
+        },
+        "/rest/user/security-question": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        567
+                    ]
+                }
+            }
+        },
+        "/rest/user/whoami": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        568
+                    ]
+                }
+            }
+        },
+        "/rest/wallet/balance": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "put": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        595,
+                        596
+                    ]
+                }
+            }
+        },
+        "/rest/web3/nftMintListen": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        611
+                    ]
+                }
+            }
+        },
+        "/rest/web3/nftUnlocked": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        610
+                    ]
+                }
+            }
+        },
+        "/rest/web3/submitKey": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        609
+                    ]
+                }
+            }
+        },
+        "/rest/web3/walletExploitAddress": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        613
+                    ]
+                }
+            }
+        },
+        "/rest/web3/walletNFTVerify": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        612
+                    ]
+                }
+            }
+        },
+        "/security.txt": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "ANY"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        206
+                    ]
+                }
+            }
+        },
+        "/snippets": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        638
+                    ]
+                }
+            }
+        },
+        "/snippets/fixes": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        642
+                    ]
+                }
+            }
+        },
+        "/snippets/fixes/{key}": {
+            "get": {
+                "parameters": [],
+                "responses": {}
+            },
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "key",
+                    "required": true
+                }
+            ],
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        641
+                    ]
+                }
+            }
+        },
+        "/snippets/verdict": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        640
+                    ]
+                }
+            }
+        },
+        "/snippets/{challenge}": {
+            "get": {
+                "parameters": [],
+                "responses": {}
+            },
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "challenge",
+                    "required": true
+                }
+            ],
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        639
+                    ]
+                }
+            }
+        },
+        "/the/devs/are/so/funny/they/hid/an/easter/egg/within/the/easter/egg": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        619
+                    ]
+                }
+            }
+        },
+        "/this/page/is/hidden/behind/an/incredibly/high/paywall/that/could/only/be/unlocked/by/sending/1btc/to/us": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        620
+                    ]
+                }
+            }
+        },
+        "/token": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "LAMBDA"
+                    },
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "routes/dataErasure.ts": [
+                        54
+                    ]
+                }
+            }
+        },
+        "/video": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        631
+                    ]
+                }
+            }
+        },
+        "/we/may/also/instruct/you/to/refuse/all/reasonably/necessary/responsibility": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        621
+                    ]
+                }
+            }
+        },
+        "/{regex_param_1}/{file}": {
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "regex_param_1",
+                    "required": true,
+                    "schema": {
+                        "pattern": "ftp(?!/quarantine)",
+                        "type": "string"
+                    }
+                },
+                {
+                    "in": "path",
+                    "name": "file",
+                    "required": true
+                }
+            ],
+            "x-atom-usages": {
+                "call": {
+                    "server.ts": [
+                        261
+                    ]
+                }
+            }
+        }
+    }
+}
