@@ -1,0 +1,387 @@
+{
+    "info": {
+        "title": "OpenAPI Specification for python",
+        "version": "1.0.0"
+    },
+    "openapi": "3.1.0",
+    "paths": {
+        "/admin": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        31
+                    ]
+                }
+            }
+        },
+        "/conversation": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        35
+                    ]
+                }
+            }
+        },
+        "/conversation/{friend_pk}": {
+            "get": {
+                "responses": {}
+            },
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "friend_pk",
+                    "required": true
+                }
+            ],
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        35
+                    ]
+                }
+            }
+        },
+        "/dash": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        34
+                    ]
+                }
+            }
+        },
+        "/django.contrib.auth.urls": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        64
+                    ]
+                }
+            }
+        },
+        "/document_root": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        67
+                    ]
+                }
+            }
+        },
+        "/instructions": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        52
+                    ]
+                }
+            }
+        },
+        "/instructions.html": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        52
+                    ]
+                }
+            }
+        },
+        "/landing": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        47
+                    ]
+                }
+            }
+        },
+        "/landing.html": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        47
+                    ]
+                }
+            }
+        },
+        "/login": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        59,
+                        60
+                    ]
+                }
+            }
+        },
+        "/login_url": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        60
+                    ]
+                }
+            }
+        },
+        "/logout": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        60
+                    ]
+                }
+            }
+        },
+        "/media/{path}": {
+            "get": {
+                "responses": {}
+            },
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "path",
+                    "required": true,
+                    "schema": {
+                        "pattern": ".*",
+                        "type": "string"
+                    }
+                }
+            ],
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        67
+                    ]
+                }
+            }
+        },
+        "/note": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        40
+                    ]
+                }
+            }
+        },
+        "/note/{pk}": {
+            "get": {
+                "responses": {}
+            },
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "pk",
+                    "required": true
+                }
+            ],
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        40
+                    ]
+                }
+            }
+        },
+        "/profile": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        61
+                    ]
+                }
+            }
+        },
+        "/profile-update": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        62
+                    ]
+                }
+            }
+        },
+        "/profile/{pk}": {
+            "get": {
+                "responses": {}
+            },
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "pk",
+                    "required": true
+                }
+            ],
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        61
+                    ]
+                }
+            }
+        },
+        "/sign-up": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        63
+                    ]
+                }
+            }
+        },
+        "/vulnerabilities": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        44
+                    ]
+                }
+            }
+        },
+        "/vulnerabilities.html": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        44
+                    ]
+                }
+            }
+        },
+        "/write-note": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "djangogoat/urls.py": [
+                        41
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,364 @@
+{
+    "info": {
+        "title": "OpenAPI Specification for javascript",
+        "version": "1.0.0"
+    },
+    "openapi": "3.1.0",
+    "paths": {
+        "/": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    },
+                    {
+                        "in": "header",
+                        "name": "LAMBDA"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "app/routes/index.js": [
+                        30
+                    ],
+                    "app/routes/tutorial.js": [
+                        8
+                    ]
+                }
+            }
+        },
+        "/allocations/{userId}": {
+            "get": {
+                "parameters": [],
+                "responses": {}
+            },
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "userId",
+                    "required": true
+                }
+            ],
+            "x-atom-usages": {
+                "call": {
+                    "app/routes/index.js": [
+                        63
+                    ]
+                }
+            }
+        },
+        "/benefits": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    },
+                    {
+                        "in": "header",
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                    }
+                ],
+                "responses": {}
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    },
+                    {
+                        "in": "header",
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "app/routes/index.js": [
+                        55,
+                        56
+                    ]
+                }
+            }
+        },
+        "/contributions": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    },
+                    {
+                        "in": "header",
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                    }
+                ],
+                "responses": {}
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    },
+                    {
+                        "in": "header",
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "app/routes/index.js": [
+                        51,
+                        52
+                    ]
+                }
+            }
+        },
+        "/dashboard": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    },
+                    {
+                        "in": "header",
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "app/routes/index.js": [
+                        44
+                    ]
+                }
+            }
+        },
+        "/learn": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    },
+                    {
+                        "in": "header",
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                    },
+                    {
+                        "in": "header",
+                        "name": "LAMBDA"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "app/routes/index.js": [
+                        70
+                    ]
+                }
+            }
+        },
+        "/login": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "app/routes/index.js": [
+                        34,
+                        33
+                    ]
+                }
+            }
+        },
+        "/logout": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "app/routes/index.js": [
+                        41
+                    ]
+                }
+            }
+        },
+        "/memos": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    },
+                    {
+                        "in": "header",
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                    }
+                ],
+                "responses": {}
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    },
+                    {
+                        "in": "header",
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "app/routes/index.js": [
+                        67,
+                        66
+                    ]
+                }
+            }
+        },
+        "/profile": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    },
+                    {
+                        "in": "header",
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                    }
+                ],
+                "responses": {}
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    },
+                    {
+                        "in": "header",
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "app/routes/index.js": [
+                        48,
+                        47
+                    ]
+                }
+            }
+        },
+        "/research": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    },
+                    {
+                        "in": "header",
+                        "name": "app/routes/session.js::program:SessionHandler:<member>(isLoggedInMiddleware)"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "app/routes/index.js": [
+                        76
+                    ]
+                }
+            }
+        },
+        "/signup": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "app/routes/index.js": [
+                        38,
+                        37
+                    ]
+                }
+            }
+        },
+        "/tutorial/a1": {
+            "get": {
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "__ecma.String"
+                    },
+                    {
+                        "in": "header",
+                        "name": "LAMBDA"
+                    }
+                ],
+                "responses": {}
+            },
+            "x-atom-usages": {
+                "call": {
+                    "app/routes/tutorial.js": [
+                        8
+                    ]
+                }
+            }
+        }
+    }
+}
